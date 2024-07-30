@@ -1,0 +1,210 @@
+var activeClass = 'active';
+$(document).ready(function()
+{
+    $('input[type=text]').val('');
+    $('.card-holder-plan-buttons button').attr('disabled', true);
+    $('.card-holder-plan-buttons .btn-danger').on('click', function()
+    {
+        var selector = '#assigned-doors li.' + activeClass;
+        var plans = getActivePlans(selector);
+
+        var rowCNT = plans.length;
+        var html = '';
+
+        for (var loopCNT = 0; loopCNT < rowCNT; loopCNT++)
+        {
+            html += plans[loopCNT].name + "<br />";
+        }
+
+        $("#mod_remove-access .modal-body p:last").html(html);
+        $("#mod_remove-access").modal('show');
+
+        return false;
+    });
+    $('#mod_remove-access .btn-primary').on('click', function()
+    {
+        var selector = '#assigned-doors li.' + activeClass;
+        var plans = getActivePlans(selector);
+
+        var data = extractPlanIds(plans);
+
+        process({'action': 'delete',
+            'GrouperMembership-identifier': $('#uid').val(),
+            'GrouperMembership-group_name': data.join('|')});
+
+        $("#mod_remove-access").modal('hide');
+
+        return false;
+    });
+    $('.card-holder-plan-buttons .btn-success').on('click', function()
+    {
+        var selector = '#available-doors li.' + activeClass;
+        var plans = getActivePlans(selector);
+
+        var data = extractPlanIds(plans);
+
+        process({'action': 'add',
+            'GrouperMembership-identifier': $('#uid').val(),
+            'GrouperMembership-group_name': data.join('|')});
+
+        return false;
+    });
+
+    addPlanClicks('.card-holder-plan-box:eq(0) ul li', '.card-holder-plan-buttons .btn-danger');
+    addPlanClicks('.card-holder-plan-box:eq(1) ul li', '.card-holder-plan-buttons .btn-success');
+    //--------------------------------------------
+    $('#filter-assigned-doors, #filter-available-doors').keyup(function ()
+    {
+        var rex = new RegExp($(this).val().replace(new RegExp('[.\\\\+*?\\[\\^\\]$(){}=!<>|:\\-]', 'g'), '\\$&'), 'gi');
+
+        $(this).closest('div').find('ul li[data-id]').hide();
+        $(this).closest('div').find('ul li[data-id]').filter(function ()
+        {
+            return rex.test($(this).text());
+        }).show();
+
+    })
+    //--------------------------------------------
+    $('.modal').on('show.bs.modal', centerModal);
+    $(window).on("resize", function()
+    {
+        $('.modal:visible').each(centerModal);
+    });
+});
+function extractPlanIds(plans)
+{
+    var rowCNT = plans.length;
+    var data = [];
+    for (var loopCNT = 0; loopCNT < rowCNT; loopCNT++)
+    {
+        data.push(plans[loopCNT].id);
+    }
+
+    return data;
+}
+function getActivePlans(selector)
+{
+    var plans = new Array();
+
+    $(selector).each(function()
+    {
+        plans.push({'id': $(this).attr('data-id'), 'name': $(this).text()});
+    });
+
+    return plans;
+}
+function removeDoorAccess(plans)
+{
+    var rowCNT = plans.length;
+    var html = '';
+
+    for (var loopCNT = 0; loopCNT < rowCNT; loopCNT++)
+    {
+        $('li[data-id="' + plans[loopCNT] + '"] .label').removeClass('hide');
+        html += $('li[data-id="' + plans[loopCNT] + '"]').removeClass(activeClass).outerHtml();
+        $('li[data-id="' + plans[loopCNT] + '"]').off('click', function()
+        {
+
+        }).remove();
+    }
+    $('#available-doors').append(html);
+    addPlanClicks('.card-holder-plan-box:eq(1) ul li', '.card-holder-plan-buttons .btn-success');
+    toggleButton('.card-holder-plan-buttons .btn-danger', $('.card-holder-plan-box:eq(1) ul li.' + activeClass).length);
+}
+function assignDoorAccess(plans)
+{
+    var rowCNT = plans.length;
+    var html = '';
+
+    for (var loopCNT = 0; loopCNT < rowCNT; loopCNT++)
+    {
+        $('li[data-id="' + plans[loopCNT] + '"] span').addClass('hide');
+        html += $('li[data-id="' + plans[loopCNT] + '"]').removeClass(activeClass).show().outerHtml();
+
+        $('li[data-id="' + plans[loopCNT] + '"]').off('click', function()
+        {
+
+        }).remove();
+    }
+    $('#assigned-doors').append(html);
+    addPlanClicks('.card-holder-plan-box:eq(0) ul li', '.card-holder-plan-buttons .btn-danger');
+    toggleButton('.card-holder-plan-buttons .btn-success', $('.card-holder-plan-box:eq(0) ul li.' + activeClass).length);
+}
+function addPlanClicks(selector, buttonSelector)
+{
+    $(selector).each(function()
+    {
+        $(this).off();
+        $(this).on('click', function()
+        {
+            if ($(this).hasClass(activeClass))
+                $(this).removeClass(activeClass);
+            else
+                $(this).addClass(activeClass);
+
+            toggleButton(buttonSelector, $(selector + '.' + activeClass).length);
+
+            return false;
+        });
+    });
+}
+function toggleButton(selector, count)
+{
+    $(selector).attr('disabled', count == 0);
+}
+function centerModal()
+{
+    $(this).css('display', 'block');
+    var $dialog = $(this).find(".modal-dialog");
+    var offset = ($(window).height() - $dialog.height()) / 2;
+    // Center modal vertically in window
+    $dialog.css("margin-top", offset);
+}
+function process_complete(data)
+{
+    var xml = data.response;
+    var errors = new Array();
+    if ($.isEmpty(data.error))
+    {
+        $(xml).find("error").each
+        (
+            function()
+            {
+                if (!$.isEmpty($(this).text()))
+                    errors.push($(this).text());
+
+                if (!status && errors.length == 0)
+                    errors.push("Unknown error. Please try again.");
+            }
+        );
+        if (errors.length == 0)
+        {
+            if (data.params.action == "delete")
+            {
+                removeDoorAccess(data.params['GrouperMembership-group_name'].split('|'));
+
+                //==> Move to ajax request eventually
+                //$("#mod_remove-access").modal('hide');
+            }
+            else if (data.params.action == "add")
+            {
+                assignDoorAccess(data.params['GrouperMembership-group_name'].split('|'));
+            }
+        }
+    }
+    else
+        errors.push(data.error);
+
+    if (errors.length > 0)
+    {
+        //displayErrors(errors);
+    }
+
+    $.blockMessage.hide();
+}
+function process(data)
+{
+    var url = "/xml/grouper_memberships/" + data.action;
+    $.blockMessage.show();
+    $.request.post(url, {"data": data, "callback": process_complete});
+}

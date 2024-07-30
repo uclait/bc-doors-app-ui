@@ -1,0 +1,96 @@
+var jsonConfig = {'headers': {'Content-Type': 'application/x-www-form-urlencoded'}};
+var params = new Array();
+(function()
+{
+    'use strict';
+
+    var app = angular.module('bruinCard', []);
+    app.controller("loginCtrl", function($scope, $http)
+    {
+        // Form submit handler.
+        $scope.submit = function(form)
+        {
+            // Trigger validation flag.
+            $scope.submitted = true;
+
+            // If form is invalid, return and let AngularJS show validation errors.
+            if (form.$invalid)
+            {
+                $scope.messages = validate($scope, 'login');
+
+                return;
+            }
+            $scope.messages = false;
+
+            $.blockMessage.show();
+            var data = getData($scope, 'login');
+            var url = "/json/logins/";
+
+            var responsePromise = $http.post(url, $.param(data), jsonConfig);
+
+            responsePromise.success(function(data, status, headers, config)
+            {
+                var redirect = data['redirect'];
+                if (data['errors'].length == 0)
+                {
+                    $scope.messages = new Array();
+                    location.href = redirect + (redirect.indexOf("?") == -1 ? "?" : "&") + "uid=" + $.uid();
+                }
+                else
+                {
+                    $scope.messages = data['errors'];
+                    $.blockMessage.hide();
+                }
+            });
+            responsePromise.error(function(data, status, headers, config)
+            {
+                $scope.messages = true;
+                $.blockMessage.hide();
+            });
+        }
+    });
+})();
+
+$(document).ready
+(
+    function()
+    {
+        params = $.queryString();
+        if ($.isDefined(params["redirect"]))
+        {
+            if ($("#redirect").length > 0 && $.isEmpty($("#redirect").val()))
+            {
+                $("#redirect").val(params["redirect"]);
+            }
+        }
+        //--------------------------------------------
+    }
+);
+function getData($scope, action)
+{
+    var data = {'Users-username': $.trim($scope.username),
+                'redirect': $.trim($("#redirect").val()),
+                'action': action};
+
+    if (action == "login")
+        data["Users-password"] = $.trim($scope.password);
+
+    return data;
+}
+function validate($scope, action)
+{
+    var errors = new Array();
+
+    if ($.isEmpty($scope.username))
+        errors.push("UCLA Login ID is required");
+
+    if (action == "login")
+    {
+        if ($.isEmpty($scope.password))
+        {
+            errors.push("Password is required");
+        }
+    }
+
+    return errors;
+}

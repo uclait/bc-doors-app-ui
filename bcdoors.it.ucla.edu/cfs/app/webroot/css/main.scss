@@ -1,0 +1,89 @@
+.content
+{
+    margin: 2%;
+}
+.content .login
+{
+    margin: 5%;
+}
+.tab-pane
+{
+    margin: 1%;
+}
+/*
+.typeahead.large
+{
+    width: 700px;
+}
+.typeahead.medium
+{
+    width: 400px;
+}
+.typeahead.small
+{
+    width: 200px;
+}
+*/
+.typeahead
+{
+    &.large
+    {
+        width: 700px;
+    }
+    &.medium
+    {
+        width: 400px;
+    }
+    &.small
+    {
+        width: 200px;
+    }
+}
+.test
+{
+    background-color: green;
+}
+.campus-affiliation button
+{
+    margin-right: 25px;
+    width: 150px;
+    font-weight: bold;
+}
+.card-holder-assign div.card-holder-plan-box
+{
+    width: 300px;
+    float: left;
+}
+.card-holder-assign .panel
+{
+    height: 300px;
+}
+.card-holder-assign ul
+{
+    padding-left: 1%;
+    list-style: none;
+}
+.card-holder-assign tr:hover,
+.card-holder-assign tr.active
+{
+    background-color: #beecec;
+    font-weight: bold;
+}
+.card-holder-assign div.card-holder-plan-buttons
+{
+    width: 200px;
+    float: left;
+    margin-top: 1%;
+}
+.card-holder-assign div.card-holder-plan-buttons button
+{
+    width: 150px;
+}
+.right-to-left li
+{
+    float: right;
+}
+.card-holder-plan-box ul
+{
+    margin-left: 0px;
+}

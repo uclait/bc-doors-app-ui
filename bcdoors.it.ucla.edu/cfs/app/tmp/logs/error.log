@@ -1,0 +1,2037 @@
+2015-02-17 17:12:56 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /app/
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-17 17:14:33 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /app/
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-17 17:14:58 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /app/
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-17 17:15:16 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /app/
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-17 17:15:42 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /app/
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-17 17:15:46 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /app/
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-17 17:16:06 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /app/
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-17 17:16:31 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /app/
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-17 17:17:18 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /app/
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-17 17:22:51 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /app/
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-17 17:33:17 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /app/
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-17 17:33:20 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /app/
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-17 18:44:04 Error: [MissingControllerException] Controller class Uperws.it.ucla.eduController could not be found.
+Exception Attributes: array (
+  'class' => 'Uperws.it.ucla.eduController',
+  'plugin' => NULL,
+)
+Request URL: /app/uperws.it.ucla.edu/grouper-ws/servicesRest/xml/v2_1_5/subjects?wsLiteObjectType=WsRestGetSubjectsLiteRequest&searchString=804554016&subjectAttributeNames=uclauniversityid%2Cuclalogonid%2Cedupersonprincipalname
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-18 09:41:59 Error: [MissingActionException] Action SystemController::cache() could not be found.
+Exception Attributes: array (
+  'controller' => 'SystemController',
+  'action' => 'cache',
+)
+Request URL: /app/systems/cache
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SystemsController), Object(CakeRequest))
+#2 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-19 14:14:18 Error: [MissingActionException] Action GeneralController::sessions() could not be found.
+Exception Attributes: array (
+  'controller' => 'GeneralController',
+  'action' => 'sessions',
+)
+Request URL: /app/general/sessions
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GeneralController), Object(CakeRequest))
+#2 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-24 12:41:11 Error: [MissingActionException] Action AppController::general() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'general',
+)
+Request URL: /app/app/general/headers
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-24 12:41:34 Error: [MissingActionException] Action AppController::general() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'general',
+)
+Request URL: /app/app/general/headers
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-24 15:39:56 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/app/webroot/general/headers
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-24 15:49:53 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/app/webroot/general/headers
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-24 15:50:49 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/app/webroot/general/headers
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-24 15:51:22 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/app/webroot/general/headers
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-24 15:52:25 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/app/webroot/general/headers
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-24 15:53:23 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/app/webroot/general/headers
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-24 16:00:27 Error: [MissingControllerException] Controller class Headers.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Headers.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/headers.php
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-24 16:12:56 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/files/emails-20150127.txt
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-24 16:31:26 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/app/webroot/general/headers
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-24 17:21:15 Error: [MissingControllerException] Controller class RestController could not be found.
+Exception Attributes: array (
+  'class' => 'RestController',
+  'plugin' => NULL,
+)
+Request URL: /app/rest/xml/photos/status
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-02 15:14:50 Error: [MissingControllerException] Controller class GrestController could not be found.
+Exception Attributes: array (
+  'class' => 'GrestController',
+  'plugin' => NULL,
+)
+Request URL: /app/grest/xml/photos/status
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-06 16:16:30 Error: [MissingControllerException] Controller class CfsController could not be found.
+Exception Attributes: array (
+  'class' => 'CfsController',
+  'plugin' => NULL,
+)
+Request URL: /cfs//cfs/xml/card_holder/info?CardHolder-uid=804554016&debug=1
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-06 16:21:17 Error: [MissingControllerException] Controller class CfsController could not be found.
+Exception Attributes: array (
+  'class' => 'CfsController',
+  'plugin' => NULL,
+)
+Request URL: /cfs//cfs/xml/deposits/add?Deposit-uid=303739052&Deposit-amount=50.00&Deposit-order_id=1422313001&Deposit-stored_value_account=EasyPay&debug=1
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-12 15:58:04 Error: [MissingActionException] Action DepositsController::status() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepositsController',
+  'action' => 'status',
+)
+Request URL: /cfs/deposits/status/info?CardHolder-uid=303726686&debug=1
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(DepositsController), Object(CakeRequest))
+#2 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-04-03 10:05:09 Error: [MissingControllerException] Controller class XmlController could not be found.
+Exception Attributes: array (
+  'class' => 'XmlController',
+  'plugin' => NULL,
+)
+Request URL: /cfs/xml
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-27 11:27:30 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:27:33 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:27:47 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:28:03 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:28:21 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:28:23 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:28:40 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:29:18 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:29:21 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:29:22 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:29:23 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:29:25 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:29:26 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:29:30 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:29:42 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:29:43 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:29:49 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:29:56 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:29:58 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:30:23 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:30:30 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:30:36 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:30:45 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:30:45 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:30:50 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:31:12 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:31:13 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:31:15 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:31:18 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:31:29 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:31:33 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:31:34 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:31:40 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:31:52 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:31:54 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:32:09 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:32:17 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:32:35 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:32:40 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:32:50 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:32:59 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:33:05 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:33:06 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:33:28 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:34:04 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:34:09 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:34:15 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:34:15 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:34:16 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:34:17 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:34:20 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:34:26 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:34:29 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:34:31 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:34:35 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:34:39 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:34:40 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:34:52 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:35:45 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:37:21 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:37:22 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:37:31 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:37:37 Error: [MissingControllerException] Controller class XmlController could not be found.
+Exception Attributes: array (
+  'class' => 'XmlController',
+  'plugin' => NULL,
+)
+Request URL: /cfs/xml
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-27 11:37:46 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:38:09 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:38:39 Error: [MissingControllerException] Controller class XmlController could not be found.
+Exception Attributes: array (
+  'class' => 'XmlController',
+  'plugin' => NULL,
+)
+Request URL: /cfs/xml
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-27 11:39:00 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:39:07 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:39:11 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:39:35 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:40:04 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:40:17 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:40:27 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:40:34 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:40:45 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:40:55 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:42:00 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:42:26 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:42:49 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:42:50 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:42:57 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:43:07 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:43:09 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:43:42 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:43:43 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:43:55 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:44:05 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:44:06 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:44:07 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:44:07 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:44:17 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:44:22 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:44:34 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:44:34 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:44:38 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:44:43 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:44:50 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:45:03 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:45:08 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:45:11 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:45:12 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:45:16 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:45:31 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:45:45 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:46:00 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:46:18 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-11-27 11:47:34 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-10-18 07:23:11 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2019-05-16 09:45:38 Warning: Warning (2): syntax error, unexpected '!' in /opt/bruincard/app.ini on line 15
+ in [/var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/LoadConfigsComponent.php, line 42]
+Trace:
+parse_ini_file - [internal], line ??
+LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
+include - APP/Config/bootstrap.php, line 140
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+include - CORE/Cake/bootstrap.php, line 175
+[main] - APP/webroot/index.php, line 92
+
+2019-05-16 09:45:38 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/LoadConfigsComponent.php, line 51]
+Trace:
+LoadConfigsComponent::parseValues() - APP/Controller/Component/LoadConfigsComponent.php, line 51
+LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
+include - APP/Config/bootstrap.php, line 140
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+include - CORE/Cake/bootstrap.php, line 175
+[main] - APP/webroot/index.php, line 92
+
+2021-03-18 07:48:51 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2021-03-18 07:49:58 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2021-03-18 07:51:08 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2021-03-18 07:54:47 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2021-03-18 07:54:57 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2021-03-18 07:55:25 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2021-07-22 07:24:15 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2021-07-22 07:25:06 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2021-07-22 07:25:11 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2023-11-30 07:07:50 Error: [SocketException] Connection refused
+Request URL: /cfs/xml/card_holder/info
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
+#1 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
+#2 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
+#3 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
+#4 /var/www/bcdoors.it.ucla.edu/cfs/app/Controller/CardHolderController.php(259): HttpComponent->get('http://localhos...', Array)
+#5 [internal function]: CardHolderController->xml_info()
+#6 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CardHolderController), Array)
+#7 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CardHolderController), Object(CakeRequest))
+#9 /var/www/bcdoors.it.ucla.edu/cfs/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2024-06-01 02:30:14 Warning: Warning (512): _cake_core_ cache was unable to write 'cake_dev_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Cache/Cache.php, line 323]
+Trace:
+Cache::write() - CORE/Cake/Cache/Cache.php, line 323
+I18n::translate() - CORE/Cake/I18n/I18n.php, line 237
+__d - CORE/Cake/basics.php, line 617
+Cache::write() - CORE/Cake/Cache/Cache.php, line 321
+CacheObjectComponent::set() - APP/Controller/Component/CacheObjectComponent.php, line 49
+LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 43
+include - APP/Config/bootstrap.php, line 140
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+include - CORE/Cake/bootstrap.php, line 175
+[main] - APP/webroot/index.php, line 92
+
+2024-06-01 02:30:14 Warning: Warning (512): short cache was unable to write 'dbase_connections' to File cache in [/var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Cache/Cache.php, line 323]
+Trace:
+Cache::write() - CORE/Cake/Cache/Cache.php, line 323
+CacheObjectComponent::set() - APP/Controller/Component/CacheObjectComponent.php, line 49
+LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 43
+include - APP/Config/bootstrap.php, line 140
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+include - CORE/Cake/bootstrap.php, line 175
+[main] - APP/webroot/index.php, line 92
+
+2024-06-01 02:30:14 Warning: Warning (512): short cache was unable to write 'application' to File cache in [/var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Cache/Cache.php, line 323]
+Trace:
+Cache::write() - CORE/Cake/Cache/Cache.php, line 323
+CacheObjectComponent::set() - APP/Controller/Component/CacheObjectComponent.php, line 49
+LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 43
+include - APP/Config/bootstrap.php, line 140
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+include - CORE/Cake/bootstrap.php, line 175
+[main] - APP/webroot/index.php, line 92
+
+2024-06-01 02:35:12 Warning: Warning (512): _cake_core_ cache was unable to write 'cake_dev_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Cache/Cache.php, line 323]
+Trace:
+Cache::write() - CORE/Cake/Cache/Cache.php, line 323
+I18n::translate() - CORE/Cake/I18n/I18n.php, line 237
+__d - CORE/Cake/basics.php, line 617
+Cache::write() - CORE/Cake/Cache/Cache.php, line 321
+CacheObjectComponent::set() - APP/Controller/Component/CacheObjectComponent.php, line 49
+LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 43
+include - APP/Config/bootstrap.php, line 140
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+include - CORE/Cake/bootstrap.php, line 175
+[main] - APP/webroot/index.php, line 92
+
+2024-06-01 02:35:12 Warning: Warning (512): short cache was unable to write 'dbase_connections' to File cache in [/var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Cache/Cache.php, line 323]
+Trace:
+Cache::write() - CORE/Cake/Cache/Cache.php, line 323
+CacheObjectComponent::set() - APP/Controller/Component/CacheObjectComponent.php, line 49
+LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 43
+include - APP/Config/bootstrap.php, line 140
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+include - CORE/Cake/bootstrap.php, line 175
+[main] - APP/webroot/index.php, line 92
+
+2024-06-01 02:35:12 Warning: Warning (512): short cache was unable to write 'application' to File cache in [/var/www/bcdoors.it.ucla.edu/cfs/lib/Cake/Cache/Cache.php, line 323]
+Trace:
+Cache::write() - CORE/Cake/Cache/Cache.php, line 323
+CacheObjectComponent::set() - APP/Controller/Component/CacheObjectComponent.php, line 49
+LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 43
+include - APP/Config/bootstrap.php, line 140
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+include - CORE/Cake/bootstrap.ph

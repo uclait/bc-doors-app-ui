@@ -1,0 +1,223 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+.border
+{
+    border: 1px dashed red;
+}
+.content
+{
+    margin-top: 2%;
+}
+.content .login
+{
+    margin: 5%;
+}
+.tab-pane
+{
+    margin: 1%;
+}
+.typeahead.large
+{
+    width: 700px;
+}
+.typeahead.medium
+{
+    width: 400px;
+}
+.typeahead.small
+{
+    width: 200px;
+}
+.campus-affiliation button
+{
+    margin-right: 25px;
+    width: 150px;
+    font-weight: bold;
+}
+.card-holder-assign div.card-holder-plan-box
+{
+    width: 300px;
+    float: left;
+}
+.card-holder-assign .panel
+{
+    height: 325px;
+}
+.card-holder-assign ul
+{
+    padding-left: 1%;
+    list-style: none;
+}
+.card-holder-assign li
+{
+    white-space: nowrap;
+}
+.card-holder-assign ul li:hover
+{
+    background-color: #e1e1e8;
+}
+.card-holder-assign ul li.active
+{
+    background-image: linear-gradient(to bottom, #D9EDF7 0px, #C4E3F3 100%);
+    background-repeat: repeat-x;
+}
+.card-holder-assign div.card-holder-plan-buttons
+{
+    width: 200px;
+    float: left;
+    margin-top: 1%;
+}
+.card-holder-plan-buttons button
+{
+    width: 150px;
+}
+.right-to-left li
+{
+    float: right;
+}
+.card-holder-plan-box ul
+{
+    margin-left: 0px;
+}
+.card-holder-plan-box ul .label, #door-plan .label
+{
+    margin-left: 3%;
+}
+.card-holder-plan-box ul span
+{
+    padding-right: 6%;
+}
+.legend span
+{
+    padding-right: 2%;
+}
+#door-plan td span
+{
+    padding-right: 16px;
+}
+.icon-assigned
+{
+    background: url("/app/img/16x16/warning.png") no-repeat scroll 0% 0% transparent;
+}
+.icon-available
+{
+    background: url("/app/img/16x16/block.png") no-repeat scroll 0% 0% transparent;
+}
+.card-holder-plan-box .table-container
+{
+    height: 200px;
+    overflow: auto;
+}
+.card-holder-plan-box table .label, #door-plan .label
+{
+    margin-left: 3%;
+}
+.door-plan-container
+{
+    min-width: 700px;
+}
+#mod_assign-access .table-responsive th:first-child,
+#mod_assign-access .table-responsive td:first-child
+{
+    width: 10%;
+}
+#mod_assign-access .table-responsive div
+{
+    overflow-y: auto; 
+    max-height: 500px;
+}
+#mod_assign-access .tt-dropdown-menu
+{
+    max-height: 250px;
+    overflow-y: auto;
+}
+.search-containers-spacer
+{
+    margin-bottom: 5%;
+}
+.form-search
+{
+    padding-top: 30px;
+}
+.search-containers
+{
+    max-width: 70%;
+}
+.search-containers table
+{
+    margin-top: 2%;
+}
+div.dataTables_paginate
+{
+    float: right;
+}
+table.borderless td,
+table.borderless th
+{
+    border: none !important;
+}
+#available-doors tbody
+{
+    height: 120px;
+    overflow-y: auto;
+}
+.popover
+{
+    width: 300px;
+}
+.popover .popover-title
+{
+    background-color: #D9EDF7;
+    color: #31708F; font-weight: bold;
+}
+.popover .popover-title img
+{
+    padding-right: 2%;
+}
+.textbox-loader
+{
+    background: url(/app/img/ajax-loader.gif) no-repeat right;
+}
+.spacer
+{
+    height: 20px;
+}
+@media (max-width: 800px)
+{
+    .card-holder-assign div.card-holder-plan-buttons
+    {
+        padding-bottom: 4%;
+    }
+}
+@media (max-width: 760px)
+{
+    .card-holder-container div.panel-info, .access-plan .card-holder-container div.panel-info
+    {
+        float: left !important;
+    }
+}
+@media (max-width: 760px)
+{
+    .nav-tabs li:nth-child(1), .nav-tabs li:nth-child(2)
+    {
+        display: none;
+    }
+}
+@media (max-width: 1000px)
+{
+    .legend span
+    {
+        padding-right: 5%;
+    }
+    .access-plan.card-holder-container div.panel-info
+    {
+        float: left !important;
+    }
+    #card_holder_add
+    {
+        width: 500px !important;
+    }
+}

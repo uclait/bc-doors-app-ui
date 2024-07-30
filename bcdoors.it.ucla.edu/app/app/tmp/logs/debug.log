@@ -1,0 +1,110 @@
+2015-05-08 15:01:09 Notice: Notice (8): Undefined index: SERVER_NAME in [/var/www/bcdoors.it.ucla.edu/app/app/Config/bootstrap.php, line 125]
+Trace:
+include - APP/Config/bootstrap.php, line 125
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+require - CORE/Cake/bootstrap.php, line 175
+ShellDispatcher::_bootstrap() - CORE/Cake/Console/ShellDispatcher.php, line 138
+ShellDispatcher::_initEnvironment() - CORE/Cake/Console/ShellDispatcher.php, line 100
+ShellDispatcher::__construct() - CORE/Cake/Console/ShellDispatcher.php, line 54
+ShellDispatcher::run() - CORE/Cake/Console/ShellDispatcher.php, line 65
+[main] - APP/Console/cake.php, line 47
+
+2015-05-08 15:06:35 Notice: Notice (8): Undefined index: SERVER_NAME in [/var/www/bcdoors.it.ucla.edu/app/app/Config/bootstrap.php, line 125]
+Trace:
+include - APP/Config/bootstrap.php, line 125
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+require - CORE/Cake/bootstrap.php, line 175
+ShellDispatcher::_bootstrap() - CORE/Cake/Console/ShellDispatcher.php, line 138
+ShellDispatcher::_initEnvironment() - CORE/Cake/Console/ShellDispatcher.php, line 100
+ShellDispatcher::__construct() - CORE/Cake/Console/ShellDispatcher.php, line 54
+ShellDispatcher::run() - CORE/Cake/Console/ShellDispatcher.php, line 65
+[main] - APP/Console/cake.php, line 47
+
+2015-05-08 15:08:40 Notice: Notice (8): Undefined index: SERVER_NAME in [/var/www/bcdoors.it.ucla.edu/app/app/Config/bootstrap.php, line 125]
+Trace:
+include - APP/Config/bootstrap.php, line 125
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+require - CORE/Cake/bootstrap.php, line 175
+ShellDispatcher::_bootstrap() - CORE/Cake/Console/ShellDispatcher.php, line 138
+ShellDispatcher::_initEnvironment() - CORE/Cake/Console/ShellDispatcher.php, line 100
+ShellDispatcher::__construct() - CORE/Cake/Console/ShellDispatcher.php, line 54
+ShellDispatcher::run() - CORE/Cake/Console/ShellDispatcher.php, line 65
+[main] - APP/Console/cake.php, line 47
+
+2015-05-08 15:22:02 Notice: Notice (8): Undefined index: SERVER_NAME in [/var/www/bcdoors.it.ucla.edu/app/app/Config/bootstrap.php, line 125]
+Trace:
+include - APP/Config/bootstrap.php, line 125
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+require - CORE/Cake/bootstrap.php, line 175
+ShellDispatcher::_bootstrap() - CORE/Cake/Console/ShellDispatcher.php, line 138
+ShellDispatcher::_initEnvironment() - CORE/Cake/Console/ShellDispatcher.php, line 100
+ShellDispatcher::__construct() - CORE/Cake/Console/ShellDispatcher.php, line 54
+ShellDispatcher::run() - CORE/Cake/Console/ShellDispatcher.php, line 65
+[main] - APP/Console/cake.php, line 47
+
+2015-05-11 14:34:47 Notice: Notice (8): Undefined index: SERVER_NAME in [/var/www/bcdoors.it.ucla.edu/app/app/Config/bootstrap.php, line 125]
+Trace:
+include - APP/Config/bootstrap.php, line 125
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+require - CORE/Cake/bootstrap.php, line 175
+ShellDispatcher::_bootstrap() - CORE/Cake/Console/ShellDispatcher.php, line 138
+ShellDispatcher::_initEnvironment() - CORE/Cake/Console/ShellDispatcher.php, line 100
+ShellDispatcher::__construct() - CORE/Cake/Console/ShellDispatcher.php, line 54
+ShellDispatcher::run() - CORE/Cake/Console/ShellDispatcher.php, line 65
+[main] - APP/Console/cake.php, line 47
+
+2015-05-11 14:38:04 Notice: Notice (8): Undefined index: SERVER_NAME in [/var/www/bcdoors.it.ucla.edu/app/app/Config/bootstrap.php, line 125]
+Trace:
+include - APP/Config/bootstrap.php, line 125
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+require - CORE/Cake/bootstrap.php, line 175
+ShellDispatcher::_bootstrap() - CORE/Cake/Console/ShellDispatcher.php, line 138
+ShellDispatcher::_initEnvironment() - CORE/Cake/Console/ShellDispatcher.php, line 100
+ShellDispatcher::__construct() - CORE/Cake/Console/ShellDispatcher.php, line 54
+ShellDispatcher::run() - CORE/Cake/Console/ShellDispatcher.php, line 65
+[main] - APP/Console/cake.php, line 47
+
+2015-05-11 16:19:49 Notice: Notice (8): Undefined index: SERVER_NAME in [/var/www/bcdoors.it.ucla.edu/app/app/Config/bootstrap.php, line 125]
+Trace:
+include - APP/Config/bootstrap.php, line 125
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+require - CORE/Cake/bootstrap.php, line 175
+ShellDispatcher::_bootstrap() - CORE/Cake/Console/ShellDispatcher.php, line 138
+ShellDispatcher::_initEnvironment() - CORE/Cake/Console/ShellDispatcher.php, line 100
+ShellDispatcher::__construct() - CORE/Cake/Console/ShellDispatcher.php, line 54
+ShellDispatcher::run() - CORE/Cake/Console/ShellDispatcher.php, line 65
+[main] - APP/Console/cake.php, line 47
+
+2015-05-11 16:24:16 Notice: Notice (8): Undefined index: SERVER_NAME in [/var/www/bcdoors.it.ucla.edu/app/app/Config/bootstrap.php, line 125]
+Trace:
+include - APP/Config/bootstrap.php, line 125
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+require - CORE/Cake/bootstrap.php, line 175
+ShellDispatcher::_bootstrap() - CORE/Cake/Console/ShellDispatcher.php, line 138
+ShellDispatcher::_initEnvironment() - CORE/Cake/Console/ShellDispatcher.php, line 100
+ShellDispatcher::__construct() - CORE/Cake/Console/ShellDispatcher.php, line 54
+ShellDispatcher::run() - CORE/Cake/Console/ShellDispatcher.php, line 65
+[main] - APP/Console/cake.php, line 47
+
+2015-05-11 16:29:21 Notice: Notice (8): Undefined index: SERVER_NAME in [/var/www/bcdoors.it.ucla.edu/app/app/Config/bootstrap.php, line 125]
+Trace:
+include - APP/Config/bootstrap.php, line 125
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+require - CORE/Cake/bootstrap.php, line 175
+ShellDispatcher::_bootstrap() - CORE/Cake/Console/ShellDispatcher.php, line 138
+ShellDispatcher::_initEnvironment() - CORE/Cake/Console/ShellDispatcher.php, line 100
+ShellDispatcher::__construct() - CORE/Cake/Console/ShellDispatcher.php, line 54
+ShellDispatcher::run() - CORE/Cake/Console/ShellDispatcher.php, line 65
+[main] - APP/Console/cake.php, line 47
+
+2015-06-18 19:18:38 Notice: Notice (8): Undefined index: SERVER_NAME in [/var/www/bcdoors.it.ucla.edu/app/app/Config/bootstrap.php, line 125]
+Trace:
+include - APP/Config/bootstrap.php, line 125
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
+require - CORE/Cake/bootstrap.php, line 175
+ShellDispatcher::_bootstrap() - CORE/Cake/Console/ShellDispatcher.php, line 138
+ShellDispatcher::_initEnvironment() - CORE/Cake/Console/ShellDispatcher.php, line 100
+ShellDispatcher::__construct() - CORE/Cake/Console/ShellDispatcher.php, line 54
+ShellDispatcher::run() - CORE/Cake/Console/ShellDispatcher.php, line 65
+[main] - APP/Console/cake.php, line 47
+

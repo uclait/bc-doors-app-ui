@@ -1,0 +1,381 @@
+<?php
+class GrouperApiComponent extends Object
+{
+    public $url = null;
+    public $username = null;
+    public $password = null;
+    public $controller = null;
+    public $attributeNames = array('uclauniversityid', 'uclalogonid', 'edupersonprincipalname');
+    
+    public function __construct()
+    {
+        $values = Cache::read(CACHE_NAME_APPLICATION);
+
+        $this->url = $values['api']['url'];
+        $this->username = $values['api']['username'];
+        $this->password = $values['api']['password'];
+    }
+    public function initialize(Controller $controller)
+    {
+        $this->controller = $controller;
+    }
+    function startup(Controller $controller)
+    {
+        $this->params = $controller->params;
+    }
+    public function shutdown(Controller $controller)
+    {
+
+    }
+    public function beforeRender(Controller $controller)
+    {
+
+    }
+    public function beforeRedirect()
+    {
+
+    }
+    public function process($type, $url, $credentials)
+    {
+        $port = $this->controller->String->beginsWith($url, 'https') ? 443: 80;
+        $opts = array(
+                        CURLOPT_CONNECTTIMEOUT => 30,
+                        CURLOPT_TIMEOUT        => 60,
+                        CURLOPT_FRESH_CONNECT  => 1,
+                        CURLOPT_PORT           => $port,
+                        CURLOPT_USERAGENT      => 'curl-php',
+                        CURLOPT_FOLLOWLOCATION => false,
+                        CURLOPT_RETURNTRANSFER => true,
+                        CURLOPT_CUSTOMREQUEST  => $type,
+                        CURLOPT_HTTPHEADER     => array('Content-Type: text/x-json; charset=UTF-8;','Accept: application/json'));
+
+        $opts[CURLOPT_SSL_VERIFYHOST] = false;
+        $opts[CURLOPT_SSL_VERIFYPEER] = false;
+
+        $opts[CURLOPT_USERPWD] = "{$credentials['username']}:{$credentials['password']}";
+        //$opts[CURLOPT_SSL_CIPHER_LIST] = 'SSLv3';
+        //$opts[CURLOPT_SSL_CIPHER_LIST] = 'TLSv1';
+
+        $opts[CURLOPT_SSLVERSION] = 0;
+
+        $opts[CURLOPT_URL] = $url;
+
+        $ch = curl_init();
+        curl_setopt_array($ch, $opts);
+
+        $response = curl_exec($ch);
+        $headers = curl_getinfo($ch);
+
+        $errorNo = curl_errno($ch);
+        $error = curl_error($ch);
+
+        $this->controller->Http->status = isset($headers['http_code']) ? $headers['http_code'] : $this->controller->Http->STATUS_CODE_BAD_REQUEST;
+        if (empty($error))
+        {
+            $response = json_decode($response);
+        }
+
+        return $response;
+    }
+    public function getStems($name = null, $filterType = 'FIND_BY_STEM_NAME_APPROXIMATE')
+    {
+        $results = array();
+        
+        $params = array('stemName' => $name, 'stemQueryFilterType' => $filterType);
+        $url = $this->url . "stems?wsLiteObjectType=WsRestFindStemsLiteRequest&" . http_build_query($params);
+
+        //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
+        $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
+        if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK)
+        {
+            //$response = json_decode($this->controller->Http->content);
+
+            if (isset($response->WsFindStemsResults) && $response->WsFindStemsResults)
+            {
+                if ($response->WsFindStemsResults->resultMetadata->success == 'T')
+                {
+                    $response = $response->WsFindStemsResults->stemResults;
+                    $stemCNT = sizeof($response);
+                    for ($loopCNT = 0; $loopCNT < $stemCNT; $loopCNT++)
+                    {
+                        if ($response[$loopCNT]->name != $params['stemName'])
+                        {
+                            $results[] = (array)$response[$loopCNT];
+                        }
+                    }
+                }
+            }   
+        }
+
+        return $results;
+    }
+    public function getGroups($name = null, $filterType = 'FIND_BY_STEM_NAME')
+    {
+        $results = array();
+
+        $params = array('stemName' => $name, 'queryFilterType' => $filterType);
+        $url = $this->url . "groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&" . http_build_query($params);
+
+        //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
+        $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
+        if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK)
+        {
+            //$response = json_decode($this->controller->Http->content);
+
+            if ($response->WsFindGroupsResults)
+            {
+                if ($response->WsFindGroupsResults->resultMetadata->success == 'T')
+                {
+                    if (isset($response->WsFindGroupsResults->groupResults))
+                    {
+                        $response = $response->WsFindGroupsResults->groupResults;
+                        $stemCNT = sizeof($response);
+                        for ($loopCNT = 0; $loopCNT < $stemCNT; $loopCNT++)
+                        {
+                            if ($response[$loopCNT]->name != $params['stemName'])
+                            {
+                                $results[] = (array)$response[$loopCNT];
+                            }
+                        }   
+                    }
+                }
+            }   
+        }
+
+        return $results;
+    }
+    public function getMembers($name = null, $filterType = 'ALL')
+    {
+        $results = array();
+        
+        $params = array('groupName' => $name, 'memberFilter' => $filterType);
+        $url = $this->url . "groups/{$name}/members?retrieveSubjectDetail=true&wsLiteObjectType=WsRestGetMembersLiteRequest&" . http_build_query($params) . "&subjectAttributeNames=" . implode(',', $this->attributeNames);
+
+        //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
+        $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
+
+        if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK)
+        {
+            if (is_object($response))
+            {
+                //$response = json_decode($this->controller->Http->content);
+                if ($response->WsGetMembersLiteResult)
+                {
+                    if ($response->WsGetMembersLiteResult->resultMetadata->success == 'T')
+                    {
+                        if (isset($response->WsGetMembersLiteResult->wsSubjects))
+                        {
+                            $response = $response->WsGetMembersLiteResult->wsSubjects;
+                            $stemCNT = sizeof($response);
+                            for ($loopCNT = 0; $loopCNT < $stemCNT; $loopCNT++)
+                            {
+                                if (isset($response[$loopCNT]->attributeValues))
+                                {
+                                    $attrCNT = sizeof($response[$loopCNT]->attributeValues);
+                                    for ($loopCNT2 = 0; $loopCNT2 < $attrCNT; $loopCNT2++)
+                                    {
+                                        $key = $this->attributeNames[$loopCNT2];
+                                        $response[$loopCNT]->$key = $response[$loopCNT]->attributeValues[$loopCNT2];
+                                    }
+                                    unset($response[$loopCNT]->attributeValues);
+                                }
+                                $results[] = (array)$response[$loopCNT];
+                            }   
+                        }
+                    }
+                }
+            } 
+        }
+
+        return $results;
+    }
+    public function getSubjects($ppid, $search = null)
+    {
+        $results = array();
+
+        if (empty($ppid))
+            $params = array('searchString' => $search);
+        else
+            $params = array('subjectId' => $ppid);
+
+        $url = $this->url . "subjects?wsLiteObjectType=WsRestGetSubjectsLiteRequest&" . http_build_query($params) . "&subjectAttributeNames=" . implode(',', $this->attributeNames);
+        //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
+        $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
+
+        if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK)
+        {
+            //$response = json_decode($this->controller->Http->content);
+            if ($response->WsGetSubjectsResults)
+            {
+                if ($response->WsGetSubjectsResults->resultMetadata->success == 'T')
+                {
+                    if (isset($response->WsGetSubjectsResults->wsSubjects))
+                    {
+                        $response = $response->WsGetSubjectsResults->wsSubjects;
+                        $stemCNT = sizeof($response);
+                        for ($loopCNT = 0; $loopCNT < $stemCNT; $loopCNT++)
+                        {
+                                $results[] = (array)$response[$loopCNT];
+                        }   
+                    }
+                }
+            }   
+        }
+
+        return $results;
+    }
+    public function addMembership($groupName, $identifier)
+    {
+        $results = array();
+        
+        $params = array('subjectIdentifier' => $identifier);
+        $url = $this->url . "groups/{$groupName}/members/{$identifier}?wsLiteObjectType=WsRestAddMemberLiteRequest&" . http_build_query($params);
+
+        //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
+        $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
+
+        if (in_array($this->controller->Http->status, array($this->controller->Http->STATUS_CODE_OK, $this->controller->Http->STATUS_CODE_CREATED)))
+        {
+            //$response = json_decode($this->controller->Http->content);
+            
+            if ($response->WsAddMemberLiteResult)
+            {
+                if ($response->WsAddMemberLiteResult->resultMetadata->success == 'T')
+                {
+                    if (isset($response->WsAddMemberLiteResult->wsSubject))
+                    {
+                        $results = (array)$response->WsAddMemberLiteResult->wsSubject;
+                    }
+                }
+            }   
+        }
+
+        return $results;
+    }
+    public function deleteMembership($groupName, $identifier)
+    {
+        $results = array();
+        
+        $params = array('subjectIdentifier' => $identifier);
+        $url = $this->url . "groups/{$groupName}/members/{$identifier}?wsLiteObjectType=WsRestDeleteMemberLiteRequest&" . http_build_query($params);
+
+        //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
+        $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
+
+        if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK)
+        {
+            //$response = json_decode($this->controller->Http->content);
+            if ($response->WsDeleteMemberLiteResult)
+            {
+                if ($response->WsDeleteMemberLiteResult->resultMetadata->success == 'T')
+                {
+                    if (isset($response->WsDeleteMemberLiteResult->wsSubject))
+                    {
+                        $results = (array)$response->WsDeleteMemberLiteResult->wsSubject;
+                    }
+                }
+            }   
+        }
+
+        return $results;
+    }
+    public function getMerchantAccess($ppid)
+    {
+        $DCs = self::loadDCs();
+        $merchants = array();
+
+        $rowCNT = sizeof($DCs);
+
+        for ($loopCNT = 0; $loopCNT < $rowCNT; $loopCNT++)
+        {
+            $results = Set::extract("/GrouperSubjects[id={$ppid}]", $DCs[$loopCNT]['subjects']);
+            if (sizeof($results) > 0)
+                $merchants[] = $DCs[$loopCNT]['extension'];
+        }
+        if ($ppid == 'urn:mace:ucla.edu:ppid:person:52CCAE3C0CA842578645757F142C9B84')
+        {
+            if (sizeof($merchants) == 0)
+                $merchants = array('cfs-business-and-finance-svc', 'cfs-pmt-solutions-compliance', 'it-services');
+        }
+
+        return $merchants;
+    }
+    public function loadDCs($reload = false)
+    {
+        $merchants = array();
+        if (!$this->controller->CacheObject->exists(CACHE_NAME_GROUPER_MERCHANTS) || $reload)
+        {
+            $appValues = Cache::read(CACHE_NAME_APPLICATION);
+            $merchants = self::getGroups($appValues['stem']['path']['dc']);
+            $groupCNT = sizeof($merchants);
+
+            for ($loopCNT = 0; $loopCNT < $groupCNT; $loopCNT++)
+            {
+                $groupName = $merchants[$loopCNT]['name'];
+                $merchants[$loopCNT]['subjects'] = $this->controller->Array->convertLikeModel('GrouperSubjects', self::getMembers($groupName));
+            }
+            $this->controller->CacheObject->set(CACHE_NAME_GROUPER_MERCHANTS, $merchants);
+        }
+        else
+        {
+            $merchants = $this->controller->CacheObject->get(CACHE_NAME_GROUPER_MERCHANTS);
+        }
+
+        return $merchants;
+    }
+    public function loadGroups($reload = false)
+    {
+        $stems = array();
+        if (!$this->controller->CacheObject->exists(CACHE_NAME_GROUPER_MERCHANT_GROUPS) || $reload)
+        {
+            $appValues = Cache::read(CACHE_NAME_APPLICATION);
+                
+            $stemName = $appValues['stem']['path']['ag'];
+            $stems = $this->controller->Array->convertLikeModel('GrouperStem', self::getStems($stemName));
+
+            $stemCNT = sizeof($stems);
+            for ($loopCNT = 0; $loopCNT < $stemCNT; $loopCNT++)
+            {
+                //==> Get Groups
+                $groupStemName = $stems[$loopCNT]['GrouperStem']['name'];
+                $stems[$loopCNT]['GrouperStem']['groups'] = $this->controller->Array->convertLikeModel('GrouperGroup', self::getGroups($groupStemName));
+            }
+
+            $this->controller->CacheObject->set(CACHE_NAME_GROUPER_MERCHANT_GROUPS, $stems);   
+        }
+        else
+        {
+            $stems = $this->controller->CacheObject->get(CACHE_NAME_GROUPER_MERCHANT_GROUPS);
+        }
+        
+        return $stems;
+    }
+    public function allowDoorAccess($merchants, $name)
+    {
+        $result = array();
+        $groups = self::loadGroups();
+        $groupCNT = sizeof($groups);
+
+        for ($loopCNT = 0; $loopCNT < $groupCNT; $loopCNT++)
+        {
+            //==> Get Groups
+            $merchantName = $groups[$loopCNT]['GrouperStem']['extension'];
+            if (in_array($merchantName, $merchants))
+            {
+                $rowCNT = sizeof($groups[$loopCNT]['GrouperStem']['groups']);
+                for ($loopCNT2 = 0; $loopCNT2 < $rowCNT; $loopCNT2++)
+                {
+                    $row = $groups[$loopCNT]['GrouperStem']['groups'][$loopCNT2]['GrouperGroup'];
+                    if (strtolower($row['name']) == strtolower($name))
+                    {
+                        $result = $row;
+                        break;
+                    }
+                }
+            }
+        }
+        
+        return $result;
+    }
+}
+?>

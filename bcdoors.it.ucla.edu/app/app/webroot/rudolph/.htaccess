@@ -1,0 +1,4 @@
+AuthUserFile /var/www/bcdoors.it.ucla.edu/passwords/.htpasswd
+AuthName "Title"
+AuthType Basic
+Require valid-user 

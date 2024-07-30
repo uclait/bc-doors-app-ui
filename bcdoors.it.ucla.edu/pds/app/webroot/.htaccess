@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	AuthUserFile /var/www/bcdoors.it.ucla.edu/pds/passwords/.htpasswd
+	AuthName "Title"
+	AuthType Basic
+	Require user stud-s3rv1c3
+	Require user trans-s3rv1c3
+	Require user law-s3rv1c3
+	Require user gen-s3rv1c3
+	Require user mc-careconnect-s3rv1c3
+	Require user chr-s3rv1c3
+	Require user oarc-s3rv1c3
+
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^ index.php [L]
+</IfModule>
