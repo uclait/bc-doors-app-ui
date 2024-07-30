@@ -97,7 +97,7 @@ ShellDispatcher::__construct() - CORE/Cake/Console/ShellDispatcher.php, line 54
 ShellDispatcher::run() - CORE/Cake/Console/ShellDispatcher.php, line 65
 [main] - APP/Console/cake.php, line 47
 
-2015-06-18 19:18:38 Notice: Notice (8): Undefined index: SERVER_NAME in [/var/www/bcdoors.it.ucla.edu/app/app/Config/bootstrap.php, line 125]
+2015-07-24 09:59:48 Notice: Notice (8): Undefined index: SERVER_NAME in [/var/www/bcdoors.it.ucla.edu/app/app/Config/bootstrap.php, line 125]
 Trace:
 include - APP/Config/bootstrap.php, line 125
 Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92

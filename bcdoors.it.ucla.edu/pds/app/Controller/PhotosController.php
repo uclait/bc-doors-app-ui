@@ -74,16 +74,15 @@ class PhotosController extends AppController
             {
                 $api = $appValues['api']['card_holder_info'];
                 $photoMount = (IS_WINDOWS ? substr(__FILE__, 0, 1) . ":" : "") . $appValues['photo']['download']['mount'];
-$this->Debug->write("photomount is  |{$photoMount}");
-
+		$this->Debug-write("photomount is  |{$photoMount}");
 
                 if (DEBUG_WRITE) {$this->Debug->write("Start Search API");};
                 $response = $this->Http->get($api['url'], array($api['param'] => $uid));
-                $this->Debug->write("UID is {$uid}");
+		$this->Debug->write("UID is {$uid}");
                 $this->Debug->write("response is {$response}");
                 $this->Debug->write("Status is {$this->Http->status}");
                 if (DEBUG_WRITE) {$this->Debug->write("End Search API");};
-                // $this->Debug->write("API Response is {$this->Http->content}");
+                $this->Debug->write("API Response is {$this->Http->content}");
                 if ($this->Http->status == $this->Http->STATUS_CODE_OK)
                 {
                     $response = $this->Http->content;
@@ -96,18 +95,22 @@ $this->Debug->write("photomount is  |{$photoMount}");
                             echo "\t", $error->message;
                         }
                     }
+                    // $fileParts = explode("\\\\", $xml->PhotoPath);
+                    
                     $this->Debug->write("PhotoPath is {$xml->PhotoPath}");
                     $fileParts = explode("\\", $xml->PhotoPath);
                     $this->Debug->write("fileParts[1] is {$fileParts[1]}");
                     $this->Debug->write("fileParts[2] is {$fileParts[2]}");
                     $this->Debug->write("fileParts[3] is {$fileParts[3]}");
-                     if ($fileParts[2] == "ts")
+
+
+                     if ($fileParts[2] == "bc")
                      {
                          $filePath = "/mnt/bcphotos/iid/".$fileParts[5];
                      }
                      else
                      {
-                         $filePath = str_replace("\\", "/", $xml->PhotoPath);
+                         $filePath = str_replace("\\\\", "/", $xml->PhotoPath);
                          $photoParts = explode(":", $filePath);
                          if (sizeof($photoParts) > 1) {
                              $filePath = $photoMount . $photoParts[1];

@@ -4,9 +4,11 @@
 	AuthUserFile /var/www/bcdoors.it.ucla.edu/cfs/passwords/.htpasswd
 	AuthName "Title"
 	AuthType Basic
-	Require user cfss3rv1c3
+	Require user cfss3rv1c3 
 
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule ^ index.php [L]
 </IfModule>
+
+

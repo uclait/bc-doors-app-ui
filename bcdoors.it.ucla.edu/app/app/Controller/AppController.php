@@ -79,7 +79,6 @@ class AppController extends Controller
         {
             $this->validatePage();
         }
-
         $merchants = $this->GrouperApi->loadDCs();
     }
     public function beforeRender()
@@ -126,9 +125,9 @@ class AppController extends Controller
             if ($this->Login->validate($_SERVER))
             {
 
-            }
-            else
-            {
+	    }
+	    else
+	    {
                 $this->Credential->terminate();
                 $this->redirect($this->Url->roadblock());
             }

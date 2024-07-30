@@ -43,8 +43,14 @@
 
         $data = array();
         $data['uid'] = $this->controller->Session->read('uid');
+// DebuGG
+// DebuGG
+// error_log("shib10a" . print_r($data['uid'],true) );
+// die("died9."  );
+
         if (empty($data['uid']))
         {
+// error_log("shib10b" . print_r($values,true) );
         	$data['uid'] = isset($values['SHIBUCLAUNIVERSITYID']) ? trim($values['SHIBUCLAUNIVERSITYID']) : null;
             $this->controller->Audit->user("Login", $data['uid'], null, "{$_SERVER['REMOTE_ADDR']}|{$_SERVER['HTTP_USER_AGENT']}");
         	if (!empty($data['uid']))

@@ -124,7 +124,7 @@ define('IS_WINDOWS', isset($_SERVER['WINDIR']));
 define('DRIVE_LETTER', IS_WINDOWS ? substr(__FILE__, 0, 1) . ":" : "");
 define('SERVER_NAME', strtolower($_SERVER['SERVER_NAME']));
 
-$devServers = array('bcdoors-dev.it.ucla.edu', 'bc-as-d02.dev.it.ucla.edu');
+$devServers = array('bcdoors-dev.it.ucla.edu', 'bc-as-d02.dev.it.ucla.edu', 'bc-as-d02.it.ucla.edu', 'localhost');
 define('ENVIRONMENT_DEV', in_array(SERVER_NAME, $devServers));
 define('ENVIRONMENT_STAGE', SERVER_NAME == 'https://bcdoors-test.it.ucla.edu');
 define('ENVIRONMENT_PROD', !ENVIRONMENT_DEV && !ENVIRONMENT_STAGE);

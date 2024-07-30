@@ -65,6 +65,9 @@ class GrouperApiComponent extends Object
         curl_setopt_array($ch, $opts);
 
         $response = curl_exec($ch);
+
+	//if (DEBUG_WRITE) {$this->Debug->write($ch);};
+
         $headers = curl_getinfo($ch);
 
         $errorNo = curl_errno($ch);
@@ -114,9 +117,14 @@ class GrouperApiComponent extends Object
     {
         $results = array();
 
-        $params = array('stemName' => $name, 'queryFilterType' => $filterType);
-        $url = $this->url . "groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&" . http_build_query($params);
-
+        // PARAMS FOR TEST
+	$params = array('stemName' => $name, 'queryFilterType' => $filterType);
+        
+	// PARAMS FOR PRODUCTION
+	// $params = array('stemName' => "ucla:bruincard:etc:acl", 'queryFilterType' => $filterType);
+	
+	$url = $this->url . "groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&" . http_build_query($params);
+        
         //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
         $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
         if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK)
@@ -129,6 +137,7 @@ class GrouperApiComponent extends Object
                 {
                     if (isset($response->WsFindGroupsResults->groupResults))
                     {
+
                         $response = $response->WsFindGroupsResults->groupResults;
                         $stemCNT = sizeof($response);
                         for ($loopCNT = 0; $loopCNT < $stemCNT; $loopCNT++)
@@ -357,16 +366,28 @@ class GrouperApiComponent extends Object
             $appValues = Cache::read(CACHE_NAME_APPLICATION);
             $this->controller->CacheObject->duration = strtolower($appValues['cache']['grouper']['merchants']);
 
-            if (DEBUG_WRITE) {$this->controller->Debug->write("Start Load DCs");};
-            $merchants = self::getGroups($appValues['stem']['path']['dc']);
+            if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper Start Load DCs");};
+            if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper Setup Merchants");};
+	    $merchants = self::getGroups($appValues['stem']['path']['dc']);
+	    if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper Setup Merchants End");};
+            
+	    // if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper Setup SizeOfMerchants");};
             $groupCNT = sizeof($merchants);
+	    // if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper Setup SizeOfMerchants End");};
 
+	    // if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper loopThroughMerchants");};
             for ($loopCNT = 0; $loopCNT < $groupCNT; $loopCNT++)
             {
                 $groupName = $merchants[$loopCNT]['name'];
+		if (DEBUG_WRITE) {$this->controller->Debug->write("Member Start");};
+                if (DEBUG_WRITE) {$this->controller->Debug->write($groupName);};
                 $merchants[$loopCNT]['subjects'] = $this->controller->Array->convertLikeModel('GrouperSubjects', self::getMembers($groupName));
-            }
+                if (DEBUG_WRITE) {$this->controller->Debug->write("Member End");};
+	    }
+	    // if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper loopThroughMerchants End");};
+	    // if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper set cached grouper merchants");};
             $this->controller->CacheObject->set(CACHE_NAME_GROUPER_MERCHANTS, $merchants);
+	    // if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper set cached grouper merchants End");};
             if (DEBUG_WRITE) {$this->controller->Debug->write("End Load DCs");};
         }
         else

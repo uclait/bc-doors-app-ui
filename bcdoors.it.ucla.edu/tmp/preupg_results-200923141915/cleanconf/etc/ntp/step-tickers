@@ -1,0 +1,6 @@
+# List of NTP servers used by the ntpdate service.
+
+time1.ucla.edu
+time2.ucla.edu
+time3.ucla.edu
+time4.ucla.edu

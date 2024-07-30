@@ -931,70 +931,61 @@ ShellDispatcher::run() - CORE/Cake/Console/ShellDispatcher.php, line 65
 2015-05-11 16:29:46 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
 2015-05-11 16:29:46 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
 2015-05-11 16:29:46 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-06-18 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-18 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-18 20:00:01 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-06-19 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-19 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-19 20:00:01 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-06-20 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-20 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-20 20:00:01 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-06-21 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-21 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-21 20:00:01 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-06-22 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-22 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-22 20:00:01 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-06-23 20:00:02 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-23 20:00:02 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-23 20:00:02 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-06-24 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-24 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-24 20:00:01 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-06-25 20:00:02 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-25 20:00:02 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-25 20:00:02 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-06-26 20:00:02 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-26 20:00:02 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-26 20:00:02 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-06-27 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-27 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-27 20:00:01 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-06-28 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-28 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-28 20:00:01 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-06-29 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-29 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-29 20:00:01 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-06-30 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-30 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-06-30 20:00:01 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-07-01 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-07-01 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-07-01 20:00:01 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-07-02 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-07-02 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-07-02 20:00:01 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-07-03 20:00:02 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-07-03 20:00:02 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-07-03 20:00:02 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-07-04 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-07-04 20:00:01 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-07-04 20:00:01 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-07-05 20:00:02 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-07-05 20:00:02 Warning: SplFileInfo::openFile(/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/myapp_cake_core_cake_console_eng) [http://php.net/splfileinfo.openfile]: failed to open stream: Permission denied in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Engine/FileEngine.php, line 356]
-2015-07-05 20:00:02 Warning: _cake_core_ cache was unable to write 'cake_console_eng' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-2015-07-07 15:58:56 Error: [MissingControllerException] Controller class Homewww.ucla.eduController could not be found.
+2016-02-22 10:45:04 Error: [MissingControllerException] Controller class AppcacheController could not be found.
 Exception Attributes: array (
-  'class' => 'Homewww.ucla.eduController',
+  'class' => 'AppcacheController',
   'plugin' => NULL,
 )
-Request URL: /app/homewww.ucla.edu
+Request URL: /app/appcache
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2015-07-17 10:23:31 Error: [MissingControllerException] Controller class CashController could not be found.
+2016-02-22 10:45:55 Error: [MissingControllerException] Controller class CcheController could not be found.
+Exception Attributes: array (
+  'class' => 'CcheController',
+  'plugin' => NULL,
+)
+Request URL: /app/cche
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-11-19 16:42:34 Error: [MissingControllerException] Controller class CfsController could not be found.
+Exception Attributes: array (
+  'class' => 'CfsController',
+  'plugin' => NULL,
+)
+Request URL: /app/cfs
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-11-19 16:42:40 Error: [MissingControllerException] Controller class PdfController could not be found.
+Exception Attributes: array (
+  'class' => 'PdfController',
+  'plugin' => NULL,
+)
+Request URL: /app/pdf
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-12-16 09:43:41 Error: [MissingControllerException] Controller class CfsController could not be found.
+Exception Attributes: array (
+  'class' => 'CfsController',
+  'plugin' => NULL,
+)
+Request URL: /app/cfs
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-12-16 09:43:49 Error: [MissingControllerException] Controller class CfsController could not be found.
+Exception Attributes: array (
+  'class' => 'CfsController',
+  'plugin' => NULL,
+)
+Request URL: /app/cfs/xml
+Stack Trace:
+#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2024-03-01 15:52:20 Error: [MissingControllerException] Controller class CashController could not be found.
 Exception Attributes: array (
   'class' => 'CashController',
   'plugin' => NULL,
@@ -1003,55 +994,8 @@ Request URL: /app/cash
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2015-07-27 15:04:02 Error: [MissingControllerException] Controller class CashController could not be found.
-Exception Attributes: array (
-  'class' => 'CashController',
-  'plugin' => NULL,
-)
-Request URL: /app/cash
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2015-07-27 15:04:53 Error: [MissingControllerException] Controller class CashController could not be found.
-Exception Attributes: array (
-  'class' => 'CashController',
-  'plugin' => NULL,
-)
-Request URL: /app/cash
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2015-10-09 14:15:55 Error: [MissingControllerException] Controller class CasController could not be found.
-Exception Attributes: array (
-  'class' => 'CasController',
-  'plugin' => NULL,
-)
-Request URL: /app/cas
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2015-11-03 20:17:21 Warning: oci_pconnect() [http://php.net/function.oci-pconnect]: ORA-12170: TNS:Connect timeout occurred in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 200]
-2015-11-03 20:17:21 Warning: oci_parse() expects parameter 1 to be resource, boolean given in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 373]
-2017-03-28 20:00:01 Warning: oci_pconnect() [http://php.net/function.oci-pconnect]: ORA-28000: the account is locked in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 200]
-2017-03-28 20:00:01 Warning: oci_parse() expects parameter 1 to be resource, boolean given in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 373]
-2017-04-03 08:31:12 Error: [MissingControllerException] Controller class ViewSessionController could not be found.
-Exception Attributes: array (
-  'class' => 'ViewSessionController',
-  'plugin' => NULL,
-)
-Request URL: /app/view_session
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2017-09-25 20:00:01 Warning: oci_pconnect() [http://php.net/function.oci-pconnect]: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 7 days in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 200]
-2017-09-26 20:00:02 Warning: oci_pconnect() [http://php.net/function.oci-pconnect]: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 6 days in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 200]
-2017-09-27 20:00:02 Warning: oci_pconnect() [http://php.net/function.oci-pconnect]: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 5 days in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 200]
-2017-09-28 20:00:01 Warning: oci_pconnect() [http://php.net/function.oci-pconnect]: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 4 days in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 200]
-2017-09-29 20:00:02 Warning: oci_pconnect() [http://php.net/function.oci-pconnect]: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 3 days in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 200]
-2017-09-30 20:00:01 Warning: oci_pconnect() [http://php.net/function.oci-pconnect]: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 2 days in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 200]
-2017-10-01 20:00:01 Warning: oci_pconnect() [http://php.net/function.oci-pconnect]: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 1 days in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 200]
-2017-11-27 11:32:21 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=202803676&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1511811134278
+2024-07-09 11:21:00 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=303739052&Search-user_id=303739052&field_id=grp_card_holder_uid&_=1720549255177
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1064,271 +1008,8 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2018-12-06 10:18:10 Error: [MissingControllerException] Controller class CardHolderbruinuid=003851276Controller could not be found.
-Exception Attributes: array (
-  'class' => 'CardHolderbruinuid=003851276Controller',
-  'plugin' => NULL,
-)
-Request URL: /app/card_holderbruinuid=003851276
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2019-05-15 14:11:12 Error: [MissingControllerException] Controller class CacheresetController could not be found.
-Exception Attributes: array (
-  'class' => 'CacheresetController',
-  'plugin' => NULL,
-)
-Request URL: /app/cachereset
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2019-05-15 14:12:02 Error: [MissingControllerException] Controller class CacheresetController could not be found.
-Exception Attributes: array (
-  'class' => 'CacheresetController',
-  'plugin' => NULL,
-)
-Request URL: /app/cachereset
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2019-05-16 09:45:24 Warning: Warning (2): syntax error, unexpected '!' in /opt/bruincard/app.ini on line 15
- in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 42]
-Trace:
-parse_ini_file - [internal], line ??
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:45:24 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 51]
-Trace:
-LoadConfigsComponent::parseValues() - APP/Controller/Component/LoadConfigsComponent.php, line 51
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:45:25 Warning: Warning (2): syntax error, unexpected '!' in /opt/bruincard/app.ini on line 15
- in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 42]
-Trace:
-parse_ini_file - [internal], line ??
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:45:25 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 51]
-Trace:
-LoadConfigsComponent::parseValues() - APP/Controller/Component/LoadConfigsComponent.php, line 51
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:46:02 Warning: Warning (2): syntax error, unexpected '!' in /opt/bruincard/app.ini on line 15
- in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 42]
-Trace:
-parse_ini_file - [internal], line ??
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:46:02 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 51]
-Trace:
-LoadConfigsComponent::parseValues() - APP/Controller/Component/LoadConfigsComponent.php, line 51
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:46:02 Warning: Warning (2): syntax error, unexpected '!' in /opt/bruincard/app.ini on line 15
- in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 42]
-Trace:
-parse_ini_file - [internal], line ??
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:46:02 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 51]
-Trace:
-LoadConfigsComponent::parseValues() - APP/Controller/Component/LoadConfigsComponent.php, line 51
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:46:40 Warning: Warning (2): syntax error, unexpected '!' in /opt/bruincard/app.ini on line 15
- in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 42]
-Trace:
-parse_ini_file - [internal], line ??
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:46:40 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 51]
-Trace:
-LoadConfigsComponent::parseValues() - APP/Controller/Component/LoadConfigsComponent.php, line 51
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:46:46 Warning: Warning (2): syntax error, unexpected '!' in /opt/bruincard/app.ini on line 15
- in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 42]
-Trace:
-parse_ini_file - [internal], line ??
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:46:46 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 51]
-Trace:
-LoadConfigsComponent::parseValues() - APP/Controller/Component/LoadConfigsComponent.php, line 51
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:46:46 Warning: Warning (2): syntax error, unexpected '!' in /opt/bruincard/app.ini on line 15
- in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 42]
-Trace:
-parse_ini_file - [internal], line ??
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:46:46 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 51]
-Trace:
-LoadConfigsComponent::parseValues() - APP/Controller/Component/LoadConfigsComponent.php, line 51
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:47:01 Warning: Warning (2): syntax error, unexpected '!' in /opt/bruincard/app.ini on line 15
- in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 42]
-Trace:
-parse_ini_file - [internal], line ??
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:47:01 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 51]
-Trace:
-LoadConfigsComponent::parseValues() - APP/Controller/Component/LoadConfigsComponent.php, line 51
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:47:02 Warning: Warning (2): syntax error, unexpected '!' in /opt/bruincard/app.ini on line 15
- in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 42]
-Trace:
-parse_ini_file - [internal], line ??
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 09:47:02 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/LoadConfigsComponent.php, line 51]
-Trace:
-LoadConfigsComponent::parseValues() - APP/Controller/Component/LoadConfigsComponent.php, line 51
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 42
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2019-05-16 13:12:45 Error: [MissingControllerException] Controller class VarController could not be found.
-Exception Attributes: array (
-  'class' => 'VarController',
-  'plugin' => NULL,
-)
-Request URL: /app/var/www/bcdoors.it.ucla.edu/app/app/View/Layouts/js/default.ctp
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2019-05-16 13:14:15 Error: [MissingControllerException] Controller class VarController could not be found.
-Exception Attributes: array (
-  'class' => 'VarController',
-  'plugin' => NULL,
-)
-Request URL: /app/var/www/bcdoors.it.ucla.edu/app/app/View/Layouts/js/default.ctp
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2019-08-15 20:01:01 Warning: oci_pconnect() [http://php.net/function.oci-pconnect]: ORA-12543: TNS:destination host unreachable in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 200]
-2019-08-15 20:01:02 Warning: oci_parse() expects parameter 1 to be resource, boolean given in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 373]
-2020-08-25 16:17:05 Error: [MissingControllerException] Controller class CController could not be found.
-Exception Attributes: array (
-  'class' => 'CController',
-  'plugin' => NULL,
-)
-Request URL: /app/c
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2020-12-16 08:50:48 Error: [MissingControllerException] Controller class CController could not be found.
-Exception Attributes: array (
-  'class' => 'CController',
-  'plugin' => NULL,
-)
-Request URL: /app/c
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2020-12-16 08:51:07 Error: [MissingControllerException] Controller class CController could not be found.
-Exception Attributes: array (
-  'class' => 'CController',
-  'plugin' => NULL,
-)
-Request URL: /app/c
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2020-12-16 08:51:12 Error: [MissingControllerException] Controller class CController could not be found.
-Exception Attributes: array (
-  'class' => 'CController',
-  'plugin' => NULL,
-)
-Request URL: /app/c
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2021-03-01 12:27:44 Error: [MissingControllerException] Controller class CController could not be found.
-Exception Attributes: array (
-  'class' => 'CController',
-  'plugin' => NULL,
-)
-Request URL: /app/c
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2021-03-18 07:41:31 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=202803676&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1616078476227
+2024-07-09 11:21:05 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=303739052&Search-user_id=303739052&field_id=grp_card_holder_uid&_=1720549255178
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1341,8 +1022,8 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2021-03-18 07:41:55 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=202803676&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1616078476228
+2024-07-09 11:21:30 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=003266233&Search-user_id=003266233&field_id=grp_card_holder_uid&_=1720549250045
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1355,8 +1036,8 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2021-03-18 07:42:27 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=202803676&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1616078530061
+2024-07-09 11:21:36 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=003266233&Search-user_id=003266233&field_id=grp_card_holder_uid&_=1720549250046
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1369,8 +1050,8 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2021-03-18 07:42:38 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1616078489015
+2024-07-09 11:24:41 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=003266233&Search-user_id=003266233&field_id=grp_card_holder_uid&_=1720549470234
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1383,8 +1064,8 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2021-03-18 07:42:52 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1616078489016
+2024-07-09 11:24:44 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=303739052&Search-user_id=303739052&field_id=grp_card_holder_uid&_=1720549476742
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1397,8 +1078,8 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2021-03-18 07:42:53 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1616078530062
+2024-07-09 11:25:08 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=303739052&Search-user_id=303739052&field_id=grp_card_holder_uid&_=1720549476743
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1411,8 +1092,8 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2021-03-18 07:43:09 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1616078489017
+2024-07-09 11:26:18 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=303739052&Search-user_id=303739052&field_id=grp_card_holder_uid&_=1720549572992
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1425,8 +1106,8 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2021-03-18 07:43:43 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1616078610493
+2024-07-09 11:36:38 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=303739052&Search-user_id=303739052&field_id=grp_card_holder_uid&_=1720549601008
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1439,8 +1120,8 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2021-03-18 07:44:36 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1616078660476
+2024-07-09 11:36:45 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=003266233&Search-user_id=003266233&field_id=grp_card_holder_uid&_=1720550198507
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1453,8 +1134,8 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2021-03-18 07:45:42 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1616078660477
+2024-07-09 11:36:56 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=003266233&Search-user_id=003266233&field_id=grp_card_holder_uid&_=1720550198507
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1467,8 +1148,8 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2021-03-18 07:45:56 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=202803676&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1616078745451
+2024-07-24 12:29:06 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=999999999&Search-user_id=003266233&field_id=grp_card_holder_uid&_=1721849341586
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1481,8 +1162,8 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2021-03-18 07:46:01 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1616078660478
+2024-07-24 12:29:15 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=999999999&Search-user_id=003266233&field_id=grp_card_holder_uid&_=1721849341587
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1495,8 +1176,8 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2021-03-18 07:46:51 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1616078802088
+2024-07-24 12:29:28 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=003266233&Search-user_id=003266233&field_id=grp_card_holder_uid&_=1721849363479
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1509,8 +1190,8 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2021-03-18 07:49:18 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1616078802089
+2024-07-24 12:31:17 Error: [SocketException] Connection refused
+Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=003266233&Search-user_id=003266233&field_id=grp_card_holder_uid&_=1721849472219
 Stack Trace:
 #0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
 #1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
@@ -1523,396 +1204,3 @@ Stack Trace:
 #8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
 #9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
-2021-03-18 07:49:35 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-name=Duggan&Search-user_id=703415461&field_id=grp_card_holder_name&_=1616078802090
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-03-18 07:49:56 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1616078802091
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-03-18 07:50:34 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1616078802092
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-03-18 07:51:22 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1616078802093
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-03-18 07:53:08 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1616079177507
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-03-18 07:54:34 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1616078802094
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-03-18 07:54:56 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-name=duggan&Search-user_id=703415461&field_id=grp_card_holder_name&_=1616078802095
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:17:29 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=202803676&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1626963429118
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:17:55 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=202803676&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1626963429119
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:18:33 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=202803676&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1626963498874
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:19:21 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1626963533869
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:19:45 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1626963577630
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:20:00 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1626963533870
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:20:14 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1626963577631
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:20:53 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1626963577632
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:22:38 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1626963533871
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:22:48 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1626963577633
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:23:14 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1626963778118
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:23:34 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=202803676&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1626963798897
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:24:22 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1626963778119
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:24:54 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=202803676&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1626963828774
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2021-07-22 07:25:08 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=703415461&Search-user_id=703415461&field_id=grp_card_holder_uid&_=1626963899680
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2022-12-12 20:01:02 Warning: oci_pconnect(): ORA-12543: TNS:destination host unreachable in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 200]
-2022-12-12 20:01:02 Warning: oci_parse() expects parameter 1 to be resource, boolean given in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Model/Datasource/Database/Oracle.php, line 373]
-2022-12-13 17:40:06 Error: [MissingControllerException] Controller class AitController could not be found.
-Exception Attributes: array (
-  'class' => 'AitController',
-  'plugin' => NULL,
-)
-Request URL: /app/ait/bc-transact-ws
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2024-03-21 07:06:32 Error: [SocketException] Connection refused
-Request URL: /app/json/search/card_holder?Search-type=card&Search-uid=202803676&Search-user_id=202803676&field_id=grp_card_holder_uid&_=1711029965763
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/CakeSocket.php(272): CakeSocket->connect()
-#1 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(374): CakeSocket->write('GET /customer/r...')
-#2 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Network/Http/HttpSocket.php(462): HttpSocket->request(Array)
-#3 /var/www/bcdoors.it.ucla.edu/app/app/Controller/Component/HttpComponent.php(69): HttpSocket->get('http://localhos...', Array)
-#4 /var/www/bcdoors.it.ucla.edu/app/app/Controller/SearchController.php(66): HttpComponent->get('http://localhos...', Array)
-#5 [internal function]: SearchController->json_card_holder()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SearchController), Array)
-#7 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest))
-#9 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2024-04-17 12:42:20 Error: [MissingControllerException] Controller class Youtube.comController could not be found.
-Exception Attributes: array (
-  'class' => 'Youtube.comController',
-  'plugin' => NULL,
-)
-Request URL: /app/youtube.com
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2024-06-04 10:53:45 Error: [SmartyException] unable to write file /var/www/bcdoors.it.ucla.edu/app/app/tmp/smarty/compile/wrt665f54a96994b0_33221506
-Request URL: /app/
-Stack Trace:
-#0 /var/www/bcdoors.it.ucla.edu/app/app/Vendor/smarty/sysplugins/smarty_internal_template.php(213): Smarty_Internal_Write_File::writeFile('/var/www/bcdoor...', '<?php /* Smarty...', Object(Smarty))
-#1 /var/www/bcdoors.it.ucla.edu/app/app/Vendor/smarty/sysplugins/smarty_internal_templatebase.php(155): Smarty_Internal_Template->compileTemplateSource()
-#2 /var/www/bcdoors.it.ucla.edu/app/app/Plugin/SmartyView/View/SmartyView.php(146): Smarty_Internal_TemplateBase->fetch('/var/www/bcdoor...')
-#3 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/View/View.php(471): SmartyView->_render('/var/www/bcdoor...')
-#4 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
-#5 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
-#6 /var/www/bcdoors.it.ucla.edu/app/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
-#7 /var/www/bcdoors.it.ucla.edu/app/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#8 {main}
-2024-06-04 12:18:46 Warning: Warning (512): short cache was unable to write 'dbase_connections' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-Trace:
-Cache::write() - CORE/Cake/Cache/Cache.php, line 323
-CacheObjectComponent::set() - APP/Controller/Component/CacheObjectComponent.php, line 49
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 43
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2024-06-04 12:18:46 Warning: Warning (512): short cache was unable to write 'application' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-Trace:
-Cache::write() - CORE/Cake/Cache/Cache.php, line 323
-CacheObjectComponent::set() - APP/Controller/Component/CacheObjectComponent.php, line 49
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 43
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2024-06-04 12:18:47 Warning: Warning (512): short cache was unable to write 'dbase_connections' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-Trace:
-Cache::write() - CORE/Cake/Cache/Cache.php, line 323
-CacheObjectComponent::set() - APP/Controller/Component/CacheObjectComponent.php, line 49
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 43
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webroot/index.php, line 92
-
-2024-06-04 12:18:47 Warning: Warning (512): short cache was unable to write 'application' to File cache in [/var/www/bcdoors.it.ucla.edu/app/lib/Cake/Cache/Cache.php, line 323]
-Trace:
-Cache::write() - CORE/Cake/Cache/Cache.php, line 323
-CacheObjectComponent::set() - APP/Controller/Component/CacheObjectComponent.php, line 49
-LoadConfigsComponent::load() - APP/Controller/Component/LoadConfigsComponent.php, line 43
-include - APP/Config/bootstrap.php, line 145
-Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 92
-include - CORE/Cake/bootstrap.php, line 175
-[main] - APP/webro

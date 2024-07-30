@@ -1,0 +1,9 @@
+# old-package|required-by-pkgs|new_pkg|repo-id
+apr-util-ldap||apr-util-ldap|rhel-7-server-optional-rpms
+groff||groff|rhel-7-server-optional-rpms
+openscap-engine-sce||openscap-engine-sce|rhel-7-server-optional-rpms
+perl-File-Copy-Recursive||perl-File-Copy-Recursive|rhel-7-server-optional-rpms
+perl-File-Which||perl-File-Which|rhel-7-server-optional-rpms
+perl-YAML-Syck||perl-YAML-Syck|rhel-7-server-optional-rpms
+php-devel||php-devel|rhel-7-server-optional-rpms
+xz-lzma-compat||xz-lzma-compat|rhel-7-server-optional-rpms
