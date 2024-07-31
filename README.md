@@ -2,6 +2,9 @@
 PHP frontend code for BCDoors application
 
 Development Guidance
+++ Install WAMP for Windows 
+++ Install CakePHP framework (https://book.cakephp.org/5/en/installation.html)
+
 
 ++ BCDoors App UI contains 3 applications
 - BCDOoors App
