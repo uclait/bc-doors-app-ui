@@ -76,10 +76,9 @@ class GrouperApiComponent extends Object
         $error = curl_error($ch);
 
         $this->controller->Http->status = isset($headers['http_code']) ? $headers['http_code'] : $this->controller->Http->STATUS_CODE_BAD_REQUEST;
-        // Disabling empty catch to read returned erro from grouper
-        // if (empty($error)) {
-        //     $response = json_decode($response);
-        // }
+        if (empty($error)) {
+            $response = json_decode($response);
+        }
 
         return $response;
     }
@@ -159,7 +158,6 @@ class GrouperApiComponent extends Object
     {
         $results = array();
 
-
         // PARAMS FOR TEST
         $params = array('stemName' => $name, 'queryFilterType' => $filterType);
 
@@ -171,8 +169,16 @@ class GrouperApiComponent extends Object
         //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
         $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
 
-        $results2 = array();
 
+        // Legacy Merchant Logging
+        if (DEBUG_WRITE) {
+            $this->controller->Debug->write("GetGroups1");
+        }
+        ;
+        if (DEBUG_WRITE) {
+            $this->controller->Debug->write(json_encode(json_encode($url)));
+        }
+        ;
         if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK) {
             //$response = json_decode($this->controller->Http->content);
 
@@ -191,52 +197,7 @@ class GrouperApiComponent extends Object
                 }
             }
 
-            // 20240731 New Grouper Membership call
-            $newUrl = 'https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/memberships';
-            $subPost_data = array('stemName' => 'training:bruincard:etc:acl');
-            $post_data = array(
-                'scope' => 'training:bruincard:etc:acl',
-                'wsStemLookup' => $subPost_data,
-                'stemScope' => 'ALL_IN_SUBTREE',
-                'enabled' => 'T'
-            );
-            $body = array('WsRestGetMembershipsRequest' => $post_data);
-            $response2 = self::processWithBody('GET', $newUrl, array("username" => $this->username, "password" => $this->password), $body);
-
-
-            if ($response2->WsFindGroupsResults) {
-                if ($response2->WsFindGroupsResults->resultMetadata->success == 'T') {
-                    if (isset($response2->WsFindGroupsResults->groupResults)) {
-
-                        $response2 = $response2->WsFindGroupsResults->groupResults;
-                        $stemCNT = sizeof($response2);
-                        for ($loopCNT = 0; $loopCNT < $stemCNT; $loopCNT++) {
-                            if ($response2[$loopCNT]->name != $params['stemName']) {
-                                $results2[] = (array) $response2[$loopCNT];
-                            }
-                        }
-                    }
-                }
-            }
         }
-
-        if (DEBUG_WRITE) {
-            $this->controller->Debug->write('Result1');
-        }
-        ;
-        if (DEBUG_WRITE) {
-            $this->controller->Debug->write(json_encode($results));
-        }
-        ;
-        if (DEBUG_WRITE) {
-            $this->controller->Debug->write('Result2');
-        }
-        ;
-        if (DEBUG_WRITE) {
-            $this->controller->Debug->write(json_encode($results2));
-        }
-        ;
-
 
         return $results;
     }
@@ -420,60 +381,110 @@ class GrouperApiComponent extends Object
     }
     public function loadDCs($reload = false)
     {
+
+        // 20240731 New Grouper Membership call
+        $merchants2 = array();
+
+        $newUrl = 'https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/memberships';
+        $subPost_data = array('stemName' => 'training:bruincard-test:etc:acl');
+        $post_data = array(
+            'scope' => 'training:bruincard-test:etc:acl',
+            'wsStemLookup' => $subPost_data,
+            'stemScope' => 'ALL_IN_SUBTREE',
+            'enabled' => 'T'
+        );
+        $body = array(
+            'WsRestGetMembershipsRequest' => array(
+                'scope' => 'training:bruincard-test:etc:acl',
+                'wsStemLookup' => $subPost_data,
+                'stemScope' => 'ALL_IN_SUBTREE',
+                'enabled' => 'T'
+            )
+        );
+        $response2 = self::processWithBody('GET', $newUrl, array("username" => $this->username, "password" => $this->password), $body);
+
+
+        if ($response2 && $response2->WsFindGroupsResults) {
+            if ($response2->WsFindGroupsResults->resultMetadata->success == 'T') {
+                if (isset($response2->WsFindGroupsResults->groupResults)) {
+
+                    $response2 = $response2->WsFindGroupsResults->groupResults;
+                    $stemCNT = sizeof($response2);
+                    for ($loopCNT = 0; $loopCNT < $stemCNT; $loopCNT++) {
+                        if ($response2[$loopCNT]->name != 'training:bruincard-test:etc:acl') {
+                            $results2[] = (array) $response2[$loopCNT];
+                            if (DEBUG_WRITE) {
+                                $this->controller->Debug->write("Results2");
+                            }
+                            ;
+                            if (DEBUG_WRITE) {
+                                $this->controller->Debug->write(json_encode($results2));
+                            }
+                            ;
+                        }
+                    }
+                }
+            }
+        }
+
+        $merchants2 = $response2;
+
+        // Merchant2 Logging
+        if (DEBUG_WRITE) {
+            $this->controller->Debug->write("Merchants2");
+        }
+        ;
+        if (DEBUG_WRITE) {
+            $this->controller->Debug->write(json_encode($merchants2));
+        }
+        ;
+
+
+
+        // 20240802 Legacy Call slower performance
         $merchants = array();
 
         $this->controller->CacheObject->clear(CACHE_NAME_GROUPER_MERCHANTS);
         if (!$this->controller->CacheObject->exists(CACHE_NAME_GROUPER_MERCHANTS) || $reload) {
             error_log('loadDCs, Cache not found');
             $appValues = Cache::read(CACHE_NAME_APPLICATION);
+
             $this->controller->CacheObject->duration = strtolower($appValues['cache']['grouper']['merchants']);
 
             if (DEBUG_WRITE) {
-                $this->controller->Debug->write("Grouper Start Load DCs");
-            }
-            ;
-            if (DEBUG_WRITE) {
-                $this->controller->Debug->write("Grouper Setup Merchants");
+                $this->controller->Debug->write("Start Load DCs");
             }
             ;
             $merchants = self::getGroups($appValues['stem']['path']['dc']);
+
+            // Legacy Merchant Logging
             if (DEBUG_WRITE) {
-                $this->controller->Debug->write("Grouper Setup Merchants End");
+                $this->controller->Debug->write("Merchants1");
+            }
+            ;
+            if (DEBUG_WRITE) {
+                $this->controller->Debug->write(json_encode($merchants));
             }
             ;
 
-            // if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper Setup SizeOfMerchants");};
             $groupCNT = sizeof($merchants);
-            // if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper Setup SizeOfMerchants End");};
 
-            // if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper loopThroughMerchants");};
             for ($loopCNT = 0; $loopCNT < $groupCNT; $loopCNT++) {
                 $groupName = $merchants[$loopCNT]['name'];
-                if (DEBUG_WRITE) {
-                    $this->controller->Debug->write("Member Start");
-                }
-                ;
-                if (DEBUG_WRITE) {
-                    $this->controller->Debug->write($groupName);
-                }
-                ;
                 $merchants[$loopCNT]['subjects'] = $this->controller->Array->convertLikeModel('GrouperSubjects', self::getMembers($groupName));
-                if (DEBUG_WRITE) {
-                    $this->controller->Debug->write("Member End");
-                }
-                ;
             }
-            // if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper loopThroughMerchants End");};
-            // if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper set cached grouper merchants");};
+
             $this->controller->CacheObject->set(CACHE_NAME_GROUPER_MERCHANTS, $merchants);
-            // if (DEBUG_WRITE) {$this->controller->Debug->write("Grouper set cached grouper merchants End");};
+
             if (DEBUG_WRITE) {
                 $this->controller->Debug->write("End Load DCs");
             }
             ;
+
         } else {
             $merchants = $this->controller->CacheObject->get(CACHE_NAME_GROUPER_MERCHANTS);
         }
+
 
         return $merchants;
     }
