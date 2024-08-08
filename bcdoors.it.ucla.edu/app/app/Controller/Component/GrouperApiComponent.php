@@ -2,6 +2,7 @@
 class GrouperApiComponent extends Object
 {
     public $url = null;
+    public $grouper_v4_0_9_url = null;
     public $username = null;
     public $password = null;
     public $controller = null;
@@ -13,6 +14,7 @@ class GrouperApiComponent extends Object
         $values = Cache::read(CACHE_NAME_APPLICATION);
 
         $this->url = $values['api']['url'];
+        $this->grouper_v4_0_9_url = $values['api']['v4_0_9'];
         $this->username = $values['api']['username'];
         $this->password = $values['api']['password'];
     }
@@ -82,7 +84,6 @@ class GrouperApiComponent extends Object
 
         return $response;
     }
-
 
     public function process($type, $url, $credentials, $body = false)
     {
@@ -171,14 +172,15 @@ class GrouperApiComponent extends Object
 
 
         // Legacy Merchant Logging
-        if (DEBUG_WRITE) {
-            $this->controller->Debug->write("GetGroups1");
-        }
-        ;
-        if (DEBUG_WRITE) {
-            $this->controller->Debug->write(json_encode(json_encode($url)));
-        }
-        ;
+        // if (DEBUG_WRITE) {
+        //     $this->controller->Debug->write("GetGroups1");
+        // }
+        // ;
+        // if (DEBUG_WRITE) {
+        //     $this->controller->Debug->write(json_encode(json_encode($url)));
+        // }
+        // ;
+
         if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK) {
             //$response = json_decode($this->controller->Http->content);
 
@@ -209,8 +211,24 @@ class GrouperApiComponent extends Object
         $params = array('groupName' => $name, 'memberFilter' => $filterType);
         $url = $this->url . "groups/{$name}/members?retrieveSubjectDetail=true&wsLiteObjectType=WsRestGetMembersLiteRequest&" . http_build_query($params) . "&subjectAttributeNames=" . implode(',', $this->validAttributeNames);
 
+        // if (DEBUG_WRITE) {
+        //     $this->controller->Debug->write(json_encode($url));
+        // }
+        // ;
+
+
         //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
         $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
+
+        // Legacy Merchant Logging
+        // if (DEBUG_WRITE) {
+        //     $this->controller->Debug->write("GetMembers" . $name);
+        // }
+        // ;
+        // if (DEBUG_WRITE) {
+        //     $this->controller->Debug->write(json_encode(json_encode($response)));
+        // }
+        // ;
 
         if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK) {
             if (is_object($response)) {
@@ -383,61 +401,134 @@ class GrouperApiComponent extends Object
     {
 
         // 20240731 New Grouper Membership call
-        $merchants2 = array();
+        $newGroups = array();
+        $newMemberships = array();
+        $newSubjects = array();
 
-        $newUrl = 'https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/memberships';
-        $subPost_data = array('stemName' => 'training:bruincard-test:etc:acl');
-        $post_data = array(
-            'scope' => 'training:bruincard-test:etc:acl',
-            'wsStemLookup' => $subPost_data,
-            'stemScope' => 'ALL_IN_SUBTREE',
-            'enabled' => 'T'
-        );
+        $newUrl = $this->url . 'memberships';
+
         $body = array(
             'WsRestGetMembershipsRequest' => array(
+                'includeSubjectDetail' => 'T',
                 'scope' => 'training:bruincard-test:etc:acl',
-                'wsStemLookup' => $subPost_data,
                 'stemScope' => 'ALL_IN_SUBTREE',
-                'enabled' => 'T'
+                'enabled' => 'T',
+                'subjectAttributeNames' => array('uclauniversityid', 'edupersonprincipalname'),
+                'wsStemLookup' => array('stemName' => 'training:bruincard-test:etc:acl'),
             )
         );
+
         $response2 = self::processWithBody('GET', $newUrl, array("username" => $this->username, "password" => $this->password), $body);
 
+        // Get Groups
+        if ($response2 && $response2->WsGetMembershipsResults) {
+            // Merchant2 Logging
+            if (DEBUG_WRITE) {
+                $this->controller->Debug->write("MembershipResults");
+            }
+            ;
+            if ($response2->WsGetMembershipsResults->wsGroups) {
+                // Merchant2 Logging
+                if (DEBUG_WRITE) {
+                    $this->controller->Debug->write("MembershipResultsGroups");
+                }
+                ;
+                $newGroups = $response2->WsGetMembershipsResults->wsGroups;
+                $newMemberships = $response2->WsGetMembershipsResults->wsMemberships;
+                $newSubjects = $response2->WsGetMembershipsResults->wsSubjects;
 
-        if ($response2 && $response2->WsFindGroupsResults) {
-            if ($response2->WsFindGroupsResults->resultMetadata->success == 'T') {
-                if (isset($response2->WsFindGroupsResults->groupResults)) {
-
-                    $response2 = $response2->WsFindGroupsResults->groupResults;
-                    $stemCNT = sizeof($response2);
-                    for ($loopCNT = 0; $loopCNT < $stemCNT; $loopCNT++) {
-                        if ($response2[$loopCNT]->name != 'training:bruincard-test:etc:acl') {
-                            $results2[] = (array) $response2[$loopCNT];
-                            if (DEBUG_WRITE) {
-                                $this->controller->Debug->write("Results2");
-                            }
-                            ;
-                            if (DEBUG_WRITE) {
-                                $this->controller->Debug->write(json_encode($results2));
-                            }
-                            ;
-                        }
-                    }
+                $stemCNT = sizeof($newGroups);
+                for ($loopGCNT = 0; $loopGCNT < $stemCNT; $loopGCNT++) {
+                    $newGroups[] = (array) $newGroups[$loopGCNT];
+                }
+                $stemCNT = sizeof($newMemberships);
+                for ($loopMCNT = 0; $loopMCNT < $stemCNT; $loopMCNT++) {
+                    $newMemberships[] = (array) $newMemberships[$loopMCNT];
+                }
+                $stemCNT = sizeof($newSubjects);
+                for ($loopSCNT = 0; $loopSCNT < $stemCNT; $loopSCNT++) {
+                    $newSubjects[] = (array) $newSubjects[$loopSCNT];
                 }
             }
         }
 
-        $merchants2 = $response2;
+        // Populate groups with subjects
+        // LOGIC
+        // Get group uuid
+        // Go through wsMemberships and get membership where group.name = membership.groupName 
+        // create object GrouperSubjects with {resultcode to edupersonprincipalname}
+        // --> populate memberId = memberid, id = subjectId, sourceid = subjectSourceId
+        // ----> Get Subject info for that membership where membership.immediatememberId = subject.memberId
+        // -------> populate resultCode = resultCode, succes = success, name = name, uclauniversityid = attributeValues[0], edupersonprincipalname = attributeValues[1], uclalogonid = substring.AttributeValues[1](all before @ sign)
+        // Final Test is a string comparison between Legacy json and New Json
 
-        // Merchant2 Logging
-        if (DEBUG_WRITE) {
-            $this->controller->Debug->write("Merchants2");
+        $groupCNT2 = sizeof($newGroups);
+        $membershipCNT2 = sizeof($newMemberships);
+        $subjectCNT2 = sizeof($newSubjects);
+        $tempSubject = "";
+
+        if ($groupCNT2 > 0) {
+            for ($loopCNT = 0; $loopCNT < $groupCNT2; $loopCNT++) {
+                $subjectsArray = array();
+                $groupName = $newGroups[$loopCNT]->name;
+                for ($loopMCNT = 0; $loopMCNT < $membershipCNT2; $loopMCNT++) {
+                    // Find Memembers of group
+                    $tempMember = $newMemberships[$loopMCNT];
+                    if ($tempMember->groupName == $groupName) {
+                        for ($loopSCNT = 0; $loopSCNT < $subjectCNT2; $loopSCNT++) {
+                            //Find SubjectDetail of that member then populate and append that to the array
+                            $tempSubject = $newSubjects[$loopSCNT];
+                            // if ($tempSubject->memberId == $tempMember->memberId) {
+                            // Get first part of email as ucla logonid
+                            // $email = $tempSubject->attributeValues;
+                            // $e = explode("@", $email);
+                            // array_pop($e); #remove last element.
+                            // $e = implode("@", $e);
+                            // Create Subject Object
+                            // $newGrouperSubject = array(
+                            //     "GrouperSubjects" => array(
+                            //         "memberId" => $tempSubject->memberId,
+                            //         "id" => $tempSubject->id,
+                            //         "sourceId" => $tempSubject->sourceId,
+                            //         "resultCode" => $tempSubject->resultCode,
+                            //         "success" => $tempSubject->success,
+                            //         "name" => $tempSubject->name,
+                            //         //"uclauniversityid" => $tempSubject->attributeValues[0],
+                            //         //"edupersonprincipalname" => $tempSubject->attributeValues[1],
+                            //         // "uclalogonid" => $e
+                            //     )
+                            // );
+                            // // Push new subject into array
+                            // array_push($subjectsArray, $newGrouperSubject);
+                            // }
+                        }
+                    }
+                }
+                // Append array to groups
+                // $newGroups[$loopCNT]['subjects'] = $subjectsArray;
+            }
         }
-        ;
+
         if (DEBUG_WRITE) {
-            $this->controller->Debug->write(json_encode($merchants2));
+            $this->controller->Debug->write(json_encode($subjectCNT2));
+            $this->controller->Debug->write("Attribute Values = " . json_encode($newSubjects[0]->attributeValues));
+            $this->controller->Debug->write(json_encode($newSubjects[0]));
+            $this->controller->Debug->write($tempSubject);
         }
-        ;
+
+        // Groups Logging
+        // if (DEBUG_WRITE) {
+        //     $this->controller->Debug->write("newGroups");
+        // }
+        // ;
+        // if (DEBUG_WRITE) {
+        //     $this->controller->Debug->write(json_encode($newGroups));
+        // }
+        // ;
+        // if (DEBUG_WRITE) {
+        //     $this->controller->Debug->write("End newGroups");
+        // }
+        // ;
 
 
 
@@ -457,22 +548,26 @@ class GrouperApiComponent extends Object
             ;
             $merchants = self::getGroups($appValues['stem']['path']['dc']);
 
-            // Legacy Merchant Logging
-            if (DEBUG_WRITE) {
-                $this->controller->Debug->write("Merchants1");
-            }
-            ;
-            if (DEBUG_WRITE) {
-                $this->controller->Debug->write(json_encode($merchants));
-            }
-            ;
-
             $groupCNT = sizeof($merchants);
 
             for ($loopCNT = 0; $loopCNT < $groupCNT; $loopCNT++) {
                 $groupName = $merchants[$loopCNT]['name'];
                 $merchants[$loopCNT]['subjects'] = $this->controller->Array->convertLikeModel('GrouperSubjects', self::getMembers($groupName));
             }
+
+            // Legacy Merchant Logging
+            // if (DEBUG_WRITE) {
+            //     $this->controller->Debug->write("Merchants1");
+            // }
+            // ;
+            // if (DEBUG_WRITE) {
+            //     $this->controller->Debug->write(json_encode($merchants));
+            // }
+            // ;
+            // if (DEBUG_WRITE) {
+            //     $this->controller->Debug->write("End Merchants1");
+            // }
+            // ;
 
             $this->controller->CacheObject->set(CACHE_NAME_GROUPER_MERCHANTS, $merchants);
 
