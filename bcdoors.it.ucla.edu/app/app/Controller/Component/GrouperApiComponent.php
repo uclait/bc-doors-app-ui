@@ -420,19 +420,9 @@ class GrouperApiComponent extends Object
 
         $response2 = self::processWithBody('GET', $newUrl, array("username" => $this->username, "password" => $this->password), $body);
 
-        // Get Groups
+        // Build Searchable Arrays for Formatting Data
         if ($response2 && $response2->WsGetMembershipsResults) {
-            // Merchant2 Logging
-            if (DEBUG_WRITE) {
-                $this->controller->Debug->write("MembershipResults");
-            }
-            ;
             if ($response2->WsGetMembershipsResults->wsGroups) {
-                // Merchant2 Logging
-                if (DEBUG_WRITE) {
-                    $this->controller->Debug->write("MembershipResultsGroups");
-                }
-                ;
                 $newGroups = $response2->WsGetMembershipsResults->wsGroups;
                 $newMemberships = $response2->WsGetMembershipsResults->wsMemberships;
                 $newSubjects = $response2->WsGetMembershipsResults->wsSubjects;
@@ -452,109 +442,64 @@ class GrouperApiComponent extends Object
             }
         }
 
-        // Populate groups with subjects
-        // LOGIC
-        // Get group uuid
-        // Go through wsMemberships and get membership where group.name = membership.groupName 
-        // create object GrouperSubjects with {resultcode to edupersonprincipalname}
-        // --> populate memberId = memberid, id = subjectId, sourceid = subjectSourceId
-        // ----> Get Subject info for that membership where membership.immediatememberId = subject.memberId
-        // -------> populate resultCode = resultCode, succes = success, name = name, uclauniversityid = attributeValues[0], edupersonprincipalname = attributeValues[1], uclalogonid = substring.AttributeValues[1](all before @ sign)
-        // Final Test is a string comparison between Legacy json and New Json
-
-        // 20240809 New Strategy
-        // Build an array of members
-        // foreach on subjects
-        // if subject is found in members, remove member and add subject to new grouper subject
-        // break if size of member = 0
 
         $groupCNT2 = sizeof($newGroups);
-        $membershipCNT2 = sizeof($newMemberships);
-        $subjectCNT2 = sizeof($newSubjects);
-
-        $tempSubject = "";
-        $countSubject = 0;
-
+        $newGrouperSubject = '';
 
         if ($groupCNT2 > 0) {
-            for ($loopCNT = 0; $loopCNT < 1; $loopCNT++) {
-                $subjectsArray = array();
+            // Go through each group and add "Subjects" array
+            for ($loopCNT = 0; $loopCNT < $groupCNT2; $loopCNT++) {
+                $tempGroupMembersArray = array();
                 $groupName = $newGroups[$loopCNT]->name;
-                for ($loopMCNT = 0; $loopMCNT < $membershipCNT2; $loopMCNT++) {
-                    // Find Memembers of group
-                    $tempMember = $newMemberships[$loopMCNT];
-                    $tempMemberId = $tempMember->memberId;
+                $newGroups[$loopCNT]->subjects = array();
+                $subjectsArray = [];
 
+                // STAGE 1: Find Members of Group
+                foreach ($newMemberships as $tempMembership) {
+                    // If Member + Group match appears, store it.
+                    if ($tempMembership->groupName == $groupName) {
+                        array_push($tempGroupMembersArray, $tempMembership->memberId);
+                    }
+                }
 
+                // STAGE 2: Find Subject data for each member
+                foreach ($newSubjects as $tempSubject) {
+                    // If match found, gather data and push, remove string from $tempGroupMembersArray
+                    if (in_array($tempSubject->memberId, $tempGroupMembersArray)) {
+                        // Get first part of email as ucla logonid
+                        $email = $tempSubject->attributeValues[1];
+                        $e = explode("@", $email);
+                        array_pop($e); #remove last element.
+                        $e = implode("@", $e);
+                        // Create Subject Object
+                        $newGrouperSubject = array(
+                            "GrouperSubjects" => array(
+                                "resultCode" => $tempSubject->resultCode,
+                                "success" => $tempSubject->success,
+                                "memberId" => $tempSubject->memberId,
+                                "id" => $tempSubject->id,
+                                "name" => $tempSubject->name,
+                                "sourceId" => $tempSubject->sourceId,
+                                "uclauniversityid" => $tempSubject->attributeValues[0],
+                                "uclalogonid" => $e,
+                                "edupersonprincipalname" => $tempSubject->attributeValues[1]
+                            )
+                        );
 
-                    if ($tempMember->groupName == $groupName) {
-                        if (DEBUG_WRITE) {
-                            $this->controller->Debug->write($tempMemberId);
+                        // Add to subjects array
+                        $subjectsArray[] = (array) $newGrouperSubject;
+
+                        //Get Index of $memberId in $tempGroupMembersArray, and remove it
+                        unset($tempGroupMembersArray[array_search($tempSubject->memberId, $tempGroupMembersArray)]);
+                        // Check if there's no more members to search for and break accordingly
+                        if (sizeOf($tempGroupMembersArray) == 0) {
+                            $newGroups[$loopCNT]->subjects = $subjectsArray;
+                            break;
                         }
-                        ;
-
-                        for ($loopSCNT = 0; $loopSCNT < $subjectCNT2; $loopSCNT++) {
-
-                            //Find SubjectDetail of that member then populate and append that to the array
-                            $tempSubject = $newSubjects[$loopSCNT];
-                            $tempSubjectMemberId = $tempSubject->memberId;
-                            if ($tempSubjectMemberId == $tempMemberId) {
-                                $countSubject = $loopSCNT;
-                            }
-                            if ($tempMemberId == $tempSubjectMemberId) {
-
-                                // Get first part of email as ucla logonid
-                                $email = $tempSubject->attributeValues[1];
-                                $e = explode("@", $email);
-                                array_pop($e); #remove last element.
-                                $e = implode("@", $e);
-                                // Create Subject Object
-                                $newGrouperSubject = array(
-                                    "GrouperSubjects" => array(
-                                        "memberId" => $tempSubject->memberId,
-                                        "id" => $tempSubject->id,
-                                        "sourceId" => $tempSubject->sourceId,
-                                        "resultCode" => $tempSubject->resultCode,
-                                        "success" => $tempSubject->success,
-                                        "name" => $tempSubject->name,
-                                        "uclauniversityid" => $tempSubject->attributeValues[0],
-                                        "edupersonprincipalname" => $tempSubject->attributeValues[1],
-                                        "uclalogonid" => $e
-                                    )
-                                );
-
-                                $newSubjects = $newGroups[$loopCNT]->subjects;
-                                if (!($newSubjects == null)) {
-                                    // If there's already a subjects property
-                                    // Append to it
-                                    $newSubjects = array_push($newSubjects, $newGrouperSubject);
-                                    $newGroups[$loopCNT]->subjects = $newSubjects;
-                                } else {
-                                    $newGroups[$loopCNT]->subjects = $newGrouperSubject;
-                                }
-                            }
-                        }
-
                     }
                 }
             }
         }
-
-
-        // Groups Logging
-        if (DEBUG_WRITE) {
-            $this->controller->Debug->write("newGroups");
-        }
-        ;
-        // if (DEBUG_WRITE) {
-        //     $this->controller->Debug->write(json_encode($newGroups));
-        // }
-        // ;
-        if (DEBUG_WRITE) {
-            $this->controller->Debug->write($countSubject);
-            $this->controller->Debug->write("End newGroups");
-        }
-        ;
 
 
 
@@ -607,6 +552,15 @@ class GrouperApiComponent extends Object
             $merchants = $this->controller->CacheObject->get(CACHE_NAME_GROUPER_MERCHANTS);
         }
 
+        // Groups Logging
+        // if (DEBUG_WRITE) {
+        //     $this->controller->Debug->write("Start newGroups");
+        //     $this->controller->Debug->write(json_encode($newGroups));
+        //     $this->controller->Debug->write("End newGroups");
+        //     $this->controller->Debug->write("Start oldGroups");
+        //     $this->controller->Debug->write(json_encode($merchants));
+        //     $this->controller->Debug->write("End oldGroups");
+        // }
 
         return $merchants;
     }
