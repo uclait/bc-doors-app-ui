@@ -465,77 +465,98 @@ class GrouperApiComponent extends Object
         $groupCNT2 = sizeof($newGroups);
         $membershipCNT2 = sizeof($newMemberships);
         $subjectCNT2 = sizeof($newSubjects);
+
         $tempSubject = "";
+        $countSubject = 0;
+
 
         if ($groupCNT2 > 0) {
-            for ($loopCNT = 0; $loopCNT < $groupCNT2; $loopCNT++) {
+            for ($loopCNT = 0; $loopCNT < 1; $loopCNT++) {
                 $subjectsArray = array();
                 $groupName = $newGroups[$loopCNT]->name;
                 for ($loopMCNT = 0; $loopMCNT < $membershipCNT2; $loopMCNT++) {
                     // Find Memembers of group
                     $tempMember = $newMemberships[$loopMCNT];
+                    $tempMemberId = $tempMember->memberId;
+
+
+
                     if ($tempMember->groupName == $groupName) {
+                        if (DEBUG_WRITE) {
+                            $this->controller->Debug->write($tempMemberId);
+                        }
+                        ;
+
                         for ($loopSCNT = 0; $loopSCNT < $subjectCNT2; $loopSCNT++) {
+
                             //Find SubjectDetail of that member then populate and append that to the array
                             $tempSubject = $newSubjects[$loopSCNT];
-                            // if ($tempSubject->memberId == $tempMember->memberId) {
-                            // Get first part of email as ucla logonid
-                            // $email = $tempSubject->attributeValues;
-                            // $e = explode("@", $email);
-                            // array_pop($e); #remove last element.
-                            // $e = implode("@", $e);
-                            // Create Subject Object
-                            // $newGrouperSubject = array(
-                            //     "GrouperSubjects" => array(
-                            //         "memberId" => $tempSubject->memberId,
-                            //         "id" => $tempSubject->id,
-                            //         "sourceId" => $tempSubject->sourceId,
-                            //         "resultCode" => $tempSubject->resultCode,
-                            //         "success" => $tempSubject->success,
-                            //         "name" => $tempSubject->name,
-                            //         //"uclauniversityid" => $tempSubject->attributeValues[0],
-                            //         //"edupersonprincipalname" => $tempSubject->attributeValues[1],
-                            //         // "uclalogonid" => $e
-                            //     )
-                            // );
-                            // // Push new subject into array
-                            // array_push($subjectsArray, $newGrouperSubject);
-                            // }
+                            $tempSubjectMemberId = $tempSubject->memberId;
+                            if ($tempSubjectMemberId == $tempMemberId) {
+                                $countSubject = $loopSCNT;
+                            }
+                            if ($tempMemberId == $tempSubjectMemberId) {
+
+                                // Get first part of email as ucla logonid
+                                $email = $tempSubject->attributeValues[1];
+                                $e = explode("@", $email);
+                                array_pop($e); #remove last element.
+                                $e = implode("@", $e);
+                                // Create Subject Object
+                                $newGrouperSubject = array(
+                                    "GrouperSubjects" => array(
+                                        "memberId" => $tempSubject->memberId,
+                                        "id" => $tempSubject->id,
+                                        "sourceId" => $tempSubject->sourceId,
+                                        "resultCode" => $tempSubject->resultCode,
+                                        "success" => $tempSubject->success,
+                                        "name" => $tempSubject->name,
+                                        "uclauniversityid" => $tempSubject->attributeValues[0],
+                                        "edupersonprincipalname" => $tempSubject->attributeValues[1],
+                                        "uclalogonid" => $e
+                                    )
+                                );
+
+                                $newSubjects = $newGroups[$loopCNT]->subjects;
+                                if (!($newSubjects == null)) {
+                                    // If there's already a subjects property
+                                    // Append to it
+                                    $newSubjects = array_push($newSubjects, $newGrouperSubject);
+                                    $newGroups[$loopCNT]->subjects = $newSubjects;
+                                } else {
+                                    $newGroups[$loopCNT]->subjects = $newGrouperSubject;
+                                }
+                            }
                         }
+
                     }
                 }
-                // Append array to groups
-                // $newGroups[$loopCNT]['subjects'] = $subjectsArray;
             }
         }
 
-        if (DEBUG_WRITE) {
-            $this->controller->Debug->write(json_encode($subjectCNT2));
-            $this->controller->Debug->write("Attribute Values = " . json_encode($newSubjects[0]->attributeValues));
-            $this->controller->Debug->write(json_encode($newSubjects[0]));
-            $this->controller->Debug->write($tempSubject);
-        }
 
         // Groups Logging
-        // if (DEBUG_WRITE) {
-        //     $this->controller->Debug->write("newGroups");
-        // }
-        // ;
+        if (DEBUG_WRITE) {
+            $this->controller->Debug->write("newGroups");
+        }
+        ;
         // if (DEBUG_WRITE) {
         //     $this->controller->Debug->write(json_encode($newGroups));
         // }
         // ;
-        // if (DEBUG_WRITE) {
-        //     $this->controller->Debug->write("End newGroups");
-        // }
-        // ;
+        if (DEBUG_WRITE) {
+            $this->controller->Debug->write($countSubject);
+            $this->controller->Debug->write("End newGroups");
+        }
+        ;
 
 
 
         // 20240802 Legacy Call slower performance
         $merchants = array();
 
-        $this->controller->CacheObject->clear(CACHE_NAME_GROUPER_MERCHANTS);
+        // 20240808 Just disabling this clear for the time being.
+        // $this->controller->CacheObject->clear(CACHE_NAME_GROUPER_MERCHANTS);
         if (!$this->controller->CacheObject->exists(CACHE_NAME_GROUPER_MERCHANTS) || $reload) {
             error_log('loadDCs, Cache not found');
             $appValues = Cache::read(CACHE_NAME_APPLICATION);
