@@ -462,6 +462,12 @@ class GrouperApiComponent extends Object
         // -------> populate resultCode = resultCode, succes = success, name = name, uclauniversityid = attributeValues[0], edupersonprincipalname = attributeValues[1], uclalogonid = substring.AttributeValues[1](all before @ sign)
         // Final Test is a string comparison between Legacy json and New Json
 
+        // 20240809 New Strategy
+        // Build an array of members
+        // foreach on subjects
+        // if subject is found in members, remove member and add subject to new grouper subject
+        // break if size of member = 0
+
         $groupCNT2 = sizeof($newGroups);
         $membershipCNT2 = sizeof($newMemberships);
         $subjectCNT2 = sizeof($newSubjects);
