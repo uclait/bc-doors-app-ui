@@ -402,87 +402,105 @@ class GrouperApiComponent extends Object
 
         // 20240731 New Grouper Membership call
         $newGroups = array();
-        $newMemberships = array();
-        $newSubjects = array();
+        //$this->controller->CacheObject->clear(CACHE_NAME_GROUPER_MERCHANTS);
+        if (!$this->controller->CacheObject->exists(CACHE_NAME_GROUPER_MERCHANTS) || $reload) {
+            $newMemberships = array();
+            $newSubjects = array();
+            $appValues = Cache::read(CACHE_NAME_APPLICATION);
 
-        $newUrl = $this->url . 'memberships';
+            // PART 1: GET LIST OF ALL GROUPS INCLUDING EMPTY ONES
+            $newUrlG = $this->url . 'groups';
 
-        $body = array(
-            'WsRestGetMembershipsRequest' => array(
-                'includeSubjectDetail' => 'T',
-                'scope' => 'training:bruincard-test:etc:acl',
-                'stemScope' => 'ALL_IN_SUBTREE',
-                'enabled' => 'T',
-                'subjectAttributeNames' => array('uclauniversityid', 'edupersonprincipalname'),
-                'wsStemLookup' => array('stemName' => 'training:bruincard-test:etc:acl'),
-            )
-        );
+            $bodyG = array(
+                'WsRestFindGroupsRequest' => array(
+                    "wsQueryFilter" => array(
+                        "typeOfGroups" => "group",
+                        "queryFilterType" => "FIND_BY_STEM_NAME",
+                        "stemName" => $appValues['stem']['path']['dc'],
+                        "stemNameScope" => "ALL_IN_SUBTREE",
+                        "enabled" => "T"
+                    )
+                )
+            );
 
-        $response2 = self::processWithBody('GET', $newUrl, array("username" => $this->username, "password" => $this->password), $body);
+            $responseG2 = self::processWithBody('GET', $newUrlG, array("username" => $this->username, "password" => $this->password), $bodyG);
+            // End Part 1
 
-        // Build Searchable Arrays for Formatting Data
-        if ($response2 && $response2->WsGetMembershipsResults) {
-            if ($response2->WsGetMembershipsResults->wsGroups) {
-                $newGroups = $response2->WsGetMembershipsResults->wsGroups;
-                $newMemberships = $response2->WsGetMembershipsResults->wsMemberships;
-                $newSubjects = $response2->WsGetMembershipsResults->wsSubjects;
+            // PART 2: GET ACTIVE MEMBERSHIPS AND SUBJECT INFORMATION
+            $newUrl = $this->url . 'memberships';
 
-                $stemCNT = sizeof($newGroups);
-                for ($loopGCNT = 0; $loopGCNT < $stemCNT; $loopGCNT++) {
-                    $newGroups[] = (array) $newGroups[$loopGCNT];
-                }
-                $stemCNT = sizeof($newMemberships);
-                for ($loopMCNT = 0; $loopMCNT < $stemCNT; $loopMCNT++) {
-                    $newMemberships[] = (array) $newMemberships[$loopMCNT];
-                }
-                $stemCNT = sizeof($newSubjects);
-                for ($loopSCNT = 0; $loopSCNT < $stemCNT; $loopSCNT++) {
-                    $newSubjects[] = (array) $newSubjects[$loopSCNT];
+            $body = array(
+                'WsRestGetMembershipsRequest' => array(
+                    'includeSubjectDetail' => 'T',
+                    'scope' => $appValues['stem']['path']['dc'],
+                    'stemScope' => 'ALL_IN_SUBTREE',
+                    'enabled' => 'T',
+                    'subjectAttributeNames' => array('uclauniversityid', 'edupersonprincipalname'),
+                    'wsStemLookup' => array('stemName' => $appValues['stem']['path']['dc']),
+                )
+            );
+
+            $response2 = self::processWithBody('GET', $newUrl, array("username" => $this->username, "password" => $this->password), $body);
+            // End Part 2
+
+            // PART 3: Build Searchable Arrays for Formatting Data
+            if ($response2 && $response2->WsGetMembershipsResults) {
+                if ($response2->WsGetMembershipsResults->wsGroups) {
+                    $newGroups = [];
+                    $newMemberships = [];
+                    $newSubjects = [];
+
+                    foreach ($responseG2->WsFindGroupsResults->groupResults as $groupie) {
+                        $newGroups[] = (array) $groupie;
+                    }
+
+                    foreach ($response2->WsGetMembershipsResults->wsMemberships as $membershipie) {
+                        $newMemberships[] = (array) $membershipie;
+                    }
+                    foreach ($response2->WsGetMembershipsResults->wsSubjects as $subjectie) {
+                        $newSubjects[] = (array) $subjectie;
+                    }
                 }
             }
-        }
 
+            $newGrouperSubject = '';
 
-        $groupCNT2 = sizeof($newGroups);
-        $newGrouperSubject = '';
-
-        if ($groupCNT2 > 0) {
             // Go through each group and add "Subjects" array
-            for ($loopCNT = 0; $loopCNT < $groupCNT2; $loopCNT++) {
-                $tempGroupMembersArray = array();
-                $groupName = $newGroups[$loopCNT]->name;
-                $newGroups[$loopCNT]->subjects = array();
+            foreach ($newGroups as $key => $groupie) {
+                $tempGroupMembersArray = [];
+                $groupName = $groupie['name'];
+                $groupie['subjects'] = [];
                 $subjectsArray = [];
 
                 // STAGE 1: Find Members of Group
                 foreach ($newMemberships as $tempMembership) {
                     // If Member + Group match appears, store it.
-                    if ($tempMembership->groupName == $groupName) {
-                        array_push($tempGroupMembersArray, $tempMembership->memberId);
+                    if ($tempMembership['groupName'] == $groupName) {
+                        $tempGroupMembersArray[] = $tempMembership['memberId'];
                     }
                 }
 
                 // STAGE 2: Find Subject data for each member
                 foreach ($newSubjects as $tempSubject) {
                     // If match found, gather data and push, remove string from $tempGroupMembersArray
-                    if (in_array($tempSubject->memberId, $tempGroupMembersArray)) {
+                    if (in_array($tempSubject['memberId'], $tempGroupMembersArray)) {
                         // Get first part of email as ucla logonid
-                        $email = $tempSubject->attributeValues[1];
+                        $email = $tempSubject['attributeValues'][1];
                         $e = explode("@", $email);
                         array_pop($e); #remove last element.
                         $e = implode("@", $e);
                         // Create Subject Object
                         $newGrouperSubject = array(
                             "GrouperSubjects" => array(
-                                "resultCode" => $tempSubject->resultCode,
-                                "success" => $tempSubject->success,
-                                "memberId" => $tempSubject->memberId,
-                                "id" => $tempSubject->id,
-                                "name" => $tempSubject->name,
-                                "sourceId" => $tempSubject->sourceId,
-                                "uclauniversityid" => $tempSubject->attributeValues[0],
+                                "resultCode" => $tempSubject['resultCode'],
+                                "success" => $tempSubject['success'],
+                                "memberId" => $tempSubject['memberId'],
+                                "id" => $tempSubject['id'],
+                                "name" => $tempSubject['name'],
+                                "sourceId" => $tempSubject['sourceId'],
+                                "uclauniversityid" => $tempSubject['attributeValues'][0],
                                 "uclalogonid" => $e,
-                                "edupersonprincipalname" => $tempSubject->attributeValues[1]
+                                "edupersonprincipalname" => $tempSubject['attributeValues'][1]
                             )
                         );
 
@@ -490,79 +508,72 @@ class GrouperApiComponent extends Object
                         $subjectsArray[] = (array) $newGrouperSubject;
 
                         //Get Index of $memberId in $tempGroupMembersArray, and remove it
-                        unset($tempGroupMembersArray[array_search($tempSubject->memberId, $tempGroupMembersArray)]);
+                        unset($tempGroupMembersArray[array_search($tempSubject["memberId"], $tempGroupMembersArray)]);
+                        $tempGroupMembersArray = array_values($tempGroupMembersArray);
+
                         // Check if there's no more members to search for and break accordingly
                         if (sizeOf($tempGroupMembersArray) == 0) {
-                            $newGroups[$loopCNT]->subjects = $subjectsArray;
                             break;
                         }
                     }
                 }
+
+                // STAGE 3: Update Subjects property for the current group
+                $newGroups[$key]["subjects"] = $subjectsArray;
             }
+        } else {
+            $newGroups = $this->controller->CacheObject->get(CACHE_NAME_GROUPER_MERCHANTS);
         }
+
+        // if (DEBUG_WRITE) {
+        //     $this->controller->Debug->write(json_encode($newGroups));
+        //     $this->controller->Debug->write("End New Groups");
+        // };
+
+        return $newGroups;
+
+
+
 
 
 
         // 20240802 Legacy Call slower performance
-        $merchants = array();
+        // $merchants = array();
 
         // 20240808 Just disabling this clear for the time being.
-        // $this->controller->CacheObject->clear(CACHE_NAME_GROUPER_MERCHANTS);
-        if (!$this->controller->CacheObject->exists(CACHE_NAME_GROUPER_MERCHANTS) || $reload) {
-            error_log('loadDCs, Cache not found');
-            $appValues = Cache::read(CACHE_NAME_APPLICATION);
+        //$this->controller->CacheObject->clear(CACHE_NAME_GROUPER_MERCHANTS);
+        // if (!$this->controller->CacheObject->exists(CACHE_NAME_GROUPER_MERCHANTS) || $reload) {
+        //     error_log('loadDCs, Cache not found');
+        //     $appValues = Cache::read(CACHE_NAME_APPLICATION);
 
-            $this->controller->CacheObject->duration = strtolower($appValues['cache']['grouper']['merchants']);
+        //     $this->controller->CacheObject->duration = strtolower($appValues['cache']['grouper']['merchants']);
 
-            if (DEBUG_WRITE) {
-                $this->controller->Debug->write("Start Load DCs");
-            }
-            ;
-            $merchants = self::getGroups($appValues['stem']['path']['dc']);
+        //     if (DEBUG_WRITE) {
+        //         $this->controller->Debug->write("Start Load DCs");
+        //     }
+        //     ;
+        //     $merchants = self::getGroups($appValues['stem']['path']['dc']);
 
-            $groupCNT = sizeof($merchants);
+        //     $groupCNT = sizeof($merchants);
 
-            for ($loopCNT = 0; $loopCNT < $groupCNT; $loopCNT++) {
-                $groupName = $merchants[$loopCNT]['name'];
-                $merchants[$loopCNT]['subjects'] = $this->controller->Array->convertLikeModel('GrouperSubjects', self::getMembers($groupName));
-            }
 
-            // Legacy Merchant Logging
-            // if (DEBUG_WRITE) {
-            //     $this->controller->Debug->write("Merchants1");
-            // }
-            // ;
-            // if (DEBUG_WRITE) {
-            //     $this->controller->Debug->write(json_encode($merchants));
-            // }
-            // ;
-            // if (DEBUG_WRITE) {
-            //     $this->controller->Debug->write("End Merchants1");
-            // }
-            // ;
+        //     for ($loopCNT = 0; $loopCNT < $groupCNT; $loopCNT++) {
+        //         $groupName = $merchants[$loopCNT]['name'];
+        //         $merchants[$loopCNT]['subjects'] = $this->controller->Array->convertLikeModel('GrouperSubjects', self::getMembers($groupName));
+        //     }
 
-            $this->controller->CacheObject->set(CACHE_NAME_GROUPER_MERCHANTS, $merchants);
+        //     $this->controller->CacheObject->set(CACHE_NAME_GROUPER_MERCHANTS, $merchants);
 
-            if (DEBUG_WRITE) {
-                $this->controller->Debug->write("End Load DCs");
-            }
-            ;
+        //     if (DEBUG_WRITE) {
+        //         $this->controller->Debug->write("End Load DCs");
+        //     }
+        //     ;
 
-        } else {
-            $merchants = $this->controller->CacheObject->get(CACHE_NAME_GROUPER_MERCHANTS);
-        }
-
-        // Groups Logging
-        // if (DEBUG_WRITE) {
-        //     $this->controller->Debug->write("Start newGroups");
-        //     $this->controller->Debug->write(json_encode($newGroups));
-        //     $this->controller->Debug->write("End newGroups");
-        //     $this->controller->Debug->write("Start oldGroups");
-        //     $this->controller->Debug->write(json_encode($merchants));
-        //     $this->controller->Debug->write("End oldGroups");
+        // } else {
+        //     $merchants = $this->controller->CacheObject->get(CACHE_NAME_GROUPER_MERCHANTS);
         // }
 
-        return $merchants;
+        // return $merchants;
     }
     public function loadGroups($reload = false)
     {
