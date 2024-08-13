@@ -404,6 +404,12 @@ class GrouperApiComponent extends Object
         $newGroups = array();
         //$this->controller->CacheObject->clear(CACHE_NAME_GROUPER_MERCHANTS);
         if (!$this->controller->CacheObject->exists(CACHE_NAME_GROUPER_MERCHANTS) || $reload) {
+
+            if (DEBUG_WRITE) {
+                $this->controller->Debug->write("Start Load DCs");
+            }
+            ;
+
             $newMemberships = array();
             $newSubjects = array();
             $appValues = Cache::read(CACHE_NAME_APPLICATION);
@@ -525,11 +531,11 @@ class GrouperApiComponent extends Object
             $newGroups = $this->controller->CacheObject->get(CACHE_NAME_GROUPER_MERCHANTS);
         }
 
-        // if (DEBUG_WRITE) {
-        //     $this->controller->Debug->write(json_encode($newGroups));
-        //     $this->controller->Debug->write("End New Groups");
-        // };
 
+        if (DEBUG_WRITE) {
+            $this->controller->Debug->write("End Load DCs");
+        }
+        ;
         return $newGroups;
 
 
