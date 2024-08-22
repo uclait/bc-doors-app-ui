@@ -130,7 +130,9 @@ define('ENVIRONMENT_STAGE', SERVER_NAME == 'https://bcdoors-test.it.ucla.edu');
 define('ENVIRONMENT_PROD', !ENVIRONMENT_DEV && !ENVIRONMENT_STAGE);
 
 if (ENVIRONMENT_DEV)
-    define('SHIBBOLETH_LOGOUT_URL', 'https://' . SERVER_NAME . '/Shibboleth.sso/Logout?return=' . urlencode('https://shbqa.ais.ucla.edu/idp/logout'));
+    // DEBUG FOR LOCAL DEVELOPMENT
+    // define('SHIBBOLETH_LOGOUT_URL', 'https://' . SERVER_NAME . '/Shibboleth.sso/Logout?return=' . urlencode('https://shbqa.ais.ucla.edu/idp/logout'));
+    define('SHIBBOLETH_LOGOUT_URL', 'https://' . SERVER_NAME . '/Shibboleth.sso/Logout?return=' . urlencode('https://shb.ais.ucla.edu/shibboleth-idp/Logout'));
 else
     define('SHIBBOLETH_LOGOUT_URL', 'https://' . SERVER_NAME . '/Shibboleth.sso/Logout?return=' . urlencode('https://shb.ais.ucla.edu/shibboleth-idp/Logout'));
 
