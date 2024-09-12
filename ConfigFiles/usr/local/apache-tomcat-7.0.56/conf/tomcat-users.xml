@@ -32,5 +32,10 @@
   <user username="tomcat" password="tomcat" roles="tomcat"/>
   <user username="both" password="tomcat" roles="tomcat,role1"/>
   <user username="role1" password="tomcat" roles="role1"/>
+<user username="cfss3rv1c3" password="kVG8mNXLmvkP" roles="bfsitrole"/>
+
 -->
+<user username="cfss3rv1c3" password="kVG8mNXLmvkP" roles="bfsitrole"/>
+
+
 </tomcat-users>
