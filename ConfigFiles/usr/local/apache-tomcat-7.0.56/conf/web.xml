@@ -4610,4 +4610,28 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
+
+     <security-constraint>
+    <web-resource-collection>
+        <web-resource-name>Basic Authentication</web-resource-name>
+<url-pattern>/customer/rest/getcardholderinfo/*</url-pattern>
+        <http-method>GET</http-method>
+        <http-method>POST</http-method>
+    </web-resource-collection>
+    <auth-constraint>
+        <role-name> bfsitrole </role-name>
+    </auth-constraint>
+</security-constraint>
+
+<login-config>
+  <auth-method>BASIC</auth-method>
+  <realm-name>Basic Authentication</realm-name>
+</login-config>
+
+<security-role>
+  <description>BFS IT role for Web Deposits</description>
+  <role-name>bfsitrole</role-name>
+</security-role>
+
+
 </web-app>
