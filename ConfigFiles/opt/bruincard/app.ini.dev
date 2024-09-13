@@ -12,12 +12,12 @@ api.url = https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/
 api.v4_0_9 = https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/
 api.wsdl = https://grouperws.it.ucla.edu/grouper-ws/services/GrouperService_v2_1?wsdl
 
-api.username = grouper-wsuser-bar
-api.password = "jd!3k4z#cg"
+api.username = grouper-wsuser-bruincard
+api.password = P$2m3#aj12
 
-stem.path = ucla:bruincard
-stem.path.dc = ucla:bruincard:etc:acl
-stem.path.ag = ucla:bruincard:access-plan-group
+stem.path = training:bruincard-test
+stem.path.dc = training:bruincard-test:etc:acl
+stem.path.ag = training:bruincard-test:access-plan-group
 
 [card_holder_info_api]
 api.card_holder_info.method = get
@@ -73,10 +73,10 @@ photo.download.default.public.key = "/var/www/bcdoors.it.ucla.edu/bcdkey.pub"
 
 [photo_download]
 photo.download.mount = /mnt/bcphotos
-photo.download.login.gen-s3rv1c3 = "ucla:bruincard:etc:photo-acl:general-services"
-photo.download.login.trans-s3rv1c3 = "ucla:bruincard:etc:photo-acl:transportation"
-photo.download.login.law-s3rv1c3 = "ucla:bruincard:etc:photo-acl:law"
-photo.download.login.stud-s3rv1c3 = "ucla:bruincard:etc:photo-acl:student-affair"
-photo.download.login.mc-careconnect-s3rv1c3 ="ucla:bruincard:etc:photo-acl:careconnect"
-photo.download.login.chr-s3rv1c3 = "ucla:bruincard:etc:photo-acl:CHR"
-photo.download.login.oarc-s3rv1c3 = "ucla:bruincard:etc:photo-acl:OARC"
+photo.download.login.gen-s3rv1c3 = "training:bruincard-test:etc:photo-acl:general-services" 
+photo.download.login.trans-s3rv1c3 = "training:bruincard-test:etc:photo-acl:transportation" 
+photo.download.login.law-s3rv1c3 = "training:bruincard-test:etc:photo-acl:law" 
+photo.download.login.stud-s3rv1c3 = "training:bruincard-test:etc:photo-acl:student-affair" 
+photo.download.login.mc-careconnect-s3rv1c3 = "training:bruincard-test:etc:photo-acl:careconnect" 
+photo.download.login.chr-s3rv1c3 = "training:bruincard-test:etc:photo-acl:CHR" 
+photo.download.login.oarc-s3rv1c3 = "training:bruincard-test:etc:photo-acl:OARC"

@@ -1,0 +1,16 @@
+[dbase_connections]
+default.host = bc-db-t01.dpns.ais.ucla.edu
+default.login = bcapp
+default.password = bcapp_psw
+default.database = bc-db-t01.dpns.ais.ucla.edu:1521/bcdoorst
+default.schema = bcdoorst
+#default.host = bc-tse-db-t01.it.ucla.edu
+##default.login = BCAPP
+##default.password = fLq_J_v5_c_8g
+##default.password = bcapp_psw
+## default.password = test##_write_bcuser
+#default.database = bc-tse-db-t01.it.ucla.edu:1521/bcdoorsp
+#default.schema = bcdoorsp
+
+default.nls_comp = LINGUISTIC
+default.nls_sort = BINARY_CI
