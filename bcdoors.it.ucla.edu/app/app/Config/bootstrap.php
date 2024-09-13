@@ -136,7 +136,7 @@ if (ENVIRONMENT_DEV)
 else
     define('SHIBBOLETH_LOGOUT_URL', 'https://' . SERVER_NAME . '/Shibboleth.sso/Logout?return=' . urlencode('https://shb.ais.ucla.edu/shibboleth-idp/Logout'));
 
-if (ENVIRONMENT_DEV)
+if (ENVIRONMENT_DEV || ENVIRONMENT_STAGE)
     $params = array(CACHE_NAME_DBASE => INI_PATH . "/dbase.ini.dev", CACHE_NAME_APPLICATION => INI_PATH . "/app.ini.dev");
 else
     $params = array(CACHE_NAME_DBASE => INI_PATH . "/dbase.ini", CACHE_NAME_APPLICATION => INI_PATH . "/app.ini");
