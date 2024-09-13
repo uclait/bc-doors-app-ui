@@ -1,4 +1,3 @@
-@ -0,0 +1,82 @@
 [app]
 base.url.app = /app
 base.url.cfs = /cfs
