@@ -1,0 +1,26 @@
+logrotate state -- version 2
+"/var/log/httpd/native.log" 2015-6-21
+"/var/log/yum.log" 2020-1-1
+"/var/log/httpd/ssl_access_log" 2015-1-25
+"/var/log/up2date" 2020-9-20
+"/var/log/dracut.log" 2019-7-13
+"/var/log/httpd/*log" 2014-10-16
+"/var/log/puppetlabs/mcollective/mcollective.log" 2018-10-12
+"/var/log/httpd/error_log" 2020-9-20
+"/var/log/puppetlabs/pxp-agent/pxp-agent.log" 2019-11-2
+"/var/log/httpd/ssl_error_log" 2020-9-20
+"/var/log/wtmp" 2019-8-21
+"/var/log/spooler" 2020-9-20
+"/var/log/btmp" 2020-9-1
+"/var/log/puppet/*log" 2014-10-7
+"/var/log/rhsm/rhsmcertd.log" 2020-9-20
+"/var/log/maillog" 2020-9-20
+"/var/log/httpd/ssl_request_log" 2015-1-25
+"/var/log/httpd/native_warn.log" 2015-3-10
+"/var/log/puppetlabs/mcollective.log" 2017-9-16
+"/var/log/secure" 2020-9-20
+"/var/log/rhsm/rhsm.log" 2020-9-20
+"/var/log/messages" 2020-9-20
+"/var/log/httpd/access_log" 2020-9-20
+"/var/log/cron" 2020-9-20
+"/var/log/fusioninventory-agent/fusioninventory-agent.log" 2017-3-19

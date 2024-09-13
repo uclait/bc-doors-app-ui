@@ -1,0 +1,94 @@
+Preupgrade Assistant Purpose
+----------------------------
+The Preupgrade Assistant is a framework designed to run the Preupgrade Assistant modules, which analyze the system for possible in-place upgrade limitations. It is based on a modular system, with each module performing a separate test, checking for package removals, incompatible obsolete packages, changes in libraries, users, groups, services, or incompatibilities of command-line options or configuration files. It is able to execute post-upgrade scripts to finalize complex tasks after the system upgrade. Apart from performing the in-place upgrades, the Preupgrade Assistant is also capable of migrating the system. It then produces a report, which assists you in performing the upgrade itself by outlining potential problem areas and by offering suggestions about mitigating any possible incompatibilities. The Preupgrade Assistant utility is a Red Hat Upgrade Tool prerequisite for completing a successful in-place upgrade to the next major version of Red Hat Enterprise Linux.
+
+Preupgrade Assistant Usage
+--------------------------
+At the moment, only a CLI interface and limited functionality is available.
+
+Follow these steps to use the Preupgrade Assistant:
+1) Run "preupg -l" command - it lists all available modules for
+        preupgrade-assistant (as the system is based on a plug-in, there might be
+        modules from different sources in the future). If nothing is shown,
+        install the preupgrade-assistant modules package.
+2) If you have RHEL6_7 modules available, run "preupg -s RHEL6_7"
+3) Wait until the analysis finishes (it can take several minutes)
+4) Review the report stored as /root/preupgrade/result.html (and possibly
+       the files stored at /root/preupgrade) . Especially check for any in-place
+        upgrade risks (as described further in this document).
+
+The /root/preupgrade file&directory structure
+------------------------------------
+
+This directory contains the data from the last Preupgrade Assistant run.
+The files are:
+result.html - a file with the final migration assessment report in a human-readable
+         form (the functionality is only listed)
+result.xml - a file with the final migration assessment report in a machine-readable form
+README - this file
+results.tar.gz - a tarball with all the files in the /root/preupgrade directory
+
+The directories are:
+cleanconf - a directory with all user-modified configuration files, which were
+          checked for the compatibility by the Preupgrade Assistant. These files
+          can be safely used on Red Hat Enterprise Linux 7 system (some of these files might need
+          a postupgrade.d scripts execution).
+dirtyconf - a directory with all user-modified configuration files, which were not
+          checked for the compatibility by the Preupgrade Assistant. These might
+          require an admin review after the Red Hat Enterprise Linux 7 installation/upgrade.
+kickstart - a directory with various files needed for generating
+          Kickstart used to clone the system. See the README file
+          in the kickstart directory for the file descriptions.
+postupgrade.d - contains various scripts which are supposed to be executed
+          AFTER the upgrade to Red Hat Enterprise Linux 7. These scripts should NEVER be used
+          on the Red Hat Enterprise Linux 6 system.
+RHEL6_7 - just a "debugging" directory - will be removed later. Ignore, unless you see an "Error" plug-in exit status.
+
+Possible exit codes explanation
+-------------------------------------
+Every single plug-in has its own exit code. The administrator needs to check
+at least those with a FAIL result before starting the in-place upgrade. The FIXED results
+should be checked after the in-place upgrade - to finish the Red Hat Enterprise Linux 7 upgrade
+properly.
+
+The possible exit codes are:
+ * PASS = everything is fine, no incompatibilities/issues detected 
+ * FAIL = an incompatibility/issue that needs to be reviewed by the admin was detected
+          FAIL does not necessarily mean that the in-place upgrade will fail, but might
+          result in a not 100% functional system
+ * FIXED = an incompatibility was detected, but the Preupgrade Assistant was able
+          to find an automated solution. Some of the fixes may require running
+          postupgrade.d scripts after the upgrade. The fixed configs are available
+          in the /root/preupgrade/cleanconf directory. The Preupgrade Assistant does not
+          handle the fixes automatically at the moment.
+ * INFORMATIONAL = nice to have information for admins (e.g. removed options
+          in some common tools which could cause malfunctions of their scripts)
+ * NOT_APPLICABLE = the package which was to be tested by the check is not
+          installed on the system 
+ * ERROR = it is not expected to occur and usually means an error in the Preupgrade Assistant
+          framework. All such errors should be reported to the Red Hat
+          Preupgrade Assistant team.
+
+In-place upgrade risk explanations
+-----------------------------------
+There are several levels of in-place upgrade risks. Any level higher than
+"slight" means you will get a not 100% functional upgraded system, although the
+in-place upgrade tool "redhat-upgrade-tool" may pass.
+
+The available risk assessment levels are:
+ * None - Default. It can be used as an indicator for some checks. It is not
+          necessary to enter these values.
+ * Slight - We assessed this field and have not found any issues. However,
+          there is still a risk that not all variants have been covered.
+ * Medium - It is likely that the area will cause a problem in the case of the in-place
+          upgrade. It needs to be checked by the administrator after
+          the in-place upgrade and after the system was monitored for
+          some time.
+ * High - The in-place upgrade cannot be used safely without the administrator's
+          assistance. This typically involves some known broken scenario,
+          existing 3rd party packages. After the administrator manually fixes
+          the issue, it should be possible to perform the in-place upgrade, but it
+          is not recommended.
+ * Extreme - We found an incompatibility which makes the in-place upgrade
+          impossible. It is recommended to install a new system with the help
+          of the Preupgrade Assistant remediations.

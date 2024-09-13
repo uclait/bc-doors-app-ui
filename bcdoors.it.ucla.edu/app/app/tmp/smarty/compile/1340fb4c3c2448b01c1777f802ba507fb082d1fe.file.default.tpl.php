@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2024-07-29 15:50:20
+<?php /* Smarty version Smarty-3.1.19, created on 2024-07-29 11:30:57
          compiled from "/var/www/bcdoors.it.ucla.edu/app/app/View/Layouts/default.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:29086101066a81cac6f0bd9-61121462%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:29456972966a7dfe17ea8a2-64900392%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '29086101066a81cac6f0bd9-61121462',
+  'nocache_hash' => '29456972966a7dfe17ea8a2-64900392',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_66a81cac724946_16097316',
+  'unifunc' => 'content_66a7dfe18210e9_84760476',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_66a81cac724946_16097316')) {function content_66a81cac724946_16097316($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_66a7dfe18210e9_84760476')) {function content_66a7dfe18210e9_84760476($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

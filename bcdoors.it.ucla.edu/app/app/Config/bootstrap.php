@@ -124,17 +124,19 @@ define('IS_WINDOWS', isset($_SERVER['WINDIR']));
 define('DRIVE_LETTER', IS_WINDOWS ? substr(__FILE__, 0, 1) . ":" : "");
 define('SERVER_NAME', strtolower($_SERVER['SERVER_NAME']));
 
-$devServers = array('bcdoors-dev.it.ucla.edu', 'bc-as-d02.dev.it.ucla.edu');
+$devServers = array('bcdoors-dev.it.ucla.edu', 'bc-as-d02.dev.it.ucla.edu', 'bc-as-d02.it.ucla.edu', 'localhost');
 define('ENVIRONMENT_DEV', in_array(SERVER_NAME, $devServers));
 define('ENVIRONMENT_STAGE', SERVER_NAME == 'https://bcdoors-test.it.ucla.edu');
 define('ENVIRONMENT_PROD', !ENVIRONMENT_DEV && !ENVIRONMENT_STAGE);
 
 if (ENVIRONMENT_DEV)
-    define('SHIBBOLETH_LOGOUT_URL', 'https://' . SERVER_NAME . '/Shibboleth.sso/Logout?return=' . urlencode('https://shbqa.ais.ucla.edu/idp/logout'));
+    // DEBUG FOR LOCAL DEVELOPMENT
+    // define('SHIBBOLETH_LOGOUT_URL', 'https://' . SERVER_NAME . '/Shibboleth.sso/Logout?return=' . urlencode('https://shbqa.ais.ucla.edu/idp/logout'));
+    define('SHIBBOLETH_LOGOUT_URL', 'https://' . SERVER_NAME . '/Shibboleth.sso/Logout?return=' . urlencode('https://shb.ais.ucla.edu/shibboleth-idp/Logout'));
 else
     define('SHIBBOLETH_LOGOUT_URL', 'https://' . SERVER_NAME . '/Shibboleth.sso/Logout?return=' . urlencode('https://shb.ais.ucla.edu/shibboleth-idp/Logout'));
 
-if (ENVIRONMENT_DEV)
+if (ENVIRONMENT_DEV || ENVIRONMENT_STAGE)
     $params = array(CACHE_NAME_DBASE => INI_PATH . "/dbase.ini.dev", CACHE_NAME_APPLICATION => INI_PATH . "/app.ini.dev");
 else
     $params = array(CACHE_NAME_DBASE => INI_PATH . "/dbase.ini", CACHE_NAME_APPLICATION => INI_PATH . "/app.ini");
@@ -155,7 +157,7 @@ define('DEBUG_WRITE', true);
 define('LOG_PATH', DRIVE_LETTER . INI_PATH . DS . "logs");
 define('DEBUG_FILE', LOG_PATH . (BASE_URL == "" ? DS : BASE_URL . "-") . "debug-" . date('Ymd') . ".log");
 
-define('REQUEST_UID', rand(10,99) . "-" . showTime('YmdHisu'));
+define('REQUEST_UID', rand(10, 99) . "-" . showTime('YmdHisu'));
 
 CakePlugin::load('DebugKit');
 CakePlugin::load('SmartyView');
@@ -180,8 +182,7 @@ function calculateExecutionSeconds()
     $result = 0;
     $rowCNT = sizeof($executionTimes);
 
-    if ($rowCNT > 0)
-    {
+    if ($rowCNT > 0) {
         $startDate = explode(':', $executionTimes[0]);
         $endDate = explode(':', ($rowCNT > 1 ? end($executionTimes) : showTime()));
 
@@ -200,8 +201,7 @@ function displayExecutionTime($return = false)
     global $executionTimes;
     $html = '';
     $html = "<pre>";
-    for ($loopCNT = 0; $loopCNT < sizeof($executionTimes); $loopCNT++)
-    {
+    for ($loopCNT = 0; $loopCNT < sizeof($executionTimes); $loopCNT++) {
         $html .= $executionTimes[$loopCNT] . "\n";
     }
     $html .= "total time: " . calculateExecutionSeconds() . "\n\n";

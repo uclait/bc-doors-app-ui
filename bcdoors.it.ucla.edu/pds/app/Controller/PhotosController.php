@@ -123,7 +123,7 @@ class PhotosController extends AppController
                     }
                     if ($response) {
                         $this->Debug->write("*********************");
-                        $this->Debug->write("PhotoPath is {$PhotoPath}");
+                        $this->Debug->write("PhotoPath is {$xml->PhotoPath}");
                         $this->Debug->write("*********************");
                         $photoParts = explode("/", $filePath);
                         $this->Debug->write("filePath is {$filePath}");

@@ -1,0 +1,69 @@
+<VirtualHost *:80>
+ 
+  ServerName bcdoors-test.it.ucla.edu
+  ServerAlias www.bcdoors-test.it.ucla.edu
+  RewriteEngine On
+  RewriteCond %{SERVER_PORT} 80
+  RewriteRule ^(.*)$ https://bcdoors-test.it.ucla.edu$1 [R,L]
+
+</VirtualHost>
+
+
+<VirtualHost bcdoors-test.it.ucla.edu:443>
+ 
+  ServerName bcdoors-test.it.ucla.edu
+  ServerAlias www.bcdoors-test.it.ucla.edu
+  DocumentRoot /var/www/bcdoors.it.ucla.edu
+ 
+  SSLEngine on
+  #SSLProtocol all -SSLv2
+  SSLProtocol +TLSv1.2
+  SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-GCM-SHA256:AES256+EDH:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GC$ 
+  #SSLProtocol TLSv1
+  #SSLCipherSuite ALL:!ADH:!EXPORT:!SSLv2:RC4+RSA:+HIGH:+MEDIUM:+LOW
+  #SSLCipherSuite ALL:!ADH:!EXPORT:!SSLv2:!SSLv3:RC4+RSA:+HIGH:+MEDIUM:+LOW
+  SSLCertificateFile /etc/pki/tls/certs/bcdoors-test_it_ucla_edu_cert.cer
+  SSLCertificateKeyFile /etc/pki/tls/private/test_bcdoors.it.ucla.edu.key
+  SSLCertificateChainFile /etc/pki/tls/certs/bcdoors-test_it_ucla_edu_interm.cer
+
+	<Directory "/var/www/bcdoors.it.ucla.edu">
+     	  Options Indexes FollowSymLinks Includes ExecCGI
+     	  AllowOverride All
+	  Order allow,deny
+	  Allow from all
+	</Directory>
+
+        <Directory "/var/www/bcdoors.it.ucla.edu/cfs">
+          Options Indexes FollowSymLinks Includes ExecCGI
+          AllowOverride All
+          Order deny,allow
+          Deny from all
+          #Financial Services
+          Allow from 164.67.133 164.67.203
+          Allow from 149.142.49.63 149.232.232.214 164.67.238.112 169.232.233.252 164.67.238.69
+          #Financial Services - test systems only
+          Allow from 169.232.233.19
+        </Directory>
+
+	<Directory "/var/www/bcdoors.it.ucla.edu/pds">
+        Options Indexes FollowSymLinks Includes ExecCGI
+        AllowOverride All
+        Order deny,allow
+        Deny from all
+        #IS internal and VPN DHCP subnets
+        Allow from 164.67.133 164.67.203
+        #Law
+        Allow from 149.142.112.3 149.142.44.21
+        #Transportation
+        Allow from 149.142.49.22 149.142.49.26 149.142.63.84 149.142.63.191 149.142.63.192
+        Allow from 149.142.63.193 149.142.63.210 149.142.63.122
+        #Student Affairs
+        Allow from 128.97.149.199 128.97.249.14 128.97.249.56
+        #General Services
+        Allow from 149.142.3.80 149.142.3.84 149.142.3.102 149.142.3.104 149.142.3.131
+        Allow from 149.142.20.18 149.142.21.201 149.142.20.72
+	#Mednet Care Connect
+	Allow from 149.142.200.54
+        </Directory>
+
+</VirtualHost>

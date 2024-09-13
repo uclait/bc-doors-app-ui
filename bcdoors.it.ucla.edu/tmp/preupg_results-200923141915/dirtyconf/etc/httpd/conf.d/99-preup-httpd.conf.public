@@ -1,0 +1,41 @@
+# you have to explicitly tell httpd on which port it should listen if
+# it is something different than 80 (which may be found in main httpd.conf)
+Listen 8099
+
+# Listen on all interfaces
+#
+# You may define how the application will be served. You may
+# set up a DNS record and use the name to serve
+# the application, so e.g.:
+#   preupg-ui.example.com.    CNAME     www.example.com.
+# and then you should set NameVirtualHost to:
+#   NameVirtualHost preupg-ui.example.com:8099
+#
+# for more information, see:
+#   http://httpd.apache.org/docs/2.2/vhosts/name-based.html
+NameVirtualHost *:8099
+
+# Use run/wsgi as it is allowed by selinux policy
+WSGISocketPrefix run/wsgi
+
+<VirtualHost *:8099>
+    WSGIDaemonProcess preupgrade display-name=%{GROUP}
+    WSGIProcessGroup preupgrade
+
+    WSGIScriptAlias / /usr/lib/python2.6/site-packages/preupg/ui/wsgi.py process-group=preupgrade
+
+    Alias /static/ "/var/lib/preupgrade/static/"
+    <Directory "/var/lib/preupgrade/static">
+        <IfModule !mod_authz_core.c>
+            # Apache 2.2
+            Order allow,deny
+            Allow from all
+        </IfModule>
+        <IfModule mod_authz_core.c>
+            # Apache 2.4
+            Require all granted
+        </IfModule>
+    </Directory>
+
+    ErrorLog logs/preup_ui_error_log
+</VirtualHost>

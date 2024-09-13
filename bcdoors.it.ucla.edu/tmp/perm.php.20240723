@@ -1,0 +1,4 @@
+<?php
+echo substr(sprintf('%o', fileperms('/var/www/bcdoors.it.ucla.edu/app/app/tmp/cache/persistent/')), -4); 
+?>
+

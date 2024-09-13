@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	AuthUserFile /var/www/bcdoors.it.ucla.edu/cfs/passwords/.htpasswd
+	AuthName "Title"
+	AuthType Basic
+	Require valid-user 
+
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^ index.php [L]
+</IfModule>

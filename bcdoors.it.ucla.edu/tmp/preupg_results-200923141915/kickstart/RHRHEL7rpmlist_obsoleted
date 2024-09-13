@@ -1,0 +1,7 @@
+# old-package|required-by-pkgs|obsoleted-by-pkgs|repo-id
+compat-readline5||libedit|
+grub||grub2|
+mingetty||util-linux|
+mysql-libs||mariadb-libs|
+udev||systemd|
+upstart||systemd|

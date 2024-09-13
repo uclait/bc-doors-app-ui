@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2024-07-29 15:50:20
+<?php /* Smarty version Smarty-3.1.19, created on 2024-07-29 11:30:57
          compiled from "/var/www/bcdoors.it.ucla.edu/app/app/View/Common/legend.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:51788889666a81cac6c9745-14358302%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:92082976666a7dfe17c8a78-78477377%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '51788889666a81cac6c9745-14358302',
+  'nocache_hash' => '92082976666a7dfe17c8a78-78477377',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_66a81cac6ca631_62693149',
+  'unifunc' => 'content_66a7dfe17c9b71_61612233',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_66a81cac6ca631_62693149')) {function content_66a81cac6ca631_62693149($_smarty_tpl) {?><div class="legend">
+<?php if ($_valid && !is_callable('content_66a7dfe17c9b71_61612233')) {function content_66a7dfe17c9b71_61612233($_smarty_tpl) {?><div class="legend">
     <span class="icon-assigned">&nbsp;</span>Pending assigning<br />
     <span class="icon-available">&nbsp;</span>Pending removal
 </div><?php }} ?>

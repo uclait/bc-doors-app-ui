@@ -1,0 +1,82 @@
+[app]
+base.url.app = /app
+base.url.cfs = /cfs
+base.url.pds = /pds
+log_audit_activity = 1
+
+[grouper]
+grouper.timeout = 120
+api.version = v2_1_000;
+
+api.url = https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/
+api.v4_0_9 = https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/
+api.wsdl = https://grouperws.it.ucla.edu/grouper-ws/services/GrouperService_v2_1?wsdl
+
+api.username = grouper-wsuser-bruincard
+api.password = P$2m3#aj12
+
+stem.path = training:bruincard-test
+stem.path.dc = training:bruincard-test:etc:acl
+stem.path.ag = training:bruincard-test:access-plan-group
+
+[card_holder_info_api]
+api.card_holder_info.method = get
+api.card_holder_info.url = http://localhost:8080/customer/rest/getcustomerinfo
+;api.card_holder_info.url = http://bcdoors-test.it.ucla.edu:8080/customer/rest/getcustomerinfo
+api.card_holder_info.param = uid
+;Example: uid=123456789
+
+;[card_holder_info_by_ppid_api] - DEPRECATED
+;api.card_holder_info_ppid.method = post
+;api.card_holder_info_ppid.content.type = text/plain
+;api.card_holder_info_ppid.url = http://localhost:8080/customer/rest/accessplans/getchbyppid
+;api.card_holder_info_ppid.url = http://bcdoors-test.it.ucla.edu:8080/customer/rest/accessplans/getdoorstatusbyid
+;Example: urn:mace:ucla.edu:ppid:person:08F9D667B0B3482BACACCF37001478FD,urn:mace:ucla.edu:ppid:person:8C66C9945EA34200891D83AC9A08DB72
+
+[card_holder_search_uid_api]
+api.card_holder_search_uid.method = get
+api.card_holder_search_uid.url = http://localhost:8080/customer/rest/searchcustomeruid
+;api.card_holder_search_uid.url = http://bcdoors-test.it.ucla.edu:8080/customer/rest/searchcustomeruid
+api.card_holder_search_uid.param = uid
+;Example: uid=999999999
+
+[card_holder_search_api]
+api.card_holder_search.method = get
+api.card_holder_search.url = http://localhost:8080/customer/rest/searchcustomer
+;api.card_holder_search.url = http://bcdoors-test.it.ucla.edu:8080/customer/rest/searchcustomer
+api.card_holder_search.param = search
+;Example: uid=john
+
+[card_holder_status_api]
+api.card_holder_status.method = post
+api.card_holder_status.content.type = text/plain
+api.card_holder_status.url = http://localhost:8080/customer/rest/accessplans/getdoorstatusbyid
+;api.card_holder_status.url = http://bcdoors-test.it.ucla.edu:8080/customer/rest/accessplans/getdoorstatusbyid
+;Example: 123456789/Plan_A,Plan_B,Plan_C,Plan_D
+
+[cache_data]
+cache.search.card_holder.data = 1
+cache.search.card_holder.duration = short
+cache.search.door_plan.data = 1
+cache.search.door_plan.duration = short
+cache.grouper.merchants = short
+cache.grouper.merchant.groups = short
+
+[search_max_results]
+search.card_holder.max = 250
+search.door_plan.max = 250
+search.timeout = 180
+
+[photo_download_keys]
+photo.download.default.private.key = "/var/www/bcdoors.it.ucla.edu/bcdkey.pem"
+photo.download.default.public.key = "/var/www/bcdoors.it.ucla.edu/bcdkey.pub"
+
+[photo_download]
+photo.download.mount = /mnt/bcphotos
+photo.download.login.gen-s3rv1c3 = "training:bruincard-test:etc:photo-acl:general-services" 
+photo.download.login.trans-s3rv1c3 = "training:bruincard-test:etc:photo-acl:transportation" 
+photo.download.login.law-s3rv1c3 = "training:bruincard-test:etc:photo-acl:law" 
+photo.download.login.stud-s3rv1c3 = "training:bruincard-test:etc:photo-acl:student-affair" 
+photo.download.login.mc-careconnect-s3rv1c3 = "training:bruincard-test:etc:photo-acl:careconnect" 
+photo.download.login.chr-s3rv1c3 = "training:bruincard-test:etc:photo-acl:CHR" 
+photo.download.login.oarc-s3rv1c3 = "training:bruincard-test:etc:photo-acl:OARC"

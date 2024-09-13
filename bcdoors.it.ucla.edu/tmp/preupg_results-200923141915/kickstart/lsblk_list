@@ -1,0 +1,6 @@
+sr0 11:0 1 1024M 0 rom 
+sda 8:0 0 40G 0 disk 
+sda1 8:1 0 500M 0 part /boot
+sda2 8:2 0 39.5G 0 part 
+VolGroup-lv_root 253:0 0 35.6G 0 lvm /
+VolGroup-lv_swap 253:1 0 4G 0 lvm [SWAP]
