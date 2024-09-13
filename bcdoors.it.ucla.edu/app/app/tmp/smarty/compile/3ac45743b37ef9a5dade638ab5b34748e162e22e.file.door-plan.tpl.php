@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2024-07-29 15:50:20
+<?php /* Smarty version Smarty-3.1.19, created on 2024-07-29 11:30:57
          compiled from "/var/www/bcdoors.it.ucla.edu/app/app/View/Search/door-plan.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:182360760766a81cac6ccae0-22171436%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:104414036966a7dfe17cc0e1-03637544%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '182360760766a81cac6ccae0-22171436',
+  'nocache_hash' => '104414036966a7dfe17cc0e1-03637544',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_66a81cac6e99c0_55636105',
+  'unifunc' => 'content_66a7dfe17e6698_82950778',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_66a81cac6e99c0_55636105')) {function content_66a81cac6e99c0_55636105($_smarty_tpl) {?><h1>Browse Access Plans</h1>
+<?php if ($_valid && !is_callable('content_66a7dfe17e6698_82950778')) {function content_66a7dfe17e6698_82950778($_smarty_tpl) {?><h1>Browse Access Plans</h1>
 <form action="/door_plans" role="form">
     <div class="search-containers hide">
         <!-- ************** DISPLAY ERROR ******************* -->

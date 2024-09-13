@@ -1,5 +1,6 @@
 <?php
-$conn = oci_connect("bcapp", "test##_write_bcuser", "bc-db-t01.dpns.ais.ucla.edu:1521/BCDOORST");
+$conn = oci_connect("bcapp", "bcapp_psw", "bc-db-t01.dpns.ais.ucla.edu:1521/BCDOORST");
+## $conn = oci_connect("bcapp", "test##_write_bcuser", "bc-db-t01.dpns.ais.ucla.edu:1521/BCDOORST");
 $stid = oci_parse($conn, 'select TABLE_NAME from cat');
 
 oci_execute($stid);

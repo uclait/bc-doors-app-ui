@@ -1,0 +1,16 @@
+boolean -D
+boolean -1 httpd_can_network_connect
+boolean -1 httpd_can_network_connect_db
+boolean -1 httpd_execmem
+boolean -1 httpd_use_nfs
+login -D
+login -a -s unconfined_u -r 's0-s0:c0.c1023' __default__
+login -a -s unconfined_u -r 's0-s0:c0.c1023' root
+login -a -s system_u -r 's0-s0:c0.c1023' system_u
+user -D
+port -D
+interface -D
+node -D
+fcontext -D
+fcontext -a -f 'all files' -t httpd_sys_content_t '/opt/bruincard/logs(/.*)?'
+fcontext -a -f 'all files' -t httpd_sys_content_t '/mnt/bcphotos(/.*)?'

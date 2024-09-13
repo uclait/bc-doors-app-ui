@@ -1,0 +1,8 @@
+epel=mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-6&arch=$basearch
+puppet6=baseurl=http://yum.puppetlabs.com/puppet6/el/6/$basearch
+rhel-6-server-rpms=baseurl=https://cdn.redhat.com/content/dist/rhel/server/6/$releasever/$basearch/os
+security_shibboleth=baseurl=http://download.opensuse.org/repositories/security:/shibboleth/RHEL_6/
+rhel-server-dts-6-rpms=baseurl=https://cdn.redhat.com/content/dist/rhel/server/6/$releasever/$basearch/devtoolset/os
+rhel-6-server-extras-rpms=baseurl=https://cdn.redhat.com/content/dist/rhel/server/6/6Server/$basearch/extras/os
+rhel-6-server-optional-rpms=baseurl=https://cdn.redhat.com/content/dist/rhel/server/6/$releasever/$basearch/optional/os
+rhel-server-dts2-6-rpms=baseurl=https://cdn.redhat.com/content/dist/rhel/server/6/$releasever/$basearch/devtoolset/2/os

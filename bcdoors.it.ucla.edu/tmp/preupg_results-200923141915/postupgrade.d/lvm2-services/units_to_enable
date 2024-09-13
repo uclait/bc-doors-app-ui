@@ -1,0 +1,3 @@
+dm-event.socket
+lvm2-lvmetad.socket
+lvm2-monitor.service

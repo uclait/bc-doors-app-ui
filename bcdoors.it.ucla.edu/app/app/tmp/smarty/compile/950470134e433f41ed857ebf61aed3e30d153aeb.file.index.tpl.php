@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2024-07-29 15:50:20
+<?php /* Smarty version Smarty-3.1.19, created on 2024-07-29 11:30:57
          compiled from "/var/www/bcdoors.it.ucla.edu/app/app/View/Home/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:158490246566a81cac5f8531-84535944%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:130682113466a7dfe16fa8a9-55579459%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '158490246566a81cac5f8531-84535944',
+  'nocache_hash' => '130682113466a7dfe16fa8a9-55579459',
   'function' => 
   array (
   ),
@@ -24,9 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_66a81cac6696e9_89980591',
+  'unifunc' => 'content_66a7dfe1769381_26983539',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_66a81cac6696e9_89980591')) {function content_66a81cac6696e9_89980591($_smarty_tpl) {?><?php if (!isset($_smarty_tpl->tpl_vars['tab']->value)) {?><?php $_smarty_tpl->tpl_vars['tab'] = new Smarty_variable('card', null, 0);?><?php }?>
+<?php if ($_valid && !is_callable('content_66a7dfe1769381_26983539')) {function content_66a7dfe1769381_26983539($_smarty_tpl) {?><?php if (!isset($_smarty_tpl->tpl_vars['tab']->value)) {?><?php $_smarty_tpl->tpl_vars['tab'] = new Smarty_variable('card', null, 0);?><?php }?>
 <div class="tabbable" data-ng-controller="cardHolderCtrl">
     <ul class="nav nav-tabs nav-pills right-to-left">
         <li><a href="<?php echo @constant('BASE_URL');?>
