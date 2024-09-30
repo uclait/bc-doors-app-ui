@@ -135,6 +135,11 @@ class GrouperApiComponent extends Object
         $params = array('stemName' => $name, 'stemQueryFilterType' => $filterType);
         $url = $this->url . "stems?wsLiteObjectType=WsRestFindStemsLiteRequest&" . http_build_query($params);
 
+        // if (DEBUG_WRITE) {
+        //     echo ("<script>console.log('getStems: " . json_encode($url) . "');</script>"); //browser console
+        //     $this->controller->Debug->write(json_encode($url));
+        // }
+
         //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
         $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
         if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK) {
@@ -166,6 +171,12 @@ class GrouperApiComponent extends Object
         // $params = array('stemName' => "ucla:bruincard:etc:acl", 'queryFilterType' => $filterType);
 
         $url = $this->url . "groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&" . http_build_query($params);
+
+        if (DEBUG_WRITE) {
+            echo ("<script>console.log('getGroups: " . json_encode($url) . "');</script>"); //browser console
+            $this->controller->Debug->write(json_encode($url));
+        }
+
 
         //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
         $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
@@ -209,12 +220,13 @@ class GrouperApiComponent extends Object
         $results = array();
 
         $params = array('groupName' => $name, 'memberFilter' => $filterType);
-        $url = $this->url . "groups/{$name}/members?retrieveSubjectDetail=true&wsLiteObjectType=WsRestGetMembersLiteRequest&" . http_build_query($params) . "&subjectAttributeNames=" . implode(',', $this->validAttributeNames);
+        $url = $this->url . "groups/{$name}/members?retrieveSubjectDetail=true&wsLiteObjectType=WsRestGetMembersLiteRequest&" .
+            http_build_query($params) . "&subjectAttributeNames=" . implode(',', $this->validAttributeNames);
 
-        // if (DEBUG_WRITE) {
-        //     $this->controller->Debug->write(json_encode($url));
-        // }
-        // ;
+        if (DEBUG_WRITE) {
+            echo ("<script>console.log('getMembers: " . json_encode($url) . "');</script>"); //browser console
+            $this->controller->Debug->write(json_encode($url));
+        }
 
 
         //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
@@ -311,6 +323,12 @@ class GrouperApiComponent extends Object
             $params = array('subjectId' => $ppid);
 
         $url = $this->url . "subjects?wsLiteObjectType=WsRestGetSubjectsLiteRequest&" . http_build_query($params) . "&subjectAttributeNames=" . implode(',', $this->attributeNames);
+
+        if (DEBUG_WRITE) {
+            echo ("<script>console.log('getSubjects: " . json_encode($url) . "');</script>"); //browser console
+            $this->controller->Debug->write(json_encode($url));
+        }
+
         //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
         $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
 
@@ -338,6 +356,11 @@ class GrouperApiComponent extends Object
         $params = array('subjectIdentifier' => $identifier);
         $url = $this->url . "groups/{$groupName}/members/{$identifier}?wsLiteObjectType=WsRestAddMemberLiteRequest&" . http_build_query($params);
 
+        if (DEBUG_WRITE) {
+            echo ("<script>console.log('addMembership: " . json_encode($url) . "');</script>"); //browser console
+            $this->controller->Debug->write(json_encode($url));
+        }
+
         //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
         $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
 
@@ -361,6 +384,11 @@ class GrouperApiComponent extends Object
 
         $params = array('subjectIdentifier' => $identifier);
         $url = $this->url . "groups/{$groupName}/members/{$identifier}?wsLiteObjectType=WsRestDeleteMemberLiteRequest&" . http_build_query($params);
+
+        if (DEBUG_WRITE) {
+            echo ("<script>console.log('deleteMembership: " . json_encode($url) . "');</script>"); //browser console
+            $this->controller->Debug->write(json_encode($url));
+        }
 
         //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
         $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
@@ -428,6 +456,7 @@ class GrouperApiComponent extends Object
                     )
                 )
             );
+
 
             $responseG2 = self::processWithBody('GET', $newUrlG, array("username" => $this->username, "password" => $this->password), $bodyG);
             // End Part 1
