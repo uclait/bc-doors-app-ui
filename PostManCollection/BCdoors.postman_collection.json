@@ -1,0 +1,729 @@
+{
+	"info": {
+		"_postman_id": "c49ac320-c716-4a05-9cdb-5e83e8e13eeb",
+		"name": "BCdoors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36152119"
+	},
+	"item": [
+		{
+			"name": "https://bcdoors.it.ucla.edu/app/home",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga_GCR6CCG74B=GS1.1.1717629751.1.1.1717630656.0.0.0; _ga_FJBC36VE9J=GS1.1.1718330818.1.0.1718330896.60.0.0; _ga_D20QK619Y0=GS1.1.1718330951.3.1.1718330969.0.0.0; _ga_5Y2BYGL910=GS1.1.1718330951.3.1.1718330969.42.0.0; _ga_TQ72BH8CSS=GS1.1.1718330951.3.1.1718330969.0.0.0; _ga_LD2DF0J62G=GS1.1.1718389917.2.0.1718389917.0.0.0; _ga_DSW9K7XWHK=GS1.1.1719443324.1.0.1719443329.0.0.0; webCenterSess=b8546c412883c221d0bb1c0cfacbafcc; WFC_ANALYTICS=sGuwKRRDUIsZOI+RthiTQNm9i7s7wDfLQRTQLWwm/28-; WFC_INSTANCE=2dSlJPdNoDfK7VH5db3boe/bfkFDOBEyvZqJeKJCyZ8-; WFC_USER=HSWGhN4IpiRcyP3jnXZkHgrxwoGmLb3WanSASXqKtcPlECGEExV5Pe8HKl2thWM6xujvDNXUC71Ph29OVDufYQ--; _ga_BQTJENYM2D=GS1.1.1720022838.1.1.1720022906.0.0.0; _ga_PM4Q7RCNQX=GS1.1.1720028156.1.0.1720028164.0.0.0; _ga_QJMTPZL052=GS1.1.1720804685.4.0.1720804685.0.0.0; _ga_7FL39908ES=GS1.1.1721241436.3.1.1721242739.0.0.0; _ga_64CXJKRZK7=GS1.1.1721241436.3.1.1721242739.0.0.0; _ga_XD0VGPB9E1=GS1.1.1721330379.1.0.1721330379.0.0.0; _ga=GA1.2.1924895093.1717626602; _gid=GA1.2.424549566.1721330380; _shibsession_64656661756c7468747470733a2f2f6263646f6f72732e69742e75636c612e6564752f73686962626f6c6574682d7370=_43458cf9ef2b7eed9b27f9f51d38c520; CAKEPHP=met1oq9bq6eimbfhreq21vt0s7"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bcdoors.it.ucla.edu/app/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"url": {
+					"raw": "https://bcdoors.it.ucla.edu/app/home",
+					"protocol": "https",
+					"host": [
+						"bcdoors",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"app",
+						"home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://bcdoors-test.it.ucla.edu/app/home",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga_GCR6CCG74B=GS1.1.1717629751.1.1.1717630656.0.0.0; _ga_FJBC36VE9J=GS1.1.1718330818.1.0.1718330896.60.0.0; _ga_D20QK619Y0=GS1.1.1718330951.3.1.1718330969.0.0.0; _ga_5Y2BYGL910=GS1.1.1718330951.3.1.1718330969.42.0.0; _ga_TQ72BH8CSS=GS1.1.1718330951.3.1.1718330969.0.0.0; _ga_LD2DF0J62G=GS1.1.1718389917.2.0.1718389917.0.0.0; _ga_DSW9K7XWHK=GS1.1.1719443324.1.0.1719443329.0.0.0; webCenterSess=b8546c412883c221d0bb1c0cfacbafcc; WFC_ANALYTICS=sGuwKRRDUIsZOI+RthiTQNm9i7s7wDfLQRTQLWwm/28-; WFC_INSTANCE=2dSlJPdNoDfK7VH5db3boe/bfkFDOBEyvZqJeKJCyZ8-; WFC_USER=HSWGhN4IpiRcyP3jnXZkHgrxwoGmLb3WanSASXqKtcPlECGEExV5Pe8HKl2thWM6xujvDNXUC71Ph29OVDufYQ--; _ga_BQTJENYM2D=GS1.1.1720022838.1.1.1720022906.0.0.0; _ga_PM4Q7RCNQX=GS1.1.1720028156.1.0.1720028164.0.0.0; _opensaml_req_https%3A%2F%2Fbcdoors-test.it.ucla.edu%2Fapp%2Fimg%2F24x24%2Finfo.png=_e914ee9e3f70b446cacf4bd1a1cd2ac0; _opensaml_req_https%3A%2F%2Fbcdoors-test.it.ucla.edu%2Fapp%2Fcard_holder%3Fuid%3D003266233=_3506c3b1162b7b4f1f1276462b1fe39b; _ga_QJMTPZL052=GS1.1.1720804685.4.0.1720804685.0.0.0; _ga_7FL39908ES=GS1.1.1721241436.3.1.1721242739.0.0.0; _ga_64CXJKRZK7=GS1.1.1721241436.3.1.1721242739.0.0.0; _ga_XD0VGPB9E1=GS1.1.1721330379.1.0.1721330379.0.0.0; _ga=GA1.2.1924895093.1717626602; _gid=GA1.2.424549566.1721330380; _shibsession_64656661756c7468747470733a2f2f6263646f6f72732d746573742e69742e75636c612e6564752f73686962626f6c6574682d7370=_4bcb019188b2dda7808b8c9aa95af615; CAKEPHP=jp3ii35739ulcqr823epeko010"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bcdoors-test.it.ucla.edu/app/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"url": {
+					"raw": "https://bcdoors-test.it.ucla.edu/app/home",
+					"protocol": "https",
+					"host": [
+						"bcdoors-test",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"app",
+						"home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v4_0_330/groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&stemName=ucla%3Abruincard%2Dtest%3Aetc%3Aacl&queryFilterType=FIND_BY_STEM_NAME",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jd!3k4z#cg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "grouper-wsuser-bar",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/x-json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl-php",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v4_0_330/groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&stemName=ucla%3Abruincard%3Aetc%3Aacl&queryFilterType=FIND_BY_STEM_NAME",
+					"protocol": "https",
+					"host": [
+						"grouperws",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"grouper-ws",
+						"servicesRest",
+						"v4_0_330",
+						"groups"
+					],
+					"query": [
+						{
+							"key": "wsLiteObjectType",
+							"value": "WsRestFindGroupsLiteRequest"
+						},
+						{
+							"key": "stemName",
+							"value": "ucla%3Abruincard%3Aetc%3Aacl"
+						},
+						{
+							"key": "queryFilterType",
+							"value": "FIND_BY_STEM_NAME"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/memberships",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jd!3k4z#cg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "grouper-wsuser-bar",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl-php",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"WsRestGetMembershipsRequest\":{\r\n    \"scope\":\"training:bruincard:etc:acl\",\r\n    \"wsStemLookup\":{\r\n      \"stemName\":\"training:bruincard:etc:acl\"\r\n    },\r\n    \"stemScope\":\"ALL_IN_SUBTREE\",\r\n    \"enabled\":\"T\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/memberships",
+					"protocol": "https",
+					"host": [
+						"grouperws",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"grouper-ws",
+						"servicesRest",
+						"4.9.0",
+						"memberships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST_OLD_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&stemName=training%3Abruincard-test%3Aetc%3Aacl",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jd!3k4z#cg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "grouper-wsuser-bar",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/x-json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl-php",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&stemName=training%3Abruincard-test%3Aetc%3Aacl&queryFilterType=FIND_BY_STEM_NAME",
+					"protocol": "https",
+					"host": [
+						"grouperws",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"grouper-ws",
+						"servicesRest",
+						"v2_1_5",
+						"groups"
+					],
+					"query": [
+						{
+							"key": "wsLiteObjectType",
+							"value": "WsRestFindGroupsLiteRequest"
+						},
+						{
+							"key": "stemName",
+							"value": "training%3Abruincard-test%3Aetc%3Aacl"
+						},
+						{
+							"key": "queryFilterType",
+							"value": "FIND_BY_STEM_NAME"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST Memberships https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/memberships",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jd!3k4z#cg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "grouper-wsuser-bar",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl-php",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"WsRestGetMembershipsRequest\":{\r\n    \"sourceIds\":[\r\n        \"ldap\"\r\n    ],\r\n    \"includeSubjectDetail\":\"T\",\r\n    \"subjectAttributeNames\":[\r\n      \"uclauniversityid\",\r\n      \"edupersonprincipalname\"\r\n    ],\r\n    \"scope\":\"training:bruincard-test:etc:acl\",\r\n    \"wsStemLookup\":{\r\n      \"stemName\":\"training:bruincard-test:etc:acl\"\r\n    },\r\n    \"stemScope\":\"ALL_IN_SUBTREE\",\r\n    \"enabled\":\"T\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/memberships",
+					"protocol": "https",
+					"host": [
+						"grouperws",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"grouper-ws",
+						"servicesRest",
+						"4.9.0",
+						"memberships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST Groups https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/Groups",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jd!3k4z#cg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "grouper-wsuser-bar",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl-php",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"WsRestFindGroupsRequest\":{\r\n    \"wsQueryFilter\": {\r\n            \"typeOfGroups\":\"group\",\r\n    \"queryFilterType\":\"FIND_BY_STEM_NAME\",\r\n        \"stemName\":\"training:bruincard-test:etc:acl\",\r\n        \"stemNameScope\":\"ALL_IN_SUBTREE\",\r\n        \"enabled\":\"T\"\r\n    }\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/groups",
+					"protocol": "https",
+					"host": [
+						"grouperws",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"grouper-ws",
+						"servicesRest",
+						"4.9.0",
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PROD https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/memberships",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jd!3k4z#cg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "grouper-wsuser-bar",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl-php",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"WsRestGetMembershipsRequest\":{\r\n    \"scope\":\"ucla:bruincard:etc:acl\",\r\n    \"wsStemLookup\":{\r\n      \"stemName\":\"ucla:bruincard:etc:acl\"\r\n    },\r\n    \"stemScope\":\"ALL_IN_SUBTREE\",\r\n    \"enabled\":\"T\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/memberships",
+					"protocol": "https",
+					"host": [
+						"grouperws",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"grouper-ws",
+						"servicesRest",
+						"4.9.0",
+						"memberships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://bcdoors-dev.it.ucla.edu/customer/rest/getcardholderinfo?uid=003266233",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "kVG8mNXLmvkP",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cfss3rv1c3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://bcdoors-dev.it.ucla.edu/customer/rest/getcardholderinfo?uid=003266233",
+					"protocol": "http",
+					"host": [
+						"bcdoors-dev",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"customer",
+						"rest",
+						"getcardholderinfo"
+					],
+					"query": [
+						{
+							"key": "uid",
+							"value": "003266233"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://bcdoors-dev.it.ucla.edu:8080/customer/rest/getcardholderinfo?uid=003266233",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "kVG8mNXLmvkP",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cfss3rv1c3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://bcdoors-dev.it.ucla.edu:8080/customer/rest/getcardholderinfo?uid=003266233",
+					"protocol": "http",
+					"host": [
+						"bcdoors-dev",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"rest",
+						"getcardholderinfo"
+					],
+					"query": [
+						{
+							"key": "uid",
+							"value": "003266233"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
