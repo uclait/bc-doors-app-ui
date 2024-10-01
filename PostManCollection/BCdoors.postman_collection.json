@@ -806,6 +806,81 @@
 			"response": []
 		},
 		{
+			"name": "NEW_GETSTEMS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/Groups",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jd!3k4z#cg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "grouper-wsuser-bar",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl-php",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"WsRestFindStemsRequest\":{\r\n    \"wsStemQueryFilter\": {\r\n        \"stemQueryFilterType\": \"FIND_BY_STEM_NAME_APPROXIMATE\",\r\n        \"stemName\": \"training:bruincard-test:access-plan-group\"\r\n    }\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/stems",
+					"protocol": "https",
+					"host": [
+						"grouperws",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"grouper-ws",
+						"servicesRest",
+						"4.9.0",
+						"stems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "OLD_GETGROUPS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&stemName=training%3Abruincard-test%3Aetc%3Aacl",
 			"request": {
 				"auth": {
@@ -880,6 +955,81 @@
 							"key": "queryFilterType",
 							"value": "FIND_BY_STEM_NAME"
 						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NEW_GETGROUPS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/Groups",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jd!3k4z#cg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "grouper-wsuser-bar",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl-php",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"WsRestFindGroupsRequest\":{\r\n    \"wsQueryFilter\": {\r\n        \"queryFilterType\": \"FIND_BY_STEM_NAME\",\r\n        \"stemName\": \"training:bruincard-test:access-plan-group:anderson-school-of-management\"\r\n    }\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/groups",
+					"protocol": "https",
+					"host": [
+						"grouperws",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"grouper-ws",
+						"servicesRest",
+						"4.9.0",
+						"groups"
 					]
 				}
 			},
@@ -976,6 +1126,81 @@
 			"response": []
 		},
 		{
+			"name": "NEW_GETMEMBERS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/Groups",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jd!3k4z#cg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "grouper-wsuser-bar",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl-php",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"WsRestGetMembersRequest\": {\r\n    \"wsGroupLookups\": [\r\n      {\r\n        \"groupName\": \"training:bruincard-test:access-plan-group:it-services:itsg-11th-floor-security-lab\"\r\n      }\r\n    ],\r\n    \"includeSubjectDetail\": \"T\",\r\n    \"subjectAttributeNames\": [\"uclauniversityid\",\"uclalogonid\",\"edupersonprincipalname\"]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/groups",
+					"protocol": "https",
+					"host": [
+						"grouperws",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"grouper-ws",
+						"servicesRest",
+						"4.9.0",
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "OLD_GETSUBJECTS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&stemName=training%3Abruincard-test%3Aetc%3Aacl",
 			"request": {
 				"auth": {
@@ -1050,6 +1275,81 @@
 							"key": "searchString",
 							"value": "003266233"
 						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NEW_GETSUBJECTS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/Groups",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jd!3k4z#cg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "grouper-wsuser-bar",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl-php",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"WsRestGetSubjectsRequest\": {\r\n    \"includeGroupDetail\": \"T\",\r\n    \"subjectAttributeNames\": [\"uclauniversityid\",\"uclalogonid\",\"edupersonprincipalname\"],\r\n    \"searchString\": \"003266233\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/subjects",
+					"protocol": "https",
+					"host": [
+						"grouperws",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"grouper-ws",
+						"servicesRest",
+						"4.9.0",
+						"subjects"
 					]
 				}
 			},

@@ -158,6 +158,19 @@ class GrouperApiComponent extends Object
             }
         }
 
+        //2024.09.30 New GetStem Call Needs Implementation
+        //URL: https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/stems
+        // JSONBODY:
+        // {
+        //     "WsRestFindStemsRequest":{
+        //       "wsStemQueryFilter": {
+        //           "stemQueryFilterType": "FIND_BY_STEM_NAME_APPROXIMATE",
+        //           "stemName": "training:bruincard-test:access-plan-group"
+        //       }
+        //     }
+        //   }
+
+
         return $results;
     }
     public function getGroups($name = null, $filterType = 'FIND_BY_STEM_NAME')
@@ -182,16 +195,6 @@ class GrouperApiComponent extends Object
         $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
 
 
-        // Legacy Merchant Logging
-        // if (DEBUG_WRITE) {
-        //     $this->controller->Debug->write("GetGroups1");
-        // }
-        // ;
-        // if (DEBUG_WRITE) {
-        //     $this->controller->Debug->write(json_encode(json_encode($url)));
-        // }
-        // ;
-
         if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK) {
             //$response = json_decode($this->controller->Http->content);
 
@@ -209,8 +212,18 @@ class GrouperApiComponent extends Object
                     }
                 }
             }
-
         }
+
+        //2024.09.30 New GetGroups Call
+        //URL: https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/groups
+        //{
+        //   "WsRestFindGroupsRequest":{
+        //     "wsQueryFilter": {
+        //         "queryFilterType": "FIND_BY_STEM_NAME",
+        //         "stemName": "training:bruincard-test:access-plan-group:anderson-school-of-management"
+        //     }
+        //   }
+        // }
 
         return $results;
     }
@@ -228,19 +241,8 @@ class GrouperApiComponent extends Object
             $this->controller->Debug->write(json_encode($url));
         }
 
-
         //$response = $this->controller->Http->get($url, array("username" => $this->username, "password" => $this->password));
         $response = self::process('GET', $url, array("username" => $this->username, "password" => $this->password));
-
-        // Legacy Merchant Logging
-        // if (DEBUG_WRITE) {
-        //     $this->controller->Debug->write("GetMembers" . $name);
-        // }
-        // ;
-        // if (DEBUG_WRITE) {
-        //     $this->controller->Debug->write(json_encode(json_encode($response)));
-        // }
-        // ;
 
         if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK) {
             if (is_object($response)) {
@@ -303,14 +305,27 @@ class GrouperApiComponent extends Object
                         //         $results[] = (array)$response[$loopCNT];
                         //     }   
                         // }
-
-
                     }
                 }
             }
         }
 
-        //error_log('$results:\n' . print_r($results));
+
+        //2024.09.30 New GetMembers Call
+        //URL: https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/groups
+        //JSON: 
+        //{
+        //   "WsRestGetMembersRequest": {
+        //     "wsGroupLookups": [
+        //       {
+        //         "groupName": "training:bruincard-test:access-plan-group:it-services:itsg-11th-floor-security-lab"
+        //       }
+        //     ],
+        //     "includeSubjectDetail": "T",
+        //     "subjectAttributeNames": ["uclauniversityid","uclalogonid","edupersonprincipalname"]
+        //   }
+        // }
+
         return $results;
     }
     public function getSubjects($ppid, $search = null)
@@ -346,6 +361,17 @@ class GrouperApiComponent extends Object
                 }
             }
         }
+
+        //2024.09.30 New GetSubjectsCall
+        //URL: https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/subjects
+        //JSON:
+        //{
+        //   "WsRestGetSubjectsRequest": {
+        //     "includeGroupDetail": "T",
+        //     "subjectAttributeNames": ["uclauniversityid","uclalogonid","edupersonprincipalname"],
+        //     "searchString": "003266233"
+        //   }
+        //}
 
         return $results;
     }
