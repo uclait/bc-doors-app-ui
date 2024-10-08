@@ -698,7 +698,7 @@
 						}
 					]
 				},
-				"method": "POST",
+				"method": "GET",
 				"header": [],
 				"url": {
 					"raw": "http://bcdoors-dev.it.ucla.edu:8080/customer/rest/getcardholderinfo?uid=003266233",
@@ -807,6 +807,9 @@
 		},
 		{
 			"name": "NEW_GETSTEMS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/Groups",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -823,7 +826,7 @@
 						}
 					]
 				},
-				"method": "POST",
+				"method": "GET",
 				"header": [
 					{
 						"key": "Content-Type",
@@ -962,6 +965,9 @@
 		},
 		{
 			"name": "NEW_GETGROUPS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/Groups",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -978,7 +984,7 @@
 						}
 					]
 				},
-				"method": "POST",
+				"method": "GET",
 				"header": [
 					{
 						"key": "Content-Type",
@@ -1127,6 +1133,9 @@
 		},
 		{
 			"name": "NEW_GETMEMBERS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/Groups",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -1143,7 +1152,7 @@
 						}
 					]
 				},
-				"method": "POST",
+				"method": "GET",
 				"header": [
 					{
 						"key": "Content-Type",
@@ -1282,6 +1291,9 @@
 		},
 		{
 			"name": "NEW_GETSUBJECTS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/Groups",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -1298,7 +1310,7 @@
 						}
 					]
 				},
-				"method": "POST",
+				"method": "GET",
 				"header": [
 					{
 						"key": "Content-Type",
@@ -1350,6 +1362,320 @@
 						"servicesRest",
 						"4.9.0",
 						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OLD_ADDMEMBER_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&stemName=training%3Abruincard-test%3Aetc%3Aacl",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jd!3k4z#cg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "grouper-wsuser-bar",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/x-json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl-php",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/groups/training:bruincard-test:access-plan-group:it-services:itsg-csb1-24x7/members/003266233?wsLiteObjectType=WsRestAddMemberLiteRequest&subjectIdentifier=003266233",
+					"protocol": "https",
+					"host": [
+						"grouperws",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"grouper-ws",
+						"servicesRest",
+						"v2_1_5",
+						"groups",
+						"training:bruincard-test:access-plan-group:it-services:itsg-csb1-24x7",
+						"members",
+						"003266233"
+					],
+					"query": [
+						{
+							"key": "wsLiteObjectType",
+							"value": "WsRestAddMemberLiteRequest"
+						},
+						{
+							"key": "subjectIdentifier",
+							"value": "003266233"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NEW_ADDMEMBER_https://grouperws.it.ucla.edu/grouper-ws​/servicesRest​/4.9.0​/groups",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jd!3k4z#cg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "grouper-wsuser-bar",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/x-json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl-php",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"WsRestAddMemberRequest\": {\r\n    \"wsGroupLookup\": {\r\n      \"groupName\": \"training:bruincard-test:access-plan-group:it-services:itsg-csb1-24x7\"\r\n    },\r\n    \"subjectLookups\": [\r\n      {\r\n        \"subjectIdentifier\": \"003266233\",\r\n        \"subjectSourceId\": \"ldap\"\r\n      }\r\n    ],\r\n    \"includeGroupDetail\": \"T\",\r\n    \"includeSubjectDetail\": \"T\",\r\n    \"addExternalSubjectIfNotFound\": \"F\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/groups",
+					"protocol": "https",
+					"host": [
+						"grouperws",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"grouper-ws",
+						"servicesRest",
+						"4.9.0",
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OLD_DELETEMEMBER_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&stemName=training%3Abruincard-test%3Aetc%3Aacl",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jd!3k4z#cg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "grouper-wsuser-bar",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/x-json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl-php",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/groups/training:bruincard-test:access-plan-group:it-services:itsg-csb1-24x7/members/003266233?wsLiteObjectType=WsRestDeleteMemberLiteRequest&subjectIdentifier=003266233",
+					"protocol": "https",
+					"host": [
+						"grouperws",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"grouper-ws",
+						"servicesRest",
+						"v2_1_5",
+						"groups",
+						"training:bruincard-test:access-plan-group:it-services:itsg-csb1-24x7",
+						"members",
+						"003266233"
+					],
+					"query": [
+						{
+							"key": "wsLiteObjectType",
+							"value": "WsRestDeleteMemberLiteRequest"
+						},
+						{
+							"key": "subjectIdentifier",
+							"value": "003266233"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NEW_DELETEMEMBER_https://grouperws.it.ucla.edu/grouper-ws​/servicesRest​/4.9.0​/groups",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "jd!3k4z#cg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "grouper-wsuser-bar",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/x-json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl-php",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"WsRestDeleteMemberRequest\": {\r\n    \"wsGroupLookup\": {\r\n      \"groupName\": \"training:bruincard-test:access-plan-group:it-services:itsg-csb1-24x7\"\r\n    },\r\n    \"subjectLookups\": [\r\n      {\r\n        \"subjectIdentifier\": \"003266233\",\r\n        \"subjectSourceId\": \"ldap\"\r\n      }\r\n    ],\r\n    \"includeGroupDetail\": \"T\",\r\n    \"includeSubjectDetail\": \"T\",\r\n    \"addExternalSubjectIfNotFound\": \"F\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/groups",
+					"protocol": "https",
+					"host": [
+						"grouperws",
+						"it",
+						"ucla",
+						"edu"
+					],
+					"path": [
+						"grouper-ws",
+						"servicesRest",
+						"4.9.0",
+						"groups"
 					]
 				}
 			},
