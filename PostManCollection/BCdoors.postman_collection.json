@@ -806,7 +806,7 @@
 			"response": []
 		},
 		{
-			"name": "NEW_GETSTEMS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/Groups",
+			"name": "NEW_GETSTEMS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/stems",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -857,7 +857,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"WsRestFindStemsRequest\":{\r\n    \"wsStemQueryFilter\": {\r\n        \"stemQueryFilterType\": \"FIND_BY_STEM_NAME_APPROXIMATE\",\r\n        \"stemName\": \"training:bruincard-test:access-plan-group\"\r\n    }\r\n  }\r\n}",
+					"raw": "\r\n{\"WsRestFindStemsRequest\":{\r\n    \"wsStemQueryFilter\":{\r\n        \"stemQueryFilterType\":\"FIND_BY_STEM_NAME_APPROXIMATE\",\r\n        \"stemName\":\"training:bruincard-test:access-plan-group\"\r\n    }\r\n  }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1210,7 +1210,7 @@
 			"response": []
 		},
 		{
-			"name": "OLD_GETSUBJECTS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&stemName=training%3Abruincard-test%3Aetc%3Aacl",
+			"name": "OLD_GETSUBJECTS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/subjects?wsLiteObjectType=WsRestGetSubjectsLiteRequest&searchString=003266233&subjectAttributeNames=uclauniversityid,uclalogonid,edupersonprincipalname",
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -1257,7 +1257,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/subjects?subjectAttributeNames=uclauniversityid,uclalogonid,edupersonprincipalname&wsLiteObjectType=WsRestGetSubjectsLiteRequest&searchString=003266233",
+					"raw": "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/subjects?wsLiteObjectType=WsRestGetSubjectsLiteRequest&searchString=003266233&subjectAttributeNames=uclauniversityid,uclalogonid,edupersonprincipalname",
 					"protocol": "https",
 					"host": [
 						"grouperws",
@@ -1273,16 +1273,21 @@
 					],
 					"query": [
 						{
-							"key": "subjectAttributeNames",
-							"value": "uclauniversityid,uclalogonid,edupersonprincipalname"
-						},
-						{
 							"key": "wsLiteObjectType",
 							"value": "WsRestGetSubjectsLiteRequest"
 						},
 						{
 							"key": "searchString",
 							"value": "003266233"
+						},
+						{
+							"key": "subjectAttributeNames",
+							"value": "uclauniversityid,uclalogonid,edupersonprincipalname"
+						},
+						{
+							"key": "subjectId",
+							"value": "003266233",
+							"disabled": true
 						}
 					]
 				}
@@ -1290,7 +1295,7 @@
 			"response": []
 		},
 		{
-			"name": "NEW_GETSUBJECTS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/Groups",
+			"name": "NEW_GETSUBJECTS_https://grouperws.it.ucla.edu/grouper-ws/servicesRest/4.9.0/subjects",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1341,7 +1346,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"WsRestGetSubjectsRequest\": {\r\n    \"includeGroupDetail\": \"T\",\r\n    \"subjectAttributeNames\": [\"uclauniversityid\",\"uclalogonid\",\"edupersonprincipalname\"],\r\n    \"searchString\": \"003266233\"\r\n  }\r\n}",
+					"raw": "// {\r\n//   \"WsRestGetSubjectsRequest\": {\r\n//     \"includeGroupDetail\": \"T\",\r\n//     \"subjectAttributeNames\": [\"uclauniversityid\",\"uclalogonid\",\"edupersonprincipalname\"],\r\n//     \"searchString\": \"003266233\"\r\n//   }\r\n// }\r\n\r\n {\"WsRestGetSubjectsRequest\":{\"includeSubjectDetail\":\"T\",\"subjectAttributeNames\":[\"uclauniversityid\",\"uclalogonid\",\"edupersonprincipalname\"],\"searchString\":\"003266233\"}}",
 					"options": {
 						"raw": {
 							"language": "json"
