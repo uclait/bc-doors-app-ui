@@ -3,7 +3,7 @@ class GeneralController extends AppController
 {
     var $name = 'General';
     var $uses = array('AuditTest', 'AuditUser', 'CardHolder', 'Definition', 'PendingAccessPlan', 'Users');
-    var $components = array('Cookie', 'File', 'Http', 'GrouperApi', 'GrouperSoapApi');
+    var $components = array('Cookie', 'File', 'Http', 'GrouperApi');
 
     public function getGrouperMembership()
     {
@@ -17,22 +17,22 @@ class GeneralController extends AppController
         switch ($use)
         {
             case 1:
-                $this->GrouperSoapApi->url = "http://iam-as-d01.dev.it.ucla.edu/grouper-ws/services/GrouperService_v2_1?wsdl";
-                $this->GrouperSoapApi->username = "grouper-wsuser-bruincard";
-                $this->GrouperSoapApi->password = "b*r13E#sk3";
+                $this->GrouperApi->url = "http://iam-as-d01.dev.it.ucla.edu/grouper-ws/services/GrouperService_v2_1?wsdl";
+                $this->GrouperApi->username = "grouper-wsuser-bruincard";
+                $this->GrouperApi->password = "b*r13E#sk3";
             break;
             case 2:
-                $this->GrouperSoapApi->url = "https://grouperws.it.ucla.edu/grouper-ws/services/GrouperService_v2_1?wsdl";
-                $this->GrouperSoapApi->username = "grouper-wsuser-bruincard";
-                $this->GrouperSoapApi->password = "P$2m3#aj12";
+                $this->GrouperApi->url = "https://grouperws.it.ucla.edu/grouper-ws/services/GrouperService_v2_1?wsdl";
+                $this->GrouperApi->username = "grouper-wsuser-bruincard";
+                $this->GrouperApi->password = "P$2m3#aj12";
             break;
             case 3:
-                $this->GrouperSoapApi->url = "https://grouperws.it.ucla.edu/grouper-ws/services/GrouperService_v2_1?wsdl";
-                $this->GrouperSoapApi->username = "grouper-wsuser-bar";
-                $this->GrouperSoapApi->password = "jd!3k4z#cg";
+                $this->GrouperApi->url = "https://grouperws.it.ucla.edu/grouper-ws/services/GrouperService_v2_1?wsdl";
+                $this->GrouperApi->username = "grouper-wsuser-bar";
+                $this->GrouperApi->password = "jd!3k4z#cg";
             break;
         }
-        $data = $this->GrouperSoapApi->getMemberships($uid);
+        $data = $this->GrouperApi->getMemberships($uid);
         echo "<pre>";
         print_r($data);
         echo "</pre>";

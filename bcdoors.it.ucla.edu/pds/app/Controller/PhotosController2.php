@@ -7,7 +7,7 @@ class PhotosController extends AppController
 {
     var $name = 'Photos';
     var $uses = array('Photo');
-    var $components = array('Date', 'File', 'GrouperSoapApi', 'Validate');
+    var $components = array('Date', 'File', 'GrouperApi', 'Validate');
     
     public function index()
     {
@@ -61,7 +61,7 @@ $this->Debug->write("Testing ******* Photo Download", $userId, null, http_build_
             {
                 if (DEBUG_WRITE) {$this->Debug->write("Start Get Membership");};
                 $doorPlanId = $appValues['photo']['download']['login'][$userId];
-                $data = $this->GrouperSoapApi->getMemberships($uid);
+                $data = $this->GrouperApi->getMemberships($uid);
                 $data = $this->Array->findByKey($data, "name", $doorPlanId);
                 if (DEBUG_WRITE) {$this->Debug->write("End Get Membership");};
 

@@ -3,7 +3,7 @@ class GrouperStemsController extends AppController
 {
     var $name = 'GrouperStems';
     var $uses = array();
-    var $components = array('Array', 'GrouperApi', 'GrouperSoapApi', 'Http', 'Validate');
+    var $components = array('Array', 'GrouperApi', 'Http', 'Validate');
     
     public function index()
     {

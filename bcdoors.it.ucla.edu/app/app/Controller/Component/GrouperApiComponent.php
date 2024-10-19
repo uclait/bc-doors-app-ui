@@ -2,7 +2,6 @@
 class GrouperApiComponent extends Object
 {
     public $url = null;
-    public $grouper_v4_0_9_url = null;
     public $username = null;
     public $password = null;
     public $controller = null;
@@ -14,7 +13,6 @@ class GrouperApiComponent extends Object
         $values = Cache::read(CACHE_NAME_APPLICATION);
 
         $this->url = $values['api']['url'];
-        $this->grouper_v4_0_9_url = $values['api']['v4_0_9'];
         $this->username = $values['api']['username'];
         $this->password = $values['api']['password'];
     }
@@ -85,49 +83,50 @@ class GrouperApiComponent extends Object
         return $response;
     }
 
-    public function process($type, $url, $credentials, $body = false)
-    {
-        $port = $this->controller->String->beginsWith($url, 'https') ? 443 : 80;
-        $opts = array(
-            CURLOPT_CONNECTTIMEOUT => 30,
-            CURLOPT_TIMEOUT => 60,
-            CURLOPT_FRESH_CONNECT => 1,
-            CURLOPT_PORT => $port,
-            CURLOPT_USERAGENT => 'curl-php',
-            CURLOPT_FOLLOWLOCATION => false,
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_CUSTOMREQUEST => $type,
-            CURLOPT_HTTPHEADER => array('Content-Type: text/x-json; charset=UTF-8;', 'Accept: application/json')
-        );
+    // public function process($type, $url, $credentials, $body = false)
+    // {
+    //     $port = $this->controller->String->beginsWith($url, 'https') ? 443 : 80;
+    //     $opts = array(
+    //         CURLOPT_CONNECTTIMEOUT => 30,
+    //         CURLOPT_TIMEOUT => 60,
+    //         CURLOPT_FRESH_CONNECT => 1,
+    //         CURLOPT_PORT => $port,
+    //         CURLOPT_USERAGENT => 'curl-php',
+    //         CURLOPT_FOLLOWLOCATION => false,
+    //         CURLOPT_RETURNTRANSFER => true,
+    //         CURLOPT_CUSTOMREQUEST => $type,
+    //         CURLOPT_HTTPHEADER => array('Content-Type: text/x-json; charset=UTF-8;', 'Accept: application/json')
+    //     );
 
-        $opts[CURLOPT_SSL_VERIFYHOST] = false;
-        $opts[CURLOPT_SSL_VERIFYPEER] = false;
+    //     $opts[CURLOPT_SSL_VERIFYHOST] = false;
+    //     $opts[CURLOPT_SSL_VERIFYPEER] = false;
 
-        $opts[CURLOPT_USERPWD] = "{$credentials['username']}:{$credentials['password']}";
-        //$opts[CURLOPT_SSL_CIPHER_LIST] = 'SSLv3';
-        //$opts[CURLOPT_SSL_CIPHER_LIST] = 'TLSv1';
+    //     $opts[CURLOPT_USERPWD] = "{$credentials['username']}:{$credentials['password']}";
+    //     //$opts[CURLOPT_SSL_CIPHER_LIST] = 'SSLv3';
+    //     //$opts[CURLOPT_SSL_CIPHER_LIST] = 'TLSv1';
 
-        $opts[CURLOPT_SSLVERSION] = 0;
+    //     $opts[CURLOPT_SSLVERSION] = 0;
 
-        $opts[CURLOPT_URL] = $url;
+    //     $opts[CURLOPT_URL] = $url;
 
-        $ch = curl_init();
-        curl_setopt_array($ch, $opts);
+    //     $ch = curl_init();
+    //     curl_setopt_array($ch, $opts);
 
-        $response = curl_exec($ch);
+    //     $response = curl_exec($ch);
 
-        $headers = curl_getinfo($ch);
+    //     $headers = curl_getinfo($ch);
 
-        $errorNo = curl_errno($ch);
-        $error = curl_error($ch);
+    //     $errorNo = curl_errno($ch);
+    //     $error = curl_error($ch);
 
-        $this->controller->Http->status = isset($headers['http_code']) ? $headers['http_code'] : $this->controller->Http->STATUS_CODE_BAD_REQUEST;
-        if (empty($error)) {
-            $response = json_decode($response);
-        }
+    //     $this->controller->Http->status = isset($headers['http_code']) ? $headers['http_code'] : $this->controller->Http->STATUS_CODE_BAD_REQUEST;
+    //     if (empty($error)) {
+    //         $response = json_decode($response);
+    //     }
 
-        return $response;
-    }
+    //     return $response;
+    // }
+
     public function getStems($name = null, $filterType = 'FIND_BY_STEM_NAME_APPROXIMATE')
     {
         $results = array();
@@ -156,7 +155,7 @@ class GrouperApiComponent extends Object
         // }
 
         // 20241016 New Grouper GetStems Call
-        $newUrlG = $this->grouper_v4_0_9_url . 'stems';
+        $newUrlG = $this->url . 'stems';
         $appValues = Cache::read(CACHE_NAME_APPLICATION);
 
             $bodyG = array(
@@ -176,10 +175,10 @@ class GrouperApiComponent extends Object
             //$response = json_decode($this->controller->Http->content);
 
             // if (DEBUG_WRITE) {
-            //     echo ("<script>console.log('getStems: " . json_encode($responseG2->WsFindStemsResults) . "');</script>"); //browser console
-            //     echo ("<script>console.log('getStems: " . json_encode($newUrlG) . "');</script>"); //browser console
-            //     echo ("<script>console.log('getStems: " . json_encode($bodyG) . "');</script>"); //browser console
-            //     $this->controller->Debug->write(json_encode($newUrlG));
+            //     // echo ("<script>console.log('getStems: " . json_encode($responseG2->WsFindStemsResults) . "');</script>"); //browser console
+            //     echo ("<script>console.log('getStems: " . json_encode($this->values) . "');</script>"); //browser console
+            //     // echo ("<script>console.log('getStems: " . json_encode($bodyG) . "');</script>"); //browser console
+            //     // $this->controller->Debug->write(json_encode($newUrlG));
             //  }    
 
             if (isset($responseG2->WsFindStemsResults) && $responseG2->WsFindStemsResults) {
@@ -234,7 +233,7 @@ class GrouperApiComponent extends Object
 
 
         // 20241016 New Grouper Groups Call for Grouper v4.0.9
-        $newUrlG = $this->grouper_v4_0_9_url . 'groups';
+        $newUrlG = $this->url . 'groups';
         $appValues = Cache::read(CACHE_NAME_APPLICATION);
 
             $bodyG = array(
@@ -325,8 +324,7 @@ class GrouperApiComponent extends Object
      
 
         // 20241017 New Grouper v4.0.9 getMembers rest Update
-        $resultsG = array();
-        $newUrlG = $this->grouper_v4_0_9_url . 'groups';
+        $newUrlG = $this->url . 'groups';
         $appValues = Cache::read(CACHE_NAME_APPLICATION);
 
         $wsGroupLookups = array("groupName" => $name); // Work around on [] array formatting
@@ -383,7 +381,7 @@ class GrouperApiComponent extends Object
         // if (DEBUG_WRITE) {
         //     // echo ("<script>console.log('getNEWMembers: " . json_encode($newUrlG) . "');</script>"); //browser console
         //     // echo ("<script>console.log('getNEWMembers: " . json_encode($bodyG) . "');</script>"); //browser console
-        //     echo ("<script>console.log('getNEWMembersResultsG: " . json_encode($resultsG) . "');</script>"); //browser console
+        //     echo ("<script>console.log('getNEWMembersResults: " . json_encode($results) . "');</script>"); //browser console
         //     $this->controller->Debug->write(json_encode($newUrlG));
         // }
 
@@ -392,7 +390,6 @@ class GrouperApiComponent extends Object
         //error_log('$results:\n' . print_r($results));
         return $results;
     }
-
 
     public function getSubjects($ppid, $search = null)
     {
@@ -430,8 +427,7 @@ class GrouperApiComponent extends Object
 
 
         // 20241017 New Grouper API v4.0.9 Restful Call for GetSubjects
-        $resultsG = array();
-        $newUrlG = $this->grouper_v4_0_9_url . 'subjects';
+        $newUrlG = $this->url . 'subjects';
         $appValues = Cache::read(CACHE_NAME_APPLICATION);
 
         $bodyG = array();
@@ -484,7 +480,7 @@ class GrouperApiComponent extends Object
         // if (DEBUG_WRITE) {
         //     echo ("<script>console.log('getNewSubjects: " . json_encode($newUrlG) . "');</script>"); //browser console
         //     echo ("<script>console.log('getNewSubjects: " . json_encode($bodyG) . "');</script>"); //browser console
-        //     echo ("<script>console.log('getNewSubjects: " . json_encode($resultsG) . "');</script>"); //browser console
+        //     echo ("<script>console.log('getNewSubjects: " . json_encode($results) . "');</script>"); //browser console
         //     $this->controller->Debug->write(json_encode($newUrlG));
         // }
 
@@ -493,6 +489,82 @@ class GrouperApiComponent extends Object
         //Temporary to test the addMemberhsip and deleteMembership ability (just refresh the page)
         // self::addMembership("training:bruincard-test:access-plan-group:it-services:itsg-csb1-24x7", "003266233");
         // self::deleteMembership("training:bruincard-test:access-plan-group:it-services:itsg-csb1-24x7", "003266233");
+
+        return $results;
+    }
+
+    public function getMemberships($identifier)
+    {
+        $results = array();
+
+        // 20241017 New Grouper API v4.0.9 Restful Call for add member
+        $newUrlG = $this->url . 'memberships';
+        $appValues = Cache::read(CACHE_NAME_APPLICATION);
+
+        $lookups = array(
+            "subjectIdentifier" => $identifier
+        );
+        $bodyG = array(
+                'WsRestGetMembershipsRequest' => array(
+                    "wsSubjectLookups" => array(
+                        $lookups
+                    ),
+                    "includeGroupDetail" => "T",
+                    "includeSubjectDetail" => "T"
+                )
+            );
+
+        $responseG2 = self::processWithBody('GET', $newUrlG, array("username" => $this->username, "password" => $this->password), $bodyG);
+
+        // if (DEBUG_WRITE) {
+        //     echo ("<script>console.log('getNewMembership: " . json_encode($newUrlG) . "');</script>"); //browser console
+        //     echo ("<script>console.log('getNewMembership: " . json_encode($bodyG) . "');</script>"); //browser console
+        //     // echo ("<script>console.log('getNewMembership: " . json_encode($responseG2) . "');</script>"); //browser console
+        //     $this->controller->Debug->write(json_encode($newUrlG));
+        // }
+
+        if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK) {
+            //$response = json_decode($this->controller->Http->content);
+            if ($responseG2->WsGetMembershipsResults) {
+                if ($responseG2->WsGetMembershipsResults->resultMetadata->success == 'T') {
+                    $accessGroup = $appValues['stem']['path']['ag'];
+                    $response = $responseG2->WsGetMembershipsResults->wsGroups;
+
+                    $groupCNT = sizeof($response);
+                    for ($loopCNT = 0; $loopCNT < $groupCNT; $loopCNT++)
+                    {
+                        if ($this->controller->String->beginsWith($response[$loopCNT]->name, $accessGroup))
+                        {
+                            $data = array('description' => $response[$loopCNT]->description,
+                                            'displayExtension' => $response[$loopCNT]->displayExtension,
+                                            'displayName' => $response[$loopCNT]->displayName,
+                                            'extension' => $response[$loopCNT]->extension,
+                                            'name' => $response[$loopCNT]->name,
+                                            'typeOfGroup' => $response[$loopCNT]->typeOfGroup,
+                                            'uuid' => $response[$loopCNT]->uuid);
+
+                            if (isset($response[$loopCNT]->detail))
+                            {
+                                $data['detail'] = array();
+                                foreach ($response[$loopCNT]->detail as $key => $value)
+                                {
+                                    $data['detail'][$key] = $value;
+                                }
+                            }
+
+                            $results[] = $data;
+                        }
+                    }
+                }
+            }
+        }
+
+        // if (DEBUG_WRITE) {
+        //     echo ("<script>console.log('getNewMembershipResults: " . json_encode($results) . "');</script>"); //browser console
+        //     $this->controller->Debug->write(json_encode($newUrlG));
+        // }
+
+        // END 20241017 New add member
 
         return $results;
     }
@@ -522,8 +594,7 @@ class GrouperApiComponent extends Object
         // }
 
         // 20241017 New Grouper API v4.0.9 Restful Call for add member
-        $resultsG = array();
-        $newUrlG = $this->grouper_v4_0_9_url . 'groups';
+        $newUrlG = $this->url . 'groups';
         $appValues = Cache::read(CACHE_NAME_APPLICATION);
 
         $lookups = array(
@@ -574,6 +645,7 @@ class GrouperApiComponent extends Object
 
         return $results;
     }
+   
     public function deleteMembership($groupName, $identifier)
     {
         $results = array();
@@ -601,8 +673,7 @@ class GrouperApiComponent extends Object
         // }
 
         // 20241017 New Grouper API v4.0.9 Restful Call for add member
-        $resultsG = array();
-        $newUrlG = $this->grouper_v4_0_9_url . 'groups';
+        $newUrlG = $this->url . 'groups';
         $appValues = Cache::read(CACHE_NAME_APPLICATION);
 
         $lookups = array(
@@ -641,18 +712,15 @@ class GrouperApiComponent extends Object
             }
         }
 
-        // if (DEBUG_WRITE) {
-        //     echo ("<script>console.log('deleteMembership: " . json_encode($newUrlG) . "');</script>"); //browser console
-        //     echo ("<script>console.log('deleteMembership: " . json_encode($bodyG) . "');</script>"); //browser console
-        //     echo ("<script>console.log('deleteMembership: " . json_encode($responseG2) . "');</script>"); //browser console
-        //     echo ("<script>console.log('deleteMembership: " . json_encode($results) . "');</script>"); //browser console
-        //     $this->controller->Debug->write(json_encode($newUrlG));
-        // }
+//        if (DEBUG_WRITE) {
+//            echo ("<script>console.log('deleteMembership: " . json_encode($newUrlG) . "');</script>"); //browser console
+//            echo ("<script>console.log('deleteMembership: " . json_encode($bodyG) . "');</script>"); //browser console
+//            echo ("<script>console.log('deleteMembership: " . json_encode($responseG2) . "');</script>"); //browser console
+//            echo ("<script>console.log('deleteMembership: " . json_encode($results) . "');</script>"); //browser console
+//            $this->controller->Debug->write(json_encode($newUrlG));
+//        }
 
         // END 20241017 New add member
-
-        return $results;
-
         
         return $results;
     }
@@ -695,7 +763,7 @@ class GrouperApiComponent extends Object
             $appValues = Cache::read(CACHE_NAME_APPLICATION);
 
             // PART 1: GET LIST OF ALL GROUPS INCLUDING EMPTY ONES
-            $newUrlG = $this->grouper_v4_0_9_url . 'groups';
+            $newUrlG = $this->url . 'groups';
 
             // if (DEBUG_WRITE) {
             //    echo ("<script>console.log('loadDC: " . json_encode($newUrlG) . "');</script>"); //browser console
@@ -718,7 +786,7 @@ class GrouperApiComponent extends Object
             // End Part 1
 
             // PART 2: GET ACTIVE MEMBERSHIPS AND SUBJECT INFORMATION
-            $newUrl = $this->grouper_v4_0_9_url . 'memberships';
+            $newUrl = $this->url . 'memberships';
 
             $body = array(
                 'WsRestGetMembershipsRequest' => array(

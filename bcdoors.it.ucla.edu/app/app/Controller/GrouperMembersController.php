@@ -3,7 +3,7 @@ class GrouperMembersController extends AppController
 {
     var $name = 'GrouperMembers';
     var $uses = array();
-    var $components = array('GrouperApi', 'GrouperSoapApi', 'Http', 'Validate');
+    var $components = array('GrouperApi', 'Http', 'Validate');
     
     public function index()
     {
