@@ -3,7 +3,7 @@ class CardHolderController extends AppController
 {
     var $name = 'Home';
     var $uses = array('PendingAccessPlan');
-    var $components = array('Breadcrumbs', 'GrouperSoapApi', 'Validate');
+    var $components = array('Breadcrumbs', 'GrouperApi', 'Validate');
     
     public function index()
     {
@@ -150,7 +150,7 @@ class CardHolderController extends AppController
             if ($continue)
             {
                 if (DEBUG_WRITE) {$this->Debug->write("Start Get Card Holder Access Plans");};
-                $data = $this->GrouperSoapApi->getMemberships($uid);
+                $data = $this->GrouperApi->getMemberships($uid);
                 if (DEBUG_WRITE) {$this->Debug->write("End Get Card Holder Access Plans");};
                 $merchants = $this->Session->read('merchants');
                 $merchantCNT = sizeof($merchants);

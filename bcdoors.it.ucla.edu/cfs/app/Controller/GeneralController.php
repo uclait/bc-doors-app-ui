@@ -3,7 +3,7 @@ class GeneralController extends AppController
 {
     var $name = 'General';
     var $uses = array('AuditTest', 'AuditUser', 'CardHolder', 'Definition', 'PendingAccessPlan', 'Users');
-    var $components = array('Cookie', 'File', 'Http', 'GrouperApi', 'GrouperSoapApi');
+    var $components = array('Cookie', 'File', 'Http', 'GrouperApi');
 
     public function headers()
     {

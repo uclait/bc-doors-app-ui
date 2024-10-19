@@ -6,7 +6,7 @@ class SystemsController extends AppController
 {
     var $name = 'System';
     var $uses = array();
-    var $components = array('Date', 'Directory', 'File', 'GrouperApi', 'GrouperSoapApi');
+    var $components = array('Date', 'Directory', 'File', 'GrouperApi');
 
     public function test()
     {
