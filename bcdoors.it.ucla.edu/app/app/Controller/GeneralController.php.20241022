@@ -1,153 +1,72 @@
 <?php
-App::uses('Folder', 'Utility');
-App::uses('File', 'Utility');
-
-class SystemsController extends AppController
+class GeneralController extends AppController
 {
-    var $name = 'System';
-    var $uses = array();
-    var $components = array('Date', 'Directory', 'File', 'GrouperApi');
+    var $name = 'General';
+    var $uses = array('AuditTest', 'AuditUser', 'CardHolder', 'Definition', 'PendingAccessPlan', 'Users');
+    var $components = array('Cookie', 'File', 'Http', 'GrouperApi');
 
-    public function test()
+    public function write_test()
     {
-        $Audit = ClassRegistry::init("Audit");
-        $userId = $this->Session->read('id');
+        $this->autoRender = false;
+        $path = "/opt/bruincard/logs/";
 
-        $params = $this->params->query;
-        $debug = isset($params['debug']);
-        $debug = true;
+        var_dump(file_exists($path));
 
-        if ($debug) {logExecutionTime("Start App"); };
+        $file = $path . "test.log";
 
-        //==> Display DBASE INI values
-        if ($debug) {logExecutionTime("DBASE INI Start");};
-        $values = '';
-        $cacheValues = Cache::read(CACHE_NAME_DBASE);
-        self::recursive($cacheValues, $values);
-        $this->set('dbase_ini', $values);
-        if ($debug) {logExecutionTime("DBASE INI End");};
-        //-------------------------------------
-        //==> Display APP INI values
-        if ($debug) {logExecutionTime("APP INI Start");};
-        $values = '';
-        $cacheValues = Cache::read(CACHE_NAME_APPLICATION);
-        self::recursive($cacheValues, $values);
-        $this->set('app_ini', $values);
-        if ($debug) {logExecutionTime("APP INI End");};
-        //-------------------------------------
-        //==> Test Dbase Connection
-        if ($debug) {logExecutionTime("Test Dbase Connection Start");};
-        $sql = "SELECT COUNT(ID) FROM AUDITS";
-        $values = $Audit->query($sql);
-        $values = sizeof($values) > 0 ? $values[0][0] : 0;
+        $this->File->write($file, "test", "w");
 
-        $this->set('dbase_read', $values ? 'success' : 'failed');
-        if ($debug) {logExecutionTime("Test Dbase Connection End");};
-        //-------------------------------------
-        //==> Test Dbase Insert
-        if ($debug) {logExecutionTime("Dbase Insert Start");};
-        $appId = Configure::read('Application.Id');
-        $definitionId = $this->DefinitionCache->getId("System", "System Database Insert Test");
-
-        $sql = "INSERT INTO AUDITS (APP_ID, DEFINITION_ID, USER_ID, ACTION_DATE) VALUES (%s, %s, '%s', '%s')";
-        $sql = sprintf($sql, $appId, $definitionId, $userId, date('Y-m-d h:i:s'));
-
-        $values = $Audit->query($sql);
-        $this->set('dbase_write', !($values === FALSE) ? 'success' : 'failed');
-        if ($debug) {logExecutionTime("Dbase Insert End");};
-        //-------------------------------------
-        //==> Show Grouper Merchants
-        if ($debug) {logExecutionTime("Show Grouper Merchants Start");};
-        $values = '';
-        $cacheValues = Cache::read(CACHE_NAME_GROUPER_MERCHANTS);
-        self::recursive($cacheValues, $values);
-        $this->set('grouper_merchants', $values);
-        if ($debug) {logExecutionTime("Show Grouper Merchants End");};
-        //-------------------------------------
-        //==> Show Grouper Merchants Groups
-        if ($debug) {logExecutionTime("Show Grouper Merchants Groups Start");};
-        $values = '';
-        $cacheValues = Cache::read(CACHE_NAME_GROUPER_MERCHANT_GROUPS);
-        self::recursive($cacheValues, $values);
-        $this->set('grouper_merchant_groups', $values);
-        if ($debug) {logExecutionTime("Show Grouper Merchants Groups End");};
-        //-------------------------------------
-        //==> Cached Files
-        if ($debug) {logExecutionTime("Cached Files Start");};
-
-        $values = array();
-        $folder = new Folder(CACHE);
-
-        $results = $folder->read();
-        if (sizeof($results) > 0)
-        {
-            $results = $results[1];
-            $fileCNT = sizeof($results);
-            for ($loopCNT = 0; $loopCNT < $fileCNT; $loopCNT++)
-            {
-                $file = new File(CACHE . $results[$loopCNT]);
-                $values[] = array('name' => $results[$loopCNT], 'size' => number_format($file->size(), 2), 'filetime' => date('m/d/Y h:i:s A', $file->lastChange()));
-            }
-        }
-        $this->set('cached_files', $values);
-        if ($debug) {logExecutionTime("Cached Files End");};
-
-        $this->set('debug_time', displayExecutionTime(true));
-        //-------------------------------------
-        //==> Log Files
-        if ($debug) {logExecutionTime("Log Files Start");};
-
-        $values = array();
-        $results = array();
-        $filter = date("Ymd");
-        $startDate = date("Y-m-d H:i:s");
-        for ($loopCNT = 0; $loopCNT < 10; $loopCNT++)
-        {
-            $endDate = $this->Date->add($startDate, 'day', -$loopCNT, 'Ymd');
-            $results[] = str_replace($filter, $endDate, DEBUG_FILE);
-        }
-
-        if (sizeof($results) > 0)
-        {
-            $fileCNT = sizeof($results);
-            for ($loopCNT = 0; $loopCNT < $fileCNT; $loopCNT++)
-            {
-                if (file_exists($results[$loopCNT]))
-                {
-                    $file = new File($results[$loopCNT]);
-                    $values[] = array('name' => substr(str_replace(LOG_PATH, "", $results[$loopCNT]), 1), 'size' => number_format($file->size(), 2), 'filetime' => date('m/d/Y h:i:s A', $file->lastChange()));
-                }
-            }
-        }
-        $this->set('log_files', $values);
-        if ($debug) {logExecutionTime("Log Files End");};
-
-        $this->set('debug_time', displayExecutionTime(true));
-        //-------------------------------------
-        if ($debug) {logExecutionTime("End App"); };
+        var_dump(file_exists($file));
     }
-    public function recursive($array, &$result, $level = 1)
+    public function key_test()
     {
-        foreach($array as $key => $value)
-        {
-            //If $value is an array.
+        $this->autoRender = false;
+        $caPath = "c:/var/www/bcdoors.it.ucla.edu";
+        $publicKey = "/var/www/bcdoors.it.ucla.edu/bcdkey.pub";
+        $privateKey = "/var/www/bcdoors.it.ucla.edu/bcdkey.pem";
+        $url = "https://bcdoors-dev.it.ucla.edu/app/rest/xml/deposits/status?Deposit-start_date=2015-02-01&Deposit-end_date=2015-02-24";
 
-            if(is_array($value))
-            {
-                $result .= str_repeat("\t", $level) . $key . "\n";
-                //We need to loop through it.
-                self::recursive($value, $result, $level + 1);
-            }
-            else
-            {
-                //It is not an array, so print it out.
-                if (strtolower($key) == 'password')
-                    $value = str_repeat('*', strlen($value));
+        echo "<pre>\n";
+        $opts = array(
+            CURLOPT_SSH_PUBLIC_KEYFILE => $publicKey,
+            #CURLOPT_SSH_PRIVATE_KEYFILE => $privateKey,
+            #CURLOPT_SSLCERT => $publicKey,
+            #CURLOPT_SSLKEY => $privateKey,
+            #CURLOPT_CAPATH => $caPath,
+            CURLOPT_URL => $url,
+            CURLOPT_CONNECTTIMEOUT => 30,
+            CURLOPT_TIMEOUT => 60,
+            CURLOPT_FRESH_CONNECT => 1,
+            CURLOPT_USERAGENT => 'curl-php',
+            CURLOPT_FOLLOWLOCATION => false,
+            CURLOPT_RETURNTRANSFER => true
+        );
 
-                $result .= str_repeat("\t", $level) . $key . ": " . $value . "\n";
-            }
-        }
+        echo $url . "\n\n";
+        $ch = curl_init();
+        curl_setopt_array($ch, $opts);
 
+        $response = curl_exec($ch);
+        $headers = curl_getinfo($ch);
+
+        $errorNo = curl_errno($ch);
+        $error = curl_error($ch);
+
+        echo "error: " . $error . "\n\n";
+        echo $response;
+
+        echo "END\n\n";
+        echo "</pre>";
+
+    }
+
+    public function headers()
+    {
+        $this->autoRender = false;
+
+        echo "<pre>";
+        print_r($_SERVER);
+        echo "</pre>";
     }
     public function view_session()
     {
@@ -159,7 +78,36 @@ class SystemsController extends AppController
         print_r($_SESSION);
         echo "</pre>";
     }
-    public function grouper_test()
+    public function view_cookie()
+    {
+        $this->autoRender = false;
+
+        // Unset all of the session variables.
+        $_SESSION = array();
+
+        // Destroy cookie
+        if (isset($_COOKIE[session_name()])) {
+            setcookie(session_name(), '', time() - 42000, '/');
+        }
+
+        session_destroy();
+
+        echo "<pre>";
+        print_r($_COOKIE);
+
+        if (isset($_SERVER['HTTP_COOKIE'])) {
+            $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
+            foreach ($cookies as $cookie) {
+                $parts = explode('=', $cookie);
+                $name = trim($parts[0]);
+                setcookie($name, '', time() - 1000);
+                setcookie($name, '', time() - 1000, '/');
+            }
+        }
+        print_r($_COOKIE);
+        echo "</pre>";
+    }
+    public function grouper_test_deprecated()
     {
         $this->autoRender = false;
 
@@ -167,18 +115,22 @@ class SystemsController extends AppController
         print_r($appValues);
 
         $url = "http://iam-as-d02.dev.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&stemName=ucla%3Abruincard%3ADC&queryFilterType=FIND_BY_STEM_NAME";
-        $data = array('username' => "grouper-wsuser-bruincard",
-                      'password' => "b*r13E#sk3");
+        $data = array(
+            'username' => "grouper-wsuser-bruincard",
+            'password' => ""
+        );
 
         //$response = $this->GrouperApi->process($url, $data);
         //print_r($response);
         //exit(1);
-        
+
 
         $url = "https://grouperws.it.ucla.edu/grouper-ws/servicesRest/v2_1_5/groups?wsLiteObjectType=WsRestFindGroupsLiteRequest&stemName=ucla%3Abruincard%3Aetc%3Aacl&queryFilterType=FIND_BY_STEM_NAME";
 
-        $data = array('username' => "grouper-wsuser-bar",
-                      'password' => "jd!3k4z#cg");
+        $data = array(
+            'username' => "grouper-wsuser-bar",
+            'password' => ""
+        );
 
         $response = $this->GrouperApi->process('GET', $url, $data);
 
@@ -190,15 +142,16 @@ class SystemsController extends AppController
 
         //exit(1);
         $opts = array(
-                            CURLOPT_CONNECTTIMEOUT => 30,
-                            CURLOPT_TIMEOUT        => 60,
-                            CURLOPT_FRESH_CONNECT  => 1,
-                            CURLOPT_PORT           => 443,
-                            CURLOPT_USERAGENT      => 'curl-php',
-                            CURLOPT_FOLLOWLOCATION => false,
-                            CURLOPT_RETURNTRANSFER => true,
-                            CURLOPT_CUSTOMREQUEST  => 'GET',
-                            CURLOPT_HTTPHEADER     => array('Content-Type: text/x-json; charset=UTF-8;','Accept: application/json'));
+            CURLOPT_CONNECTTIMEOUT => 30,
+            CURLOPT_TIMEOUT => 60,
+            CURLOPT_FRESH_CONNECT => 1,
+            CURLOPT_PORT => 443,
+            CURLOPT_USERAGENT => 'curl-php',
+            CURLOPT_FOLLOWLOCATION => false,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_CUSTOMREQUEST => 'GET',
+            CURLOPT_HTTPHEADER => array('Content-Type: text/x-json; charset=UTF-8;', 'Accept: application/json')
+        );
 
         //$this->setRequest(array('gateway_id' => $this->username, 'password' => $this->password));
 
@@ -222,11 +175,11 @@ class SystemsController extends AppController
         $errorNo = curl_errno($ch);
         $error = curl_error($ch);
 
-pr($error);
-pr(json_decode($response));
+        pr($error);
+        pr(json_decode($response));
 
         echo "<pre>";
-//        print_r($_SERVER);
+        //        print_r($_SERVER);
         echo "</pre>";
 
         $data = $this->Definition->find('all');
@@ -248,36 +201,31 @@ pr(json_decode($response));
         $totalCNT = sizeof($contents);
 
         $hasCommas = 0;
-        $realRecords  = 0;
+        $realRecords = 0;
         $blank = 0;
 
         $this->File->write($output, "index\tlast_name\tfirst_name\tmiddle_name\r\n", 'w');
-        for ($loopCNT = 0; $loopCNT < $totalCNT; $loopCNT++)
-        {
+        for ($loopCNT = 0; $loopCNT < $totalCNT; $loopCNT++) {
             $fields = explode('|', $contents[$loopCNT]);
-           //pr($fields[3]);
-           //echo $loopCNT . ". " . $contents[$loopCNT] . "\n";
+            //pr($fields[3]);
+            //echo $loopCNT . ". " . $contents[$loopCNT] . "\n";
             if (empty($contents[$loopCNT]))
                 continue;
 
             $fields[3] = trim($fields[3]);
-            if (!isset($fields[3]))
-            {
+            if (!isset($fields[3])) {
                 $blank++;
                 echo "row: " . $loopCNT . "<br>";
-            }
-            else
-            {
+            } else {
                 $realRecords++;
-                if ($this->String->endsWith($fields[3], ","))
-                {
+                if ($this->String->endsWith($fields[3], ",")) {
                     $fields[3] = substr($fields[3], 0, -1);
-                    echo $fields[3]; exit(1);
-                    
+                    echo $fields[3];
+                    exit(1);
+
                 }
 
-                if ($this->String->contains($fields[3], ','))
-                {
+                if ($this->String->contains($fields[3], ',')) {
                     $hasCommas++;
                     $names = explode(',', $fields[3]);
 
@@ -286,9 +234,7 @@ pr(json_decode($response));
                     $text = "{$names[0]}\t" . trim($firstNames[0]);
                     if (sizeof($firstNames) > 1)
                         $text .= "\t" . trim($firstNames[1]);
-                }
-                else
-                {
+                } else {
                     //echo $loopCNT . ". " . $contents[$loopCNT] . "\n";
                     $text = "{$fields[3]}";
                 }
@@ -322,13 +268,11 @@ pr(json_decode($response));
 
         $groupNames = array();
         $groupStemCNT = sizeof($groups);
-        for ($loopCNT2 = 0; $loopCNT2 < $groupStemCNT; $loopCNT2++)
-        {
+        for ($loopCNT2 = 0; $loopCNT2 < $groupStemCNT; $loopCNT2++) {
             $values = $groups[$loopCNT2]['GrouperStem']['groups'];
             $groupCNT = sizeof($values);
             $found = false;
-            for ($loopCNT3 = 0; $loopCNT3 < $groupCNT; $loopCNT3++)
-            {
+            for ($loopCNT3 = 0; $loopCNT3 < $groupCNT; $loopCNT3++) {
                 $groupNames[] = $values[$loopCNT3]['GrouperGroup']['description'];
             }
         }
@@ -336,10 +280,8 @@ pr(json_decode($response));
         //pr($groups);
         $matches = array();
         $missing = array();
-        for ($loopCNT = 0; $loopCNT < $total; $loopCNT++)
-        {
-            if (!empty($contents[$loopCNT]))
-            {
+        for ($loopCNT = 0; $loopCNT < $total; $loopCNT++) {
+            if (!empty($contents[$loopCNT])) {
                 if (in_array($contents[$loopCNT], $groupNames))
                     $matches[] = $contents[$loopCNT];
                 else
@@ -365,22 +307,19 @@ pr(json_decode($response));
         $skipped = 0;
         $failed = 0;
         $total = sizeof($contents);
-        for ($loopCNT = 0; $loopCNT < $total; $loopCNT++)
-        {
-            if (!empty($contents[$loopCNT]))
-            {
+        for ($loopCNT = 0; $loopCNT < $total; $loopCNT++) {
+            if (!empty($contents[$loopCNT])) {
                 list($cardNumber, $uid, $name) = explode(";", $contents[$loopCNT], 3);
 
-                if (!$this->String->contains($name, ",") ||
+                if (
+                    !$this->String->contains($name, ",") ||
                     $this->String->endsWith($name, ",") ||
                     $this->String->contains($name, "\\") ||
-                    $this->String->contains($name, "/"))
-                {
+                    $this->String->contains($name, "/")
+                ) {
                     //pr($contents[$loopCNT]);
                     $skipped++;
-                }
-                else
-                {
+                } else {
                     $nameParts = explode(',', $name);
                     $sql = sprintf("INSERT INTO card_holders (ucla_uid, first_name, last_name) VALUES('%s', '%s', '%s');", $uid, str_replace("'", "''", trim($nameParts[1])), str_replace("'", "''", trim($nameParts[0])));
                     //echo $sql . "\n";
@@ -421,8 +360,7 @@ pr(json_decode($response));
         exit(1);
         ksort($groups);
         echo "<pre>";
-        foreach($groups as $key => $value)
-        {
+        foreach ($groups as $key => $value) {
             $pattern = '/[\s\+\/\(\)]/i';
             echo preg_replace($pattern, "-", strtolower($key)) . "\t" . $key . "\n";
         }
@@ -433,27 +371,24 @@ pr(json_decode($response));
     public function parse()
     {
         $this->autoRender = false;
-        
+
         $file = WWW_ROOT . "/GROUPER_MEMBER_GROUP_MAPPING.txt";
         $contents = explode("\r\n", $this->File->read($file));
         $groups = array();
-        
+
         $rowCNT = sizeof($contents);
-        for ($loopCNT = 0; $loopCNT < $rowCNT; $loopCNT++)
-        {
-            if (!empty($contents[$loopCNT]))
-            {
+        for ($loopCNT = 0; $loopCNT < $rowCNT; $loopCNT++) {
+            if (!empty($contents[$loopCNT])) {
                 list($uid, $groupName) = explode(";", $contents[$loopCNT], 2);
                 if (!isset($groups[$groupName]))
                     $groups[$groupName] = 0;
 
-                $groups[$groupName]++;   
+                $groups[$groupName]++;
             }
         }
         ksort($groups);
         echo "<pre>";
-        foreach($groups as $key => $value)
-        {
+        foreach ($groups as $key => $value) {
             $pattern = '/[\s\+\/\(\)]/i';
             echo preg_replace($pattern, "-", strtolower($key)) . "\t" . $key . "\n";
         }
@@ -484,7 +419,7 @@ pr(json_decode($response));
         $fields = array("ID", "DEFINITION_ID");
         $result = $this->AuditTest->find("all", array("conditions" => $conditions));
         pr($result[0]);
-        
+
         $uid = '202803676';
         $path = 'ucla:bruincard:AG:HHSDoorMerchant:HHSTestAG';
         $fields = array("UCLA_UID" => $uid, "PATH" => $path);
@@ -492,7 +427,7 @@ pr(json_decode($response));
         //$result = $this->PendingAccessPlan->delete(14);
         var_dump($result);
         exit(1);
-        
+
         $id = 3;
         $result = $this->AuditTest->delete($id);
         var_dump($result);
@@ -507,16 +442,13 @@ pr(json_decode($response));
         $fields = array("UCLA_UID" => '804554016', "PATH" => 'ucla:bruincard:AG:HHSDoorMerchant:HHSTestAG', "ACTION" => 'A');
 
         $result = $this->PendingAccessPlan->find("first", array("conditions" => $fields));
-        if (isset($result['PendingAccessPlan']))
-        {
+        if (isset($result['PendingAccessPlan'])) {
             echo "EXISTS<BR><BR>";
             $result = $this->PendingAccessPlan->deleteAll($fields);
             echo "DELETE<BR><BR>";
             $result = $this->PendingAccessPlan->find("count", array("conditions" => $fields));
             echo "CNT: " . $result . "<BR><BR>";
-        }
-        else
-        {
+        } else {
             echo "ADD<BR><BR>";
             $this->PendingAccessPlan->id = null;
             $result = $this->PendingAccessPlan->save(array("PendingAccessPlan" => $fields));
@@ -532,17 +464,14 @@ pr(json_decode($response));
         $filePath = WWW_ROOT . 'files\\';
         $fileName = 'itservices-bc-TSCreate-wd0002.txt';
 
-        if (file_exists($filePath . $fileName))
-        {
+        if (file_exists($filePath . $fileName)) {
             $content = explode("\n", $this->File->read($filePath . $fileName));
             $rowCNT = sizeof($content);
-            for ($loopCNT = 0; $loopCNT < $rowCNT; $loopCNT++)
-            {
+            for ($loopCNT = 0; $loopCNT < $rowCNT; $loopCNT++) {
                 $cardHolder = array();
                 $content[$loopCNT] = trim(str_replace("\r", "", $content[$loopCNT]));
                 echo $loopCNT . '. ' . $content[$loopCNT];
-                if (!empty($content[$loopCNT]))
-                {
+                if (!empty($content[$loopCNT])) {
                     $fields = explode("|", $content[$loopCNT]);
                     /*
                         0 = uid
@@ -550,8 +479,7 @@ pr(json_decode($response));
                         2 = first name
                         3 = middle name
                     */
-                    if (isset($fields[0]) && !empty($fields[0]))
-                    {
+                    if (isset($fields[0]) && !empty($fields[0])) {
                         $uid = trim($fields[0]);
                         $cardHolder['uid'] = trim($uid);
                         $cardHolder['first_name'] = trim($fields[2]);
@@ -559,18 +487,14 @@ pr(json_decode($response));
                         $cardHolder['ucla_login_id'] = strtolower($this->_generateUCLALoginId(array($cardHolder['first_name'], $cardHolder['last_name'])));
                         $cardHolder['email'] = $cardHolder['ucla_login_id'] . '@ucla.edu';
 
-                        if ($this->CardHolder->find('count', array('conditions' => array('ucla_login_id' => $cardHolder['ucla_login_id']))) == 0)
-                        {
+                        if ($this->CardHolder->find('count', array('conditions' => array('ucla_login_id' => $cardHolder['ucla_login_id']))) == 0) {
                             $cardHolder['inserted'] = date('Y-m-d H:m:s');
 
                             $this->CardHolder->id = null;
-                            try
-                            {
+                            try {
                                 $result = $this->CardHolder->save(array('CardHolder' => $cardHolder));
                                 echo ' - ADDED';
-                            }
-                            catch (Exception $ex)
-                            {
+                            } catch (Exception $ex) {
                                 pr($cardHolder);
                             }
 
@@ -590,26 +514,21 @@ pr(json_decode($response));
         $fileName = 'contacts.txt';
         $uid = 9000000001;
 
-        if (file_exists($filePath . $fileName))
-        {
+        if (file_exists($filePath . $fileName)) {
             $content = explode("\n", $this->File->read($filePath . $fileName));
             $rowCNT = sizeof($content);
-            for ($loopCNT = 1; $loopCNT < $rowCNT; $loopCNT++)
-            {
+            for ($loopCNT = 1; $loopCNT < $rowCNT; $loopCNT++) {
                 $cardHolder = array();
                 $content[$loopCNT] = trim(str_replace("\r", "", $content[$loopCNT]));
                 echo $loopCNT . '. ' . $content[$loopCNT];
-                if (!empty($content[$loopCNT]))
-                {
+                if (!empty($content[$loopCNT])) {
                     $fields = explode("\t", $content[$loopCNT]);
 
-                    if (isset($fields[2]) && !empty($fields[2]))
-                    {
+                    if (isset($fields[2]) && !empty($fields[2])) {
                         $cardHolder['email'] = $this->_extractEmail($fields[2]);
                         $cardHolder['ucla_login_id'] = strtolower($this->_generateUCLALoginId($fields));
 
-                        if ($this->CardHolder->find('count', array('conditions' => array('ucla_login_id' => $cardHolder['ucla_login_id']))) == 0)
-                        {
+                        if ($this->CardHolder->find('count', array('conditions' => array('ucla_login_id' => $cardHolder['ucla_login_id']))) == 0) {
                             $cardHolder['uid'] = $uid;
                             $cardHolder['first_name'] = $fields[0];
                             $cardHolder['last_name'] = $fields[1];
@@ -619,13 +538,10 @@ pr(json_decode($response));
                             $uid++;
 
                             $this->CardHolder->id = null;
-                            try
-                            {
+                            try {
                                 $result = $this->CardHolder->save(array('CardHolder' => $cardHolder));
                                 echo ' - ADDED';
-                            }
-                            catch (Exception $ex)
-                            {
+                            } catch (Exception $ex) {
                                 pr($cardHolder);
                             }
                         }
@@ -641,7 +557,7 @@ pr(json_decode($response));
     }
     private function _extractEmail($value)
     {
-        if(preg_match('!\(([^\)]+)\)!', $value, $match))
+        if (preg_match('!\(([^\)]+)\)!', $value, $match))
             $value = $match[1];
 
         return $value;

@@ -74,42 +74,32 @@ class DATABASE_CONFIG
                             'prefix' => '');
                             //'encoding' => 'utf8'
     */
-    
-    public $default = array('datasource' => 'Database/Oracle',
-                            'driver' => 'oracle',
-                            'connect' => 'oci_pconnect',
-                            'persistent' => true,
-                            'host' => 'localhost:1521',
-                            'login' => '',
-                            'password' => '',
-                            'database' => '',
-                            'prefix' => '',
-                            'schema' => '');
-    
-    public $oracle = array('datasource' => 'Database/Oracle',
-                            'driver' => 'oracle',
-                            'connect' => 'oci_pconnect',
-                            'persistent' => true,
-                            'host' => 'bc-db-t01.dpns.ais.ucla.edu',
-                            'login' => 'bcapp',
-                            'password' => 'bcapp_psw',
-                            ## 'password' => 'test##_write_bcuser',
-                            'database' => 'bc-db-t01.dpns.ais.ucla.edu:1521/bcdoorst',
-                            'nls_comp' => 'LINGUISTIC',
-                            'nls_sort' => 'BINARY_CI',
-                            'prefix' => '',
-                            'schema' => 'bcdoorst');
-    
-    public $mysql = array('datasource' => 'Database/Mysql',
-                          'persistent' => false,
-                          'host' => 'localhost',
-                          'login' => 'web-user',
-                          'password' => 'etgwhy39nj',
-                          'database' => 'bruin_card',
-                          'prefix' => '');
 
-        
-    function __construct ()
+    public $default = array(
+        'datasource' => 'Database/Oracle',
+        'driver' => 'oracle',
+        'connect' => 'oci_pconnect',
+        'persistent' => true,
+        'host' => 'localhost:1521',
+        'login' => '',
+        'password' => '',
+        'database' => '',
+        'prefix' => '',
+        'schema' => ''
+    );
+
+    public $mysql = array(
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => 'localhost',
+        'login' => 'web-user',
+        'password' => 'etgwhy39nj',
+        'database' => 'bruin_card',
+        'prefix' => ''
+    );
+
+
+    function __construct()
     {
         $values = Cache::read(CACHE_NAME_DBASE);
         if (isset($values['default']))
