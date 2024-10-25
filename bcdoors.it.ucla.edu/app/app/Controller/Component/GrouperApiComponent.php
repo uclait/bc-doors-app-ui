@@ -158,18 +158,16 @@ class GrouperApiComponent extends Object
         $newUrlG = $this->url . 'stems';
         $appValues = Cache::read(CACHE_NAME_APPLICATION);
 
-            $bodyG = array(
-                'WsRestFindStemsRequest' => array(
-                    "wsStemQueryFilter" => array(
-                        "stemQueryFilterType" => "FIND_BY_STEM_NAME_APPROXIMATE",
-                        "stemName" => $name,
-                    )
+        $bodyG = array(
+            'WsRestFindStemsRequest' => array(
+                "wsStemQueryFilter" => array(
+                    "stemQueryFilterType" => "FIND_BY_STEM_NAME_APPROXIMATE",
+                    "stemName" => $name,
                 )
-            );
+            )
+        );
 
-            $responseG2 = self::processWithBody('GET', $newUrlG, array("username" => $this->username, "password" => $this->password), $bodyG);
-
-            
+        $responseG2 = self::processWithBody('GET', $newUrlG, array("username" => $this->username, "password" => $this->password), $bodyG);
 
         if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK) {
             //$response = json_decode($this->controller->Http->content);
@@ -182,7 +180,6 @@ class GrouperApiComponent extends Object
             //  }    
 
             if (isset($responseG2->WsFindStemsResults) && $responseG2->WsFindStemsResults) {
-               
                 if ($responseG2->WsFindStemsResults->resultMetadata->success == 'T') {
                     $response = $responseG2->WsFindStemsResults->stemResults;
                     $stemCNT = sizeof($response);
@@ -197,7 +194,7 @@ class GrouperApiComponent extends Object
 
         // END 20241016 NEW GROUPER GET STEMS CALL
 
-         return $results;
+        return $results;
     }
 
     public function getGroups($name = null, $filterType = 'FIND_BY_STEM_NAME')
@@ -236,18 +233,16 @@ class GrouperApiComponent extends Object
         $newUrlG = $this->url . 'groups';
         $appValues = Cache::read(CACHE_NAME_APPLICATION);
 
-            $bodyG = array(
-                'WsRestFindGroupsRequest' => array(
-                    "wsQueryFilter" => array(
-                        "queryFilterType" => "FIND_BY_STEM_NAME",
-                        "stemName" => $name,
-                    )
+        $bodyG = array(
+            'WsRestFindGroupsRequest' => array(
+                "wsQueryFilter" => array(
+                    "queryFilterType" => "FIND_BY_STEM_NAME",
+                    "stemName" => $name,
                 )
-            );
+            )
+        );
 
-            $responseG2 = self::processWithBody('GET', $newUrlG, array("username" => $this->username, "password" => $this->password), $bodyG);
-
-            
+        $responseG2 = self::processWithBody('GET', $newUrlG, array("username" => $this->username, "password" => $this->password), $bodyG);
 
         if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK) {
 
@@ -282,7 +277,6 @@ class GrouperApiComponent extends Object
         $results = array();
 
         $params = array('groupName' => $name, 'memberFilter' => $filterType);
-        
         // 20241017 Legacy Grouper v2.1.5 call
         // $url = $this->url . "groups/{$name}/members?retrieveSubjectDetail=true&wsLiteObjectType=WsRestGetMembersLiteRequest&" . http_build_query($params) . "&subjectAttributeNames=" . implode(',', $this->validAttributeNames);
 
@@ -321,7 +315,6 @@ class GrouperApiComponent extends Object
         //         }
         //     }
         // }
-     
 
         // 20241017 New Grouper v4.0.9 getMembers rest Update
         $newUrlG = $this->url . 'groups';
@@ -351,7 +344,6 @@ class GrouperApiComponent extends Object
                     if ($responseG2->WsGetMembersResults->resultMetadata->success == 'T') {
                         // loop through the response 
                         if (isset($responseG2->WsGetMembersResults->results[0]->wsSubjects)) {
-                            
                             $attributeNames = $responseG2->WsGetMembersResults->subjectAttributeNames;
 
                             $responseG = $responseG2->WsGetMembersResults->results[0]->wsSubjects;
@@ -402,8 +394,8 @@ class GrouperApiComponent extends Object
         //     $params = array('subjectId' => $ppid);
 
         // $url = $this->url . "subjects?wsLiteObjectType=WsRestGetSubjectsLiteRequest&" . http_build_query($params) . "&subjectAttributeNames=" . implode(',', $this->attributeNames);
-        
-	    // if (DEBUG_WRITE) {
+
+        // if (DEBUG_WRITE) {
         //    echo ("<script>console.log('getSubjects: " . json_encode($url) . "');</script>"); //browser console
         //    $this->controller->Debug->write(json_encode($url));
         // }
@@ -458,7 +450,7 @@ class GrouperApiComponent extends Object
                     ),
                 )
             );
-        
+
 
         $responseG2 = self::processWithBody('GET', $newUrlG, array("username" => $this->username, "password" => $this->password), $bodyG);
 
@@ -505,23 +497,16 @@ class GrouperApiComponent extends Object
             "subjectIdentifier" => $identifier
         );
         $bodyG = array(
-                'WsRestGetMembershipsRequest' => array(
-                    "wsSubjectLookups" => array(
-                        $lookups
-                    ),
-                    "includeGroupDetail" => "T",
-                    "includeSubjectDetail" => "T"
-                )
-            );
+            'WsRestGetMembershipsRequest' => array(
+                "wsSubjectLookups" => array(
+                    $lookups
+                ),
+                "includeGroupDetail" => "T",
+                "includeSubjectDetail" => "T"
+            )
+        );
 
         $responseG2 = self::processWithBody('GET', $newUrlG, array("username" => $this->username, "password" => $this->password), $bodyG);
-
-        // if (DEBUG_WRITE) {
-        //     echo ("<script>console.log('getNewMembership: " . json_encode($newUrlG) . "');</script>"); //browser console
-        //     echo ("<script>console.log('getNewMembership: " . json_encode($bodyG) . "');</script>"); //browser console
-        //     // echo ("<script>console.log('getNewMembership: " . json_encode($responseG2) . "');</script>"); //browser console
-        //     $this->controller->Debug->write(json_encode($newUrlG));
-        // }
 
         if ($this->controller->Http->status == $this->controller->Http->STATUS_CODE_OK) {
             //$response = json_decode($this->controller->Http->content);
@@ -529,44 +514,83 @@ class GrouperApiComponent extends Object
                 if ($responseG2->WsGetMembershipsResults->resultMetadata->success == 'T') {
                     $accessGroup = $appValues['stem']['path']['ag'];
                     $response = $responseG2->WsGetMembershipsResults->wsGroups;
+                    if (isset($response['description'])) {
+                        $response = array($response);
+                    }
 
                     $groupCNT = sizeof($response);
-                    for ($loopCNT = 0; $loopCNT < $groupCNT; $loopCNT++)
-                    {
-                        if ($this->controller->String->beginsWith($response[$loopCNT]->name, $accessGroup))
-                        {
-                            $data = array('description' => $response[$loopCNT]->description,
-                                            'displayExtension' => $response[$loopCNT]->displayExtension,
-                                            'displayName' => $response[$loopCNT]->displayName,
-                                            'extension' => $response[$loopCNT]->extension,
-                                            'name' => $response[$loopCNT]->name,
-                                            'typeOfGroup' => $response[$loopCNT]->typeOfGroup,
-                                            'uuid' => $response[$loopCNT]->uuid);
+                    for ($loopCNT = 0; $loopCNT < $groupCNT; $loopCNT++) {
+                        // if ($this->controller->String->beginsWith($response[$loopCNT]->name, $accessGroup))
+                        // { 
+                        // $data = array(
+                        // 'description' => $response[$loopCNT]->description, //string
+                        // 'displayExtension' => $response[$loopCNT]->displayExtension, //string
+                        // 'displayName' => $response[$loopCNT]->displayName, //string
+                        // 'extension' => $response[$loopCNT]->extension, //string
+                        // 'name' => $response[$loopCNT]->name, //string
+                        // 'typeOfGroup' => $response[$loopCNT]->typeOfGroup, //string
+                        // 'uuid' => $response[$loopCNT]->uuid); //string
 
-                            if (isset($response[$loopCNT]->detail))
-                            {
-                                $data['detail'] = array();
-                                foreach ($response[$loopCNT]->detail as $key => $value)
-                                {
-                                    $data['detail'][$key] = $value;
-                                }
+                        $data = self::getMembershipJSONHelper($response[$loopCNT]);
+
+                        if (isset($response[$loopCNT]->detail)) {
+                            $data['detail'] = array();
+                            foreach ($response[$loopCNT]->detail as $key => $value) {
+                                $data['detail'][$key] = $value;
                             }
-
-                            $results[] = $data;
                         }
+                        $results[] = $data;
+                        // }
                     }
                 }
             }
         }
 
         // if (DEBUG_WRITE) {
-        //     echo ("<script>console.log('getNewMembershipResults: " . json_encode($results) . "');</script>"); //browser console
-        //     $this->controller->Debug->write(json_encode($newUrlG));
+        //     echo ("<script>console.log('getNewMembershipFunction: " . json_encode($results) . "');</script>"); //browser console
         // }
 
         // END 20241017 New add member
 
         return $results;
+    }
+
+    private function getMembershipJSONHelper($response)
+    {
+        $data = array(
+            'description' => '', //string
+            'displayExtension' => '', //string
+            'displayName' => '', //string
+            'extension' => '', //string
+            'name' => '', //string
+            'typeOfGroup' => '', //string
+            'uuid' => ''
+        ); //string
+
+        if (isset($response->description)) {
+
+            $data['description'] = $response->description;
+        }
+        if (isset($response->displayExtension)) {
+            $data['displayExtension'] = $response->displayExtension;
+        }
+        if (isset($response->displayName)) {
+            $data['displayName'] = $response->displayName;
+        }
+        if (isset($response->extension)) {
+            $data['extension'] = $response->extension;
+        }
+        if (isset($response->name)) {
+            $data['name'] = $response->name;
+        }
+        if (isset($response->typeOfGroup)) {
+            $data['typeOfGroup'] = $response->typeOfGroup;
+        }
+        if (isset($response->uuid)) {
+            $data['uuid'] = $response->uuid;
+        }
+
+        return $data;
     }
 
     public function addMembership($groupName, $identifier)
@@ -602,19 +626,18 @@ class GrouperApiComponent extends Object
             "subjectSourceId" => "ldap"
         );
         $bodyG = array(
-                'WsRestAddMemberRequest' => array(
-                    "wsGroupLookup" => array(
-                        "groupName" => $groupName
-                    ),
-                    "subjectLookups" => array(
-                        $lookups
-                    ),
-                    "includeGroupDetail" => "T",
-                    "includeSubjectDetail" => "T",
-                    "addExternalSubjectIfNotFound" => "F"
-                )
-            );
-        
+            'WsRestAddMemberRequest' => array(
+                "wsGroupLookup" => array(
+                    "groupName" => $groupName
+                ),
+                "subjectLookups" => array(
+                    $lookups
+                ),
+                "includeGroupDetail" => "T",
+                "includeSubjectDetail" => "T",
+                "addExternalSubjectIfNotFound" => "F"
+            )
+        );
 
         $responseG2 = self::processWithBody('GET', $newUrlG, array("username" => $this->username, "password" => $this->password), $bodyG);
 
@@ -645,7 +668,6 @@ class GrouperApiComponent extends Object
 
         return $results;
     }
-   
     public function deleteMembership($groupName, $identifier)
     {
         $results = array();
@@ -681,19 +703,18 @@ class GrouperApiComponent extends Object
             "subjectSourceId" => "ldap"
         );
         $bodyG = array(
-                'WsRestDeleteMemberRequest' => array(
-                    "wsGroupLookup" => array(
-                        "groupName" => $groupName
-                    ),
-                    "subjectLookups" => array(
-                        $lookups
-                    ),
-                    "includeGroupDetail" => "T",
-                    "includeSubjectDetail" => "T",
-                    "addExternalSubjectIfNotFound" => "F"
-                )
-            );
-        
+            'WsRestDeleteMemberRequest' => array(
+                "wsGroupLookup" => array(
+                    "groupName" => $groupName
+                ),
+                "subjectLookups" => array(
+                    $lookups
+                ),
+                "includeGroupDetail" => "T",
+                "includeSubjectDetail" => "T",
+                "addExternalSubjectIfNotFound" => "F"
+            )
+        );
 
         $responseG2 = self::processWithBody('GET', $newUrlG, array("username" => $this->username, "password" => $this->password), $bodyG);
 
@@ -712,7 +733,7 @@ class GrouperApiComponent extends Object
             }
         }
 
-//        if (DEBUG_WRITE) {
+        //        if (DEBUG_WRITE) {
 //            echo ("<script>console.log('deleteMembership: " . json_encode($newUrlG) . "');</script>"); //browser console
 //            echo ("<script>console.log('deleteMembership: " . json_encode($bodyG) . "');</script>"); //browser console
 //            echo ("<script>console.log('deleteMembership: " . json_encode($responseG2) . "');</script>"); //browser console
@@ -721,7 +742,6 @@ class GrouperApiComponent extends Object
 //        }
 
         // END 20241017 New add member
-        
         return $results;
     }
 
@@ -935,7 +955,6 @@ class GrouperApiComponent extends Object
         $stems = array();
 
         //$reload = true; // 20241016: Set Reload to true for debugging, comment this line for production
-        
         if (!$this->controller->CacheObject->exists(CACHE_NAME_GROUPER_MERCHANT_GROUPS) || $reload) {
             $appValues = Cache::read(CACHE_NAME_APPLICATION);
             $this->controller->CacheObject->duration = strtolower($appValues['cache']['grouper']['merchant']['groups']);
@@ -943,7 +962,6 @@ class GrouperApiComponent extends Object
             $stemName = $appValues['stem']['path']['ag'];
 
             $stems = $this->controller->Array->convertLikeModel('GrouperStem', self::getStems($stemName));
-            
             $stemCNT = sizeof($stems);
             for ($loopCNT = 0; $loopCNT < $stemCNT; $loopCNT++) {
                 //==> Get Groups
